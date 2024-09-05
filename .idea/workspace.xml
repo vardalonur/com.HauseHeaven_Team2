@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81ddda3f-3493-473a-a9eb-d2e8a6f1abc7" name="Changes" comment="Revert &quot;Can/04.09/Listing Page Eklendi&quot;&#10;&#10;This reverts commit bfa7af24">
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/WebsiteMain.java" beforeDir="false" />
-    </list>
+    <list default="true" id="81ddda3f-3493-473a-a9eb-d2e8a6f1abc7" name="Changes" comment="Revert &quot;Can/04.09/Listing Page Eklendi&quot;&#10;&#10;This reverts commit bfa7af24" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,32 +36,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;TestNG.US_32.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.US_32.tagsDisplay (1).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.US_32.tagsDisplay.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.US_32.tagsDisplay1.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.US_32.tagsItemCreate.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.US_32.tagsItemDelete.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.US_32.tagsItemEdit.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.US_32.tagsSection.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.US_33.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.US_33.testimonialsItemCreate.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.US_34.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.US_34.testimonialsItemCreate.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.US_35.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.US_32.executor": "Run",
+    "TestNG.US_32.tagsDisplay (1).executor": "Run",
+    "TestNG.US_32.tagsDisplay.executor": "Run",
+    "TestNG.US_32.tagsDisplay1.executor": "Run",
+    "TestNG.US_32.tagsItemCreate.executor": "Run",
+    "TestNG.US_32.tagsItemDelete.executor": "Run",
+    "TestNG.US_32.tagsItemEdit.executor": "Run",
+    "TestNG.US_32.tagsSection.executor": "Run",
+    "TestNG.US_33.executor": "Run",
+    "TestNG.US_33.testimonialsItemCreate.executor": "Run",
+    "TestNG.US_34.executor": "Run",
+    "TestNG.US_34.testimonialsItemCreate.executor": "Run",
+    "TestNG.US_35.executor": "Run",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\vardal\IdeaProjects\T144\com.HauseHeaven_Team2\src\test\java\Pages" />
