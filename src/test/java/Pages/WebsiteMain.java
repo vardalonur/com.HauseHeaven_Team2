@@ -301,7 +301,3 @@ public class WebsiteMain {
 
 
 
-
-    // CAN YILMAZ'A AYRILMISTIR 101'den baslayiniz.
-}
->>>>>>> main
