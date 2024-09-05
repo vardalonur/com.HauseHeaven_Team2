@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81ddda3f-3493-473a-a9eb-d2e8a6f1abc7" name="Changes" comment="Revert &quot;Can/04.09/Listing Page Eklendi&quot;&#10;&#10;This reverts commit bfa7af24">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/WebsiteMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/WebsiteMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Can/US_06.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/Can/US_06.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Can/US_07.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/Can/US_07.java" afterDir="false" />
-    </list>
+    <list default="true" id="81ddda3f-3493-473a-a9eb-d2e8a6f1abc7" name="Changes" comment="Revert &quot;Can/04.09/Listing Page Eklendi&quot;&#10;&#10;This reverts commit bfa7af24" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,7 +53,7 @@
     "TestNG.US_34.executor": "Run",
     "TestNG.US_34.testimonialsItemCreate.executor": "Run",
     "TestNG.US_35.executor": "Run",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "onur",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "project.structure.last.edited": "Project",
