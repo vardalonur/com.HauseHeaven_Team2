@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81ddda3f-3493-473a-a9eb-d2e8a6f1abc7" name="Changes" comment="Revert &quot;Can/04.09/Listing Page Eklendi&quot;&#10;&#10;This reverts commit bfa7af24" />
+    <list default="true" id="81ddda3f-3493-473a-a9eb-d2e8a6f1abc7" name="Changes" comment="Revert &quot;Can/04.09/Listing Page Eklendi&quot;&#10;&#10;This reverts commit bfa7af24">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,6 +42,7 @@
   "keyToString": {
     "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.US_32 (1).executor": "Run",
     "TestNG.US_32.executor": "Run",
     "TestNG.US_32.tagsDisplay (1).executor": "Run",
     "TestNG.US_32.tagsDisplay.executor": "Run",
@@ -48,12 +51,13 @@
     "TestNG.US_32.tagsItemDelete.executor": "Run",
     "TestNG.US_32.tagsItemEdit.executor": "Run",
     "TestNG.US_32.tagsSection.executor": "Run",
+    "TestNG.US_33 (1).executor": "Run",
     "TestNG.US_33.executor": "Run",
     "TestNG.US_33.testimonialsItemCreate.executor": "Run",
     "TestNG.US_34.executor": "Run",
     "TestNG.US_34.testimonialsItemCreate.executor": "Run",
     "TestNG.US_35.executor": "Run",
-    "git-widget-placeholder": "onur",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "project.structure.last.edited": "Project",
@@ -70,9 +74,9 @@
       <recent name="Pages" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.US_35">
-    <configuration name="US_32" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="com.HauseHeaven_Team2" />
+  <component name="RunManager" selected="TestNG.US_33 (1)">
+    <configuration name="US_32 (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Team144_TestNG_POM" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Tests.Onur.*" />
@@ -88,8 +92,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="US_33" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="com.HauseHeaven_Team2" />
+    <configuration name="US_33 (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Team144_TestNG_POM" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Tests.Onur.*" />
@@ -159,11 +163,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.US_33 (1)" />
+        <item itemvalue="TestNG.US_32 (1)" />
         <item itemvalue="TestNG.US_35" />
         <item itemvalue="TestNG.US_34.realEstateMenuTest" />
         <item itemvalue="TestNG.US_34" />
-        <item itemvalue="TestNG.US_33" />
-        <item itemvalue="TestNG.US_32" />
       </list>
     </recent_temporary>
   </component>
