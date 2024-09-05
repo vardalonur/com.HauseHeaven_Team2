@@ -30,7 +30,7 @@ public class DriverCross {
 
         kullanilacakBrowser =   kullanilacakBrowser==null
                 ?
-                ConfigReader.getProperty("browser")
+                utilities.ConfigReader.getProperty("browser")
                 :
                 kullanilacakBrowser ;
 

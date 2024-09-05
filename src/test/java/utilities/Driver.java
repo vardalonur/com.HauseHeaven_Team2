@@ -23,7 +23,7 @@ public class Driver {
     public static WebDriver getDriver(){
 
         if (driver == null){
-            String secilenBrowser = ConfigReader.getProperty("browser");
+            String secilenBrowser = utilities.ConfigReader.getProperty("browser");
 
             switch (secilenBrowser){
 
