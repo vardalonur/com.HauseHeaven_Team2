@@ -4,9 +4,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class WebsiteMain {
+import utilities.Driver;
 
-    public WebsiteMain(){
+public class WebsiteMain {
         PageFactory.initElements(utilities.Driver.getDriver(), this);
     }
     // CAN YILMAZ BÖLÜMÜ
@@ -103,4 +103,201 @@ public class WebsiteMain {
 
 
     // CAN YILMAZ'A AYRILMISTIR 101'den baslayiniz.
+
+//KEVSER\\
+    ////////////////////////==================\\\\\\\\\\\\\\\\\\\\\\\\
+
+                //Header Bölümü Ortak Elementler\\
+
+    ////////////////////////==================\\\\\\\\\\\\\\\\\\\\\\\\
+
+    @FindBy(xpath = "//*[@id=\"navigation\"]/div[2]/ul[1]/li[4]/a")
+    public WebElement agentsButonu;
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//KEVSER son\\
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
