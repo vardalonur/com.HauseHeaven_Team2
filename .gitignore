@@ -12,6 +12,7 @@ test-output/
 *.iws
 *.iml
 *.ipr
+configuration.properties
 
 ### Eclipse ###
 .apt_generated
