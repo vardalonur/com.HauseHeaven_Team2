@@ -297,6 +297,43 @@ public class AdminDashboard {
 
 
 
+    //Admindashboard Home Page//
+
+    @FindBy (xpath = "//div[@class='page-header navbar navbar-static-top']" )
+    public WebElement topNavBar;
+
+    @FindBy(xpath = "//div[@class='page-sidebar navbar-collapse collapse']")
+    public WebElement sideBar;
+
+    @FindBy(xpath = "(//span[@class='badge badge-default'])[1]")
+    public WebElement topNavBarButton;
+
+        //Blog Menu Subsections//
+
+    //Categories Button
+    @FindBy (id = "cms-plugins-blog-categories")
+    public WebElement CategoriesButton;
+
+            //Categories Page Elements
+
+    @FindBy (xpath = "//li[@class='folder-root open'][1]")
+    public WebElement houseArchitecture;
+
+    @FindBy(xpath = "//li[@class='folder-root open'][2]")
+    public WebElement houseDesign;
+
+    @FindBy(xpath = "//li[@class='folder-root open'][3]")
+    public  WebElement buildingMaterials;
+
+    @FindBy(xpath = "/html/body/div[2]/div[2]/div[3]/div[2]/div/div[2]/div/div[2]/div/div[2]/div[1]/a")
+    public WebElement categoriesCreateButton;
+
+    @FindBy(xpath = "/html/body/div[2]/div[2]/div[3]/div[2]/div/div[2]/div/div[3]/div/div[2]/form/div[2]/input" )
+    public WebElement categoriesNameForm;
+
+    @FindBy(xpath = "//div[@class='ui-select-wrapper form-group'][1]")
+    public WebElement categoriesParentForm;
+
 
 
 
