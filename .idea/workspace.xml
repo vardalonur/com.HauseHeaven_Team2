@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="81ddda3f-3493-473a-a9eb-d2e8a6f1abc7" name="Changes" comment="Revert &quot;Can/04.09/Listing Page Eklendi&quot;&#10;&#10;This reverts commit bfa7af24">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="onur" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2lWCTbM3X5UiySCfYZDacSN9PbP" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.US_32 (1).executor": "Run",
+    "TestNG.US_32.executor": "Run",
+    "TestNG.US_32.tagsDisplay (1).executor": "Run",
+    "TestNG.US_32.tagsDisplay.executor": "Run",
+    "TestNG.US_32.tagsDisplay1.executor": "Run",
+    "TestNG.US_32.tagsItemCreate.executor": "Run",
+    "TestNG.US_32.tagsItemDelete.executor": "Run",
+    "TestNG.US_32.tagsItemEdit.executor": "Run",
+    "TestNG.US_32.tagsSection.executor": "Run",
+    "TestNG.US_33 (1).executor": "Run",
+    "TestNG.US_33.executor": "Run",
+    "TestNG.US_33.testimonialsItemCreate.executor": "Run",
+    "TestNG.US_34.executor": "Run",
+    "TestNG.US_34.testimonialsItemCreate.executor": "Run",
+    "TestNG.US_35.executor": "Run",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\vardal\IdeaProjects\T144\com.HauseHeaven_Team2\src\test\java\Pages" />
+    </key>
+    <key name="MoveInnerDialog.RECENTS_KEY">
+      <recent name="Pages" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.US_33 (1)">
+    <configuration name="US_32 (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Team144_TestNG_POM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.Onur.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests.Onur" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Onur.US_32" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="US_33 (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Team144_TestNG_POM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.Onur.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests.Onur" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Onur.US_33" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="US_34" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="com.HauseHeaven_Team2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.Onur.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests.Onur" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Onur.US_34" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="US_34.realEstateMenuTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="com.HauseHeaven_Team2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.Onur.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests.Onur" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Onur.US_34" />
+      <option name="METHOD_NAME" value="realEstateMenuTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="US_35" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="com.HauseHeaven_Team2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.Onur.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests.Onur" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Onur.US_35" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.US_33 (1)" />
+        <item itemvalue="TestNG.US_32 (1)" />
+        <item itemvalue="TestNG.US_35" />
+        <item itemvalue="TestNG.US_34.realEstateMenuTest" />
+        <item itemvalue="TestNG.US_34" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="81ddda3f-3493-473a-a9eb-d2e8a6f1abc7" name="Changes" comment="" />
+      <created>1725286453843</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1725286453843</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="c42665a4-4c27-4c67-8842-2674e478b059" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="c42665a4-4c27-4c67-8842-2674e478b059">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:C:/Users/vardal/IdeaProjects/T144/com.HauseHeaven_Team2/src/test/java/Tests/Can" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Revert &quot;Can/04.09/Listing Page Eklendi&quot;&#10;&#10;This reverts commit bfa7af24" />
+    <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;Can/04.09/Listing Page Eklendi&quot;&#10;&#10;This reverts commit bfa7af24" />
+  </component>
+</project>
