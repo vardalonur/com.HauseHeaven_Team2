@@ -20,13 +20,13 @@ public class US_28 {
         AdminDashboard adminDashboard=new AdminDashboard();
 
         //Enter the relevant data in the Email field.
-        adminDashboard.emailUsernameFormu.sendKeys(ConfigReader.getProperty("AdminGecerliEmail"));
+        adminDashboard.emailUsernameForm.sendKeys(ConfigReader.getProperty("AdminGecerliEmail"));
 
         //Enter the relevant data in the password field.
-        adminDashboard.passwordFormu.sendKeys(ConfigReader.getProperty("AdminGecerliPassword"));
+        adminDashboard.passwordForm.sendKeys(ConfigReader.getProperty("AdminGecerliPassword"));
 
         //Click the Sign in button.
-        adminDashboard.signInButonu.click();
+        adminDashboard.signInButton.click();
 
 
 
