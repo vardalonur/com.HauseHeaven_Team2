@@ -35,14 +35,29 @@ public class Listing {
     @FindBy (id= "select2-select-type-container")
     public WebElement typeDropDown;
 
-    @FindBy (xpath = "//span[@class='select2-selection__placeholder']")
-    public List<WebElement> searchBoxDropDownMenu;
-    //3. index min 4 max
-    @FindBy (xpath = "//label=[@clas='checkbox-custom-label']")
-    public List<WebElement> checkBoxes;
-    //0. index wifi 2.index swimming pool
-    @FindBy (xpath = "//*[@id=\"app\"]/section/div[2]/div[1]/div[2]/div[1]/ul/li[1]/a")
-    public WebElement shareButton;
+    @FindBy (xpath = "//input[@class='select2-search__field']")
+    public WebElement dropDownYazmaYeri;
+
+    @FindBy (xpath = "//span[@id='select2-minprice-container']")
+    public WebElement searchBoxMinPriceDropDownMenu;
+
+    @FindBy (xpath = "//span[@id='select2-maxprice-container']")
+    public WebElement searchBoxMaxPriceDropDownMenu;
+
+    @FindBy (xpath = "/html/body/div[2]/div[4]/section/div/div[2]/div[1]/div/div[2]/div/form/div[9]/div[2]/ul/li[1]/label")
+    public WebElement wifi;
+
+    @FindBy (xpath = "/html/body/div[2]/div[4]/section/div/div[2]/div[1]/div/div[2]/div/form/div[9]/div[2]/ul/li[3]/label")
+    public WebElement swimmingpool;
+
+    @FindBy (xpath = "/html/body/div[2]/div[4]/section/div/div[2]/div[1]/div/div[2]/div/form/button")
+    public WebElement findNewHomeButton;
+
+    @FindBy (className = "m-0")
+    public  WebElement numberOfResultHome;
+
+   @FindBy (xpath = "//*[@id='app']/section/div[2]/div[1]/div[2]/div[1]/ul/li[1]/a")
+   public WebElement shareButton;
 
 
 
