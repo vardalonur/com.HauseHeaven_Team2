@@ -12,13 +12,13 @@ public class AdminDashboard {
     //Admin Login Panel\\
         //Email/Username
         @FindBy (xpath = "//*[@placeholder='Email/Username']")
-        public WebElement emailUsernameFormu;
+        public WebElement emailUsernameForm;
         //Password
         @FindBy (xpath = "//*[@placeholder='Password']")
-        public WebElement passwordFormu;
+        public WebElement passwordForm;
         //Sign in Button
         @FindBy (xpath = "//*[@class='btn btn-block login-button']")
-        public WebElement signInButonu;
+        public WebElement signInButton;
 
 
 
@@ -27,12 +27,12 @@ public class AdminDashboard {
 
     //Blog Menu\\
     @FindBy(xpath = "/html/body/div[2]/div[2]/div[3]/div[1]/div/div/div/ul/li[3]")
-    public WebElement blogButonu;
+    public WebElement blogButton;
 
         //Blog Menu Subsections\\
             //Tags button
             @FindBy(xpath = "//*[@id='cms-plugins-blog-tags']/a")
-            public WebElement tagsButonu;
+            public WebElement tagsButton;
                 //Tags Create Page Elements
 
                     //Status dropdownMenu
@@ -56,25 +56,25 @@ public class AdminDashboard {
             @FindBy (xpath = "/html/body/div[2]/div[2]/div[3]/div[1]/div/div/div/ul/li[5]/ul/li[2]/a")
             public WebElement projectsButton;
             //Features Button
-            @FindBy (xpath = "/html/body/div[2]/div[2]/div[3]/div[1]/div/div/div/ul/li[5]/ul/li[2]/a")
+            @FindBy (xpath = "/html/body/div[2]/div[2]/div[3]/div[1]/div/div/div/ul/li[5]/ul/li[3]/a")
             public WebElement featuresButton;
             //Facilities Button
-            @FindBy (xpath = "/html/body/div[2]/div[2]/div[3]/div[1]/div/div/div/ul/li[5]/ul/li[2]/a")
+            @FindBy (xpath = "/html/body/div[2]/div[2]/div[3]/div[1]/div/div/div/ul/li[5]/ul/li[4]/a")
             public WebElement facilitiesButton;
             //Investors Button
-            @FindBy (xpath = "/html/body/div[2]/div[2]/div[3]/div[1]/div/div/div/ul/li[5]/ul/li[2]/a")
+            @FindBy (xpath = "/html/body/div[2]/div[2]/div[3]/div[1]/div/div/div/ul/li[5]/ul/li[5]/a")
             public WebElement investorsButton;
             //Categories Button
-            @FindBy (xpath = "/html/body/div[2]/div[2]/div[3]/div[1]/div/div/div/ul/li[5]/ul/li[2]/a")
+            @FindBy (xpath = "/html/body/div[2]/div[2]/div[3]/div[1]/div/div/div/ul/li[5]/ul/li[6]/a")
             public WebElement categoriesButton;
             //Types Button
-            @FindBy (xpath = "/html/body/div[2]/div[2]/div[3]/div[1]/div/div/div/ul/li[5]/ul/li[2]/a")
+            @FindBy (xpath = "/html/body/div[2]/div[2]/div[3]/div[1]/div/div/div/ul/li[5]/ul/li[7]/a")
             public WebElement typesButton;
-            //Review Button
-            @FindBy (xpath = "/html/body/div[2]/div[2]/div[3]/div[1]/div/div/div/ul/li[5]/ul/li[2]/a")
-            public WebElement reviewButton;
+            //Reviews Button
+            @FindBy (xpath = "/html/body/div[2]/div[2]/div[3]/div[1]/div/div/div/ul/li[5]/ul/li[8]/a")
+            public WebElement reviewsButton;
             //Settings Button
-            @FindBy (xpath = "/html/body/div[2]/div[2]/div[3]/div[1]/div/div/div/ul/li[5]/ul/li[2]/a")
+            @FindBy (xpath = "/html/body/div[2]/div[2]/div[3]/div[1]/div/div/div/ul/li[5]/ul/li[9]/a")
             public WebElement settingsButton;
 
 
@@ -82,7 +82,7 @@ public class AdminDashboard {
 
 ////////////////////////==================\\\\\\\\\\\\\\\\\\\\\\\\
 
-                //Admin Paneli Mutual Elements\\
+                //Admin Panel Mutual Elements\\
 
 ////////////////////////==================\\\\\\\\\\\\\\\\\\\\\\\\
 
@@ -92,10 +92,10 @@ public class AdminDashboard {
     @FindBy (xpath = "/html/body/div[2]/div[2]/div[3]/div[2]/div/div[2]/div[1]/div[2]/div[2]/div/div/div[2]/button[1]")
     public WebElement createButton;
     //Listedeki ilk item edit butonu
-    @FindBy (xpath = "/html/body/div[2]/div[2]/div[3]/div[2]/div/div[2]/div[1]/div[2]/div[2]/div/div/table/tbody/tr[1]/td[7]/div/a[1]")
+    @FindBy (xpath = "//*[@data-bs-original-title=\"Edit\"][1]")
     public WebElement editButton;
     //Listedeki ilk item delete butonu
-    @FindBy (xpath = "/html/body/div[2]/div[2]/div[3]/div[2]/div/div[2]/div[1]/div[2]/div[2]/div/div/table/tbody/tr[1]/td[7]/div/a[2]")
+    @FindBy (xpath = "//*[@data-bs-original-title='Delete'][1]")
     public WebElement deleteButton;
     //Delete Screen
         //X button
@@ -114,7 +114,7 @@ public class AdminDashboard {
         //Name Form
         @FindBy (xpath = "//*[@placeholder='Name']")
         public WebElement nameForm;
-        //"The name field is required."
+        //"The name field is required." (Can also be used for Title field.)
         @FindBy (xpath = "//*[@id='name-error']")
         public WebElement nameError;
         //Title form
@@ -147,13 +147,13 @@ public class AdminDashboard {
         public WebElement statusMenu;
             //Status Selections
                 //Published
-                @FindBy (xpath = "//li[text()='Published']")
+                @FindBy (xpath = "//option[@value='published']")
                 public WebElement publishedStatus;
                 //Draft
-                @FindBy (xpath = "//li[text()='Draft']")
+                @FindBy (xpath = "//option[@value='draft']")
                 public WebElement draftStatus;
                 //Pending
-                @FindBy (xpath = "//li[text()='Pending']")
+                @FindBy (xpath = "//option[@value='pending']")
                 public WebElement pendingStatus;
                 //Approved
                 @FindBy (xpath = "//li[text()='Approved']")
@@ -224,16 +224,213 @@ public class AdminDashboard {
             //Save&Exit tuşuna tıklandığında, browser bir önceki sayfaya gelmeli.
             //Tags
             @FindBy (xpath = "//li[@class='breadcrumb-item active'][text()='Tags']")
-            public WebElement tagsReturn;
+            public WebElement tagsConfirm;
             //Testimonials
             @FindBy (xpath = "//li[@class='breadcrumb-item active'][text()='Testimonials']")
-            public WebElement testimonialsReturn;
+            public WebElement testimonialsConfirm;
             //Properties
             @FindBy (xpath = "//li[@class='breadcrumb-item active'][text()='Properties']")
-            public WebElement propertiesReturn;
+            public WebElement propertiesConfirm;
+            //Projects
+            @FindBy (xpath = "//li[@class='breadcrumb-item active'][text()='Projects']")
+            public WebElement projectsConfirm;
+            //Features
+            @FindBy (xpath = "//li[@class='breadcrumb-item active'][text()='Features']")
+            public WebElement featuresConfirm;
+            //Facilities
+            @FindBy (xpath = "//li[@class='breadcrumb-item active'][text()='Facilities']")
+            public WebElement facilitiesConfirm;
+            //Investors
+            @FindBy (xpath = "//li[@class='breadcrumb-item active'][text()='Investors']")
+            public WebElement investorsConfirm;
+            //Categories
+            @FindBy (xpath = "//li[@class='breadcrumb-item active'][text()='Categories']")
+            public WebElement categoriesConfirm;
+            //Types
+            @FindBy (xpath = "//li[@class='breadcrumb-item active'][text()='Types']")
+            public WebElement typesConfirm;
+            //Reviews
+            @FindBy (xpath = "//li[@class='breadcrumb-item active'][text()='Reviews']")
+            public WebElement reviewsConfirm;
+            //Settings
+            @FindBy (xpath = "//li[@class='breadcrumb-item active'][text()='Settings']")
+            public WebElement settingsConfirm;
             //Success Message Popup of Create, Edit and Delete
                 @FindBy (xpath = "//*[@class='toast toast-success']")
                 public WebElement successPopup;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //Admindashboard Home Page//
+
+    @FindBy (xpath = "//div[@class='page-header navbar navbar-static-top']" )
+    public WebElement topNavBar;
+
+    @FindBy(xpath = "//div[@class='page-sidebar navbar-collapse collapse']")
+    public WebElement sideBar;
+
+    @FindBy(xpath = "(//span[@class='badge badge-default'])[1]")
+    public WebElement topNavBarButton;
+
+        //Blog Menu Subsections//
+
+    //Categories Button
+    @FindBy (id = "cms-plugins-blog-categories")
+    public WebElement CategoriesButton;
+
+            //Categories Page Elements
+
+    @FindBy (xpath = "//li[@class='folder-root open'][1]")
+    public WebElement houseArchitecture;
+
+    @FindBy(xpath = "//li[@class='folder-root open'][2]")
+    public WebElement houseDesign;
+
+    @FindBy(xpath = "//li[@class='folder-root open'][3]")
+    public  WebElement buildingMaterials;
+
+    @FindBy(xpath = "/html/body/div[2]/div[2]/div[3]/div[2]/div/div[2]/div/div[2]/div/div[2]/div[1]/a")
+    public WebElement categoriesCreateButton;
+
+    @FindBy(xpath = "/html/body/div[2]/div[2]/div[3]/div[2]/div/div[2]/div/div[3]/div/div[2]/form/div[2]/input" )
+    public WebElement categoriesNameForm;
+
+    @FindBy(xpath = "//div[@class='ui-select-wrapper form-group'][1]")
+    public WebElement categoriesParentForm;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
