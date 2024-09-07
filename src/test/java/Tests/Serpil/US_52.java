@@ -13,8 +13,7 @@ import utilities.Driver;
 import java.time.Duration;
 
 public class US_52 {
-    private WebDriverWait wait;
-    @Test
+        @Test
     public void locations() throws InterruptedException {
 
        /* Launch browser
