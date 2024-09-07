@@ -296,7 +296,7 @@ public class AdminDashboard {
 
 
 
-
+        //DAMLA BAŞLANGIÇ
     //Admindashboard Home Page//
 
     @FindBy (xpath = "//div[@class='page-header navbar navbar-static-top']" )
@@ -427,6 +427,8 @@ public class AdminDashboard {
 
 
 
+        //DAMLA BİTİŞ
+        //SERPİL BAŞLANGIÇ
 
 
 
@@ -443,4 +445,187 @@ public class AdminDashboard {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //SERPİL BİTİŞ
+        //ÜMİT BAŞLANGIÇ
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //ÜMİT BİTİŞ
 }
