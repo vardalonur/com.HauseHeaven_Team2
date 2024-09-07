@@ -9,7 +9,7 @@ import utilities.Driver;
 public class WebsiteMain {
    public WebsiteMain () {     PageFactory.initElements(utilities.Driver.getDriver(), this);
 }
-// CAN YILMAZ BÖLÜMÜ
+// CAN BAŞLANGIÇ
 // Listing Butonu
 @FindBy (linkText ="Listing")
 public WebElement listingButton;
@@ -102,9 +102,22 @@ public WebElement listingButton;
 
 
 
-// CAN YILMAZ'A AYRILMISTIR 101'den baslayiniz.
 
-//KEVSER\\
+
+
+
+
+
+
+
+
+
+
+
+
+      // CAN BİTİŞ
+
+      //KEVSER BAŞLANGIÇ
 ////////////////////////==================\\\\\\\\\\\\\\\\\\\\\\\\
 
 //Header Bölümü Ortak Elementler\\
@@ -197,7 +210,6 @@ public WebElement agentsButonu;
 
 
 
-//KEVSER son\\
 
 
 
@@ -205,6 +217,8 @@ public WebElement agentsButonu;
 
 
 
+      //KEVSER BİTİŞ
+      //ÜMİT BAŞLANGIÇ
 
 
 
@@ -297,5 +311,12 @@ public WebElement agentsButonu;
 
 
 
+
+
+
+
+
+
+      //ÜMİT BİTİŞ
 
 }
