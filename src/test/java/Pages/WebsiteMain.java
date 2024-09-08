@@ -132,7 +132,7 @@ public WebElement signUpButton;
 
 @FindBy(xpath = "//*[@href=\"https://qa.hauseheaven.com/login\"]")
 public WebElement signInButton;
-
+/*
 @FindBy(xpath = "(//*[@href=\"https://qa.hauseheaven.com/\"])[3]")
 public WebElement homeButton;
 
@@ -142,12 +142,20 @@ public WebElement projectsButton;
 @FindBy(xpath = "//*[@href=\"https://qa.hauseheaven.com/blog\"]")
 public WebElement blogButton;
 
+@FindBy(xpath = "(//*[@href=\"https://qa.hauseheaven.com/contact\"])[1]")
+public WebElement contactButton;
 
+@FindBy(xpath = "//*[@class='text-success']")
+public WebElement addPropertyButton;
 
+// kullanıcı adı-soyadı yazan kısım
+@FindBy(xpath = "(//*[@class='login-item'])[1]")
+public WebElement userDashboardButton;
 
+@FindBy(xpath = "(//*[@class='login-item'])[2]")
+public WebElement LogoutButton;
 
-
-
+*/
 
 
 

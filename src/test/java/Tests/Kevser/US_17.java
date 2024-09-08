@@ -1,6 +1,8 @@
 package Tests.Kevser;
 
+import Pages.UserDashboard;
 import Pages.WebsiteMain;
+import org.apache.xmlbeans.impl.xb.xsdschema.Attribute;
 import org.testng.annotations.Test;
 import utilities.ConfigReader;
 import utilities.Driver;
@@ -18,6 +20,9 @@ public class US_17 {
         websiteMain.signInButton.click();
 
         //Email gir
+        UserDashboard userDashboard = new UserDashboard();
+        userDashboard.userEmailUsernameForm.sendKeys(ConfigReader.getProperty("kevsGecerliEmail"));
+
         //Şifre gir
         //Login butonuna tıkla
         //Home butonuna tıkla
