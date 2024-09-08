@@ -133,6 +133,16 @@ public WebElement signUpButton;
 @FindBy(xpath = "//*[@href=\"https://qa.hauseheaven.com/login\"]")
 public WebElement signInButton;
 
+@FindBy(xpath = "(//*[@href=\"https://qa.hauseheaven.com/\"])[3]")
+public WebElement homeButton;
+
+@FindBy(xpath = "//*[@href=\"https://qa.hauseheaven.com/projects\"]")
+public WebElement projectsButton;
+
+@FindBy(xpath = "//*[@href=\"https://qa.hauseheaven.com/blog\"]")
+public WebElement blogButton;
+
+
 
 
 
