@@ -125,7 +125,15 @@ public WebElement listingButton;
 ////////////////////////==================\\\\\\\\\\\\\\\\\\\\\\\\
 
 @FindBy(xpath = "//*[@id=\"navigation\"]/div[2]/ul[1]/li[4]/a")
-public WebElement agentsButonu;
+public WebElement agentsButton;
+
+@FindBy(xpath = "//*[@id=\"navigation\"]/div[2]/ul[1]/li[7]/a")
+public WebElement signUpButton;
+
+@FindBy(xpath = "//*[@href=\"https://qa.hauseheaven.com/login\"]")
+public WebElement signInButton;
+
+
 
 
 

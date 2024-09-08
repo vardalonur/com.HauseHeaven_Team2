@@ -20,8 +20,13 @@ public class Agents {
     @FindBy(xpath = "(//*[text()='Email:'])[1]")
     public  WebElement ilkAgentEmail;
 
-    @FindBy(xpath = "(//*[@class='fr-position'])[1]")
+    @FindBy(xpath = "//*[@href=\"mailto:agent@hauseheaven.com\"]")
     public WebElement ilkAgentIlanSayisi;
+
+    @FindBy(xpath = "(//*[@class='ti-email'])[1]")
+    public WebElement ilkAgentMailButonu;
+
+
 
 
 
