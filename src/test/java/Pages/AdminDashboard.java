@@ -450,26 +450,6 @@ public class AdminDashboard {
     @FindBy(id = "cms-plugins-city")
     public WebElement citiesButton;
 
-//SERPİL//Admindashboard Home Page//
-
-    //Locations Button
-    @FindBy(xpath = "//span[contains(text(), 'Locations')]")
-    public WebElement locationsButton;
-
-    //Locations Menu Subsections\\
-
-    // 1. Countries Button
-    @FindBy(id = "cms-plugins-country")
-    public WebElement countriesButton;
-
-    // 2. States Button
-    @FindBy(id = "cms-plugins-state")
-    public WebElement statesButton;
-
-    // 3. Cities Button
-    @FindBy(id = "cms-plugins-city")
-    public WebElement citiesButton;
-
 
 
 

@@ -3,6 +3,7 @@ package Pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Test;
 
 import java.awt.*;
 
@@ -35,49 +36,6 @@ public class UserDashboard {
     //Projects element
     @FindBy (xpath = "/html/body/div[2]/div[2]/div/nav/div[2]/ul[1]/li[3]/a")
     public WebElement projectsButton;
-
-
-    //Projects Page\\
-
-    //Result Text
-    @FindBy(xpath = "//div[@class='left-column'] ")
-    public WebElement resultText;
-
-    //First Project
-    @FindBy(xpath = "//p[@class='listing-short-description'][1]")
-    public WebElement firstProject;
-
-    //Second Project
-    @FindBy(xpath = "(//p[@class='listing-short-description'])[2]")
-    public WebElement secondProject;
-
-    //Thirth Project
-    @FindBy(xpath = "//p[@class='listing-short-description'][3]")
-    public WebElement thirthProject;
-
-    //Fourth Project
-    @FindBy(xpath = "(//p[@class='listing-short-description'])[4]")
-    public WebElement fourthProject;
-
-    //Fifth Project
-    @FindBy(xpath = "//p[@class='listing-short-description'][5]")
-    public WebElement fifthProject;
-
-    //Sixth Project
-    @FindBy(xpath = "(//p[@class='listing-short-description'])[6]")
-    public WebElement sixthProject;
-
-    //Seventh Project
-    @FindBy(xpath = "//p[@class='listing-short-description'][7]")
-    public WebElement seventhProject;
-
-    //Eighth Project
-    @FindBy(xpath = "(//p[@class='listing-short-description'])[8]")
-    public WebElement eighthProject;
-
-    //Ninth Project
-    @FindBy(xpath = "(//p[@class='listing-short-description'])[9]")
-    public WebElement ninthhProject;
 
 }
 
