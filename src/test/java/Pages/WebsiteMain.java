@@ -151,11 +151,11 @@ public WebElement addPropertyButton;
 // kullanıcı adı-soyadı yazan kısım
 @FindBy(xpath = "(//*[@class='login-item'])[1]")
 public WebElement userDashboardButton;
-
+*/
 @FindBy(xpath = "(//*[@class='login-item'])[2]")
 public WebElement LogoutButton;
 
-*/
+
 
 
 

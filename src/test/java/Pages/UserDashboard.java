@@ -280,7 +280,60 @@ public class UserDashboard {
 
 
     // KEVSER BİTİŞ
+//Gulnar basladı
 
+
+
+   @FindBy(xpath = "//*[@id='navigation']/div[2]/ul[2]/li[3]")
+ public WebElement logoutButton;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //gulnar bıttı.
 
 
 

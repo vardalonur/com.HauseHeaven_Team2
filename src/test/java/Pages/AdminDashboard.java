@@ -1,5 +1,6 @@
 package Pages;
 
+import org.apache.xmlbeans.impl.xb.xsdschema.Public;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -624,4 +625,147 @@ public class AdminDashboard {
 
 
         //ÜMİT BİTİŞ
-}
+
+
+
+//GULNAR
+    //payments buttonları.
+   @FindBy(xpath = ("//*[@id='cms-plugins-payments']/a/span[1]"))
+   public WebElement paymentsButton;
+
+    @FindBy(xpath = ("//*[@id='cms-plugins-payments-all']"))
+    public WebElement transactionsButton;
+
+    @FindBy(xpath = ("//*[@id='cms-plugins-payment-methods']/a"))
+    public WebElement paymentMethodsButton;
+
+    @FindBy(xpath = ("//*[@id='app']/div[2]/div[1]/div/div[2]/ul/li[5]/a"))
+    public WebElement adminProfilDropdown;
+
+    @FindBy(xpath = ("//*[@class='btn-logout']"))
+    public WebElement logoutButton;
+
+    @FindBy(xpath = ("//*[@id='app']/div[2]/div[3]/div[2]/div/ol/li[3]"))
+    public WebElement paymentMethodsConfirm;
+
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Gulnar end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
