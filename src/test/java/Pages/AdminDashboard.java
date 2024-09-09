@@ -431,6 +431,7 @@ public class AdminDashboard {
         //DAMLA BİTİŞ
         //SERPİL BAŞLANGIÇ
 
+
 //SERPİL//Admindashboard Home Page//
 
     //Locations Button
@@ -747,25 +748,4 @@ public class AdminDashboard {
 
 
 //Gulnar end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
