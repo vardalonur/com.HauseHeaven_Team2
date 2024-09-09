@@ -14,6 +14,7 @@ public class US_16 {
         /*Launch browser
 Go to https://qa.hauseheaven.com/
 Log in as registered user by entering user email and password
+Click on the name button
 Navigate to the properties listing page.
 Click on the 'Create' button.
 Enter required details into the form fields (e.g., property name, description, price, location, images).
@@ -36,7 +37,13 @@ Verify that the new listing appears in the listings page.
         userDashboard.userLogInButton.click();
         Thread.sleep(2000);
 
+        //Click on the name button
+
+
+
+
         //Navigate to the properties listing page.
+
 
 
 
