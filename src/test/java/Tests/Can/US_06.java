@@ -2,12 +2,14 @@ package Tests.Can;
 
 import Pages.Listing;
 import Pages.WebsiteMain;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
+import utilities.ConfigReader;
 import utilities.Driver;
 
 import static utilities.Driver.driver;
@@ -42,7 +44,7 @@ public class US_06 {
 
         String totalResultinString = Listing.numberOfResult.getText().substring(16,18);
 
-        Integer totalResult = Integer.valueOf(totalResultinString);
+        int totalResult = Integer.parseInt(totalResultinString);
 
         System.out.println("Total number of Result: " + totalResult);
 
@@ -75,7 +77,7 @@ public class US_06 {
 
         //Click on the first property of the page with "View" Button
         String expectedTitleOfAProperty = listing.titleOfAProperty.get(0).getText();
-        String expectedPreiseOfAProperty = listing.preiseOfAProperty.get(0).getText();
+        String expectedPreciseOfAProperty = listing.preiseOfAProperty.get(0).getText();
 
         actions.sendKeys(Keys.PAGE_DOWN).perform();
         listing.viewButton.get(0).click();
@@ -91,7 +93,7 @@ public class US_06 {
 
         String actualPreiseOfAProperty = listing.preiseAfterClickingOnView.getText();
 
-        softAssert.assertEquals(actualPreiseOfAProperty, expectedPreiseOfAProperty);
+        softAssert.assertEquals(actualPreiseOfAProperty, expectedPreciseOfAProperty);
         Driver.quitDriver();
     }
 
@@ -114,23 +116,63 @@ public class US_06 {
 
         softAssert.assertEquals(actualCurrentTitle, expectedCurrentTitle);
 
+        actions.sendKeys(Keys.PAGE_DOWN).perform();
         Listing listing = new Listing();
         //Fill determined search boxes then click on "Find New Home"
+        //actions.sendKeys(Keys.PAGE_DOWN).perform();
+
+        utilities.ReusableMethods.bekle(1);
+        //Type: For Sale
+        listing.typeDropDown.click();
+        utilities.ReusableMethods.bekle(1);
+        listing.dropDownYazmaYeri.sendKeys("For Sale");
+        utilities.ReusableMethods.bekle(1);
+        listing.dropDownYazmaYeri.sendKeys(Keys.ENTER);
+
+        utilities.ReusableMethods.bekle(1);
+        //No Min: 500
+        listing.searchBoxMinPriceDropDownMenu.click();
+        listing.dropDownYazmaYeri.sendKeys(("500" + Keys.ENTER));
+
+        //No Max: 1000
+        listing.searchBoxMaxPriceDropDownMenu.click();
+        listing.dropDownYazmaYeri.sendKeys("1000" + Keys.ENTER);
+
+        //Checkbox: Wifi and Swimming Pool
+        utilities.ReusableMethods.bekle(2);
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,350)");
+        utilities.ReusableMethods.bekle(1);
+        listing.wifi.click();
+        listing.swimmingpool.click();
+        utilities.ReusableMethods.bekle(1);
+        //Searching by clicking on button
+
+        js.executeScript("arguments[0].scrollIntoView(true);", listing.findNewHomeButton);
+        listing.findNewHomeButton.submit();
+       actions.sendKeys(Keys.PAGE_DOWN).perform();
+
+       utilities.ReusableMethods.bekle(2);
+       actions.sendKeys(Keys.PAGE_DOWN).perform();
+       utilities.ReusableMethods.bekle(2);
         actions.sendKeys(Keys.PAGE_DOWN).perform();
-      //  Select selectHouse = new Select(listing.typeDropDown);
-      //  selectHouse.selectByVisibleText("For Sale");
-        listing.searchBoxDropDownMenu.get(3).click();
-
-
-
+      //  utilities.ReusableMethods.bekle(2);
+      //  actions.sendKeys(Keys.PAGE_DOWN).perform();
+      //  js.executeScript("window.scrollBy(0,1700)");
+      //  listing.findNewHomeButton.click();
         //Validate the Result
 
+        String expectedResult = "0";
+        String actualResult = listing.numberOfResultHome.getText();
+
+        softAssert.assertEquals(actualResult, expectedResult);
 
         Driver.quitDriver();
     }
 
     @Test
     public void TC04(){
+        Actions actions = new Actions(Driver.getDriver());
         //Go to HauseHeven Home Page
         Driver.getDriver().get("https://qa.hauseheaven.com/");
 
@@ -139,7 +181,28 @@ public class US_06 {
         webSiteMain.listingButton.click();
 
         //Click on "Sorty By"
-        //Choose "Price: High to low"
+        Listing listing = new Listing();
 
+        listing.sortByButton.click();
+        utilities.ReusableMethods.bekle(3);
+        //Choose "Name: A-Z"
+        listing.sortByButtonInput.sendKeys("Name: A-Z");
+        utilities.ReusableMethods.bekle(1);
+        listing.sortByButtonInput.sendKeys(Keys.ENTER);
+        //Create softAssert Object
+        SoftAssert softAssert = new SoftAssert();
+     //  JavascriptExecutor js = (JavascriptExecutor) driver;
+     //  js.executeScript("arguments[0].scrollIntoView(true);", listing.headOfFirstProperty);
+
+        utilities.ReusableMethods.bekle(2);
+        actions.sendKeys(Keys.PAGE_DOWN).perform();
+        String expectedTitle = "001";
+
+
+        String actualTitle = listing.headOfFirstProperty.getText();
+
+        softAssert.assertEquals(actualTitle, expectedTitle);
+
+        Driver.quitDriver();
     }
 }
