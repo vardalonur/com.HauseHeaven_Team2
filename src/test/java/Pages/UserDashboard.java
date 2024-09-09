@@ -17,11 +17,16 @@ public class UserDashboard {
 
 
 //SERPİL BAŞLANGIÇ
-
+    /*
+    !!!!!!!!!!!!!
+    BU ELEMENT HEADER'A AIT VE WEBSITEMAIN CLASS'INDA KAYITLI /signInButton/ (ONUR)
+    !!!!!!!!!!!!!
+    */
     //Home Page\\
     //Home Page SıgnIn Button
     @FindBy(xpath = "//li[@class='add-listing']")
     public WebElement homePageSignInButton;
+
 
     //User Login Panel\\
     //UserEmail/Username
@@ -35,186 +40,17 @@ public class UserDashboard {
     public WebElement userLogInButton;
 
 
+    /*
+    !!!!!!!!!!!!!
+    HEADER ELEMENTLERİ BURADA OLMAZ (ONUR)
+    !!!!!!!!!!!!!
+     */
     // Header Elements\\
     //Projects element
     @FindBy (xpath = "/html/body/div[2]/div[2]/div/nav/div[2]/ul[1]/li[3]/a")
     public WebElement projectsButton;
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-//SERPİL BİTİŞ  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
   
   
   
@@ -297,108 +133,6 @@ public class UserDashboard {
   
   
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         //SERPİL BİTİŞ
 
@@ -445,6 +179,52 @@ public class UserDashboard {
 
     @FindBy(xpath = "//*[@id=\"botble-real-estate-tables-account-property-table_info\"]/span/span[2]")
     public WebElement totalAdvertNumberText;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

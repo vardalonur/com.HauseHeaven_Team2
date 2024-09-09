@@ -243,6 +243,61 @@ public WebElement LogoutButton;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       //KEVSER BİTİŞ
       //ÜMİT BAŞLANGIC
       // Main Page Web Elements
