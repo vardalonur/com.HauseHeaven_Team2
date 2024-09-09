@@ -50,7 +50,7 @@ public class Listing {
     @FindBy (xpath = "/html/body/div[2]/div[4]/section/div/div[2]/div[1]/div/div[2]/div/form/div[9]/div[2]/ul/li[3]/label")
     public WebElement swimmingpool;
 
-    @FindBy (xpath = "/html/body/div[2]/div[4]/section/div/div[2]/div[1]/div/div[2]/div/form/button")
+    @FindBy (xpath = "//*[@id=\"filters-form\"]/button")
     public WebElement findNewHomeButton;
 
     @FindBy (className = "m-0")
@@ -59,15 +59,37 @@ public class Listing {
    @FindBy (xpath = "//*[@id='app']/section/div[2]/div[1]/div[2]/div[1]/ul/li[1]/a")
    public WebElement shareButton;
 
+    @FindBy (xpath = "//textarea[@class='form-control ht-80']")
+    public WebElement commentTextArea;
 
+    @FindBy (xpath = "//*[@id=\"clTen\"]/div/form/div[2]/div[2]/div/button")
+    public WebElement submitReview;
 
+    @FindBy (xpath = "//*[@id=\"name\"]")
+    public WebElement nameForm;
 
+    @FindBy (xpath = "//*[@id=\"email\"]")
+    public WebElement emailForm;
 
+    @FindBy (xpath = "//*[@id=\"consult-form\"]/div/div[2]/input")
+    public WebElement phoneForm;
 
+    @FindBy (xpath = "//*[@id=\"consult-form\"]/div/div[5]/textarea")
+    public WebElement contentForm;
 
+    @FindBy (xpath = "//*[@id=\"consult-form\"]/div/div[6]/button")
+    public WebElement sendForm;
 
+    @FindBy (xpath = "//*[@id=\"select2-sort_by-container\"]/span")
+    public WebElement sortByButton;
+    @FindBy (xpath = "/html/body/span/span/span[1]/input")
+    public WebElement sortByButtonInput;
 
+    @FindBy(xpath = "//*[@id=\"app\"]/section/div/div[2]/div/div[2]/div[1]/div/div[2]/div[1]/div/div[1]/h4/a")
+    public WebElement headOfFirstProperty;
 
+    @FindBy(xpath = "//a[@class='cl-facebook']")
+    public WebElement facebookButton;
 
 
 
@@ -77,71 +99,7 @@ public class Listing {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    //CAN YILMAZ'a ait buraya kadar
+    //CAN YILMAZ'a ait buraya kadar  1-100
 //SERPİL ................\\
 
 //Projects Page\\
