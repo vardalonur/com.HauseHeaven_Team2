@@ -2,10 +2,12 @@ package Tests.Kevser;
 
 import Pages.Agents;
 import Pages.WebsiteMain;
+import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.ReusableMethods;
 
 public class US_09 {
 
@@ -17,10 +19,10 @@ public class US_09 {
 
         //Header bölümünde 'Agents' butonunun görünür olduğunu doğrula
         WebsiteMain websiteMain = new WebsiteMain();
-        Assert.assertTrue(websiteMain.agentsButonu.isDisplayed());
+        Assert.assertTrue(websiteMain.agentsButton.isDisplayed());
 
         //Agents butonuna tıkla
-        websiteMain.agentsButonu.click();
+        websiteMain.agentsButton.click();
 
         //İlk emlakçının ismi görüntülendiğini doğrula.
         Agents agents = new Agents();
@@ -39,7 +41,25 @@ public class US_09 {
         Driver.quitDriver();
     }
 
-    
+    @Test
+    public void TC02(){
+        //Browser aç ve https://qa.hauseheaven.com/  adersine git
+        Driver.getDriver().get(ConfigReader.getProperty("WebsiteMainPageURL"));
+        WebsiteMain websiteMain = new WebsiteMain();
+        Agents agents = new Agents();
 
+        //Agents butonuna tıkla
 
+        websiteMain.agentsButton.click();
+
+        //Email ikonu görünür olduğunu doğrula
+        JavascriptExecutor jse = (JavascriptExecutor) Driver.getDriver();
+        jse.executeScript("arguments[0].scrollIntoView({block: 'center'});",agents.ilkAgentMailButonu);
+        ReusableMethods.bekle(1);
+        Assert.assertTrue(agents.ilkAgentMailButonu.isDisplayed());
+
+        // Sayfay kapat
+        Driver.quitDriver();
+
+    }
 }
