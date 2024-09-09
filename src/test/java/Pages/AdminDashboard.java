@@ -523,17 +523,6 @@ public class AdminDashboard {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
         //SERPİL BİTİŞ
         //ÜMİT BAŞLANGIÇ
 
