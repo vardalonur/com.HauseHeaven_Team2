@@ -92,7 +92,7 @@ public class AdminDashboard {
     @FindBy (xpath = "/html/body/div[2]/div[2]/div[3]/div[2]/div/div[2]/div[1]/div[2]/div[2]/div/div/div[2]/button[1]")
     public WebElement createButton;
     //Listedeki ilk item edit butonu
-    @FindBy (xpath = "//*[@data-bs-original-title=\"Edit\"][1]")
+    @FindBy (xpath = "//*[@data-bs-original-title='Edit'][1]")
     public WebElement editButton;
     //Listedeki ilk item delete butonu
     @FindBy (xpath = "//*[@data-bs-original-title='Delete'][1]")
@@ -449,17 +449,6 @@ public class AdminDashboard {
     // 3. Cities Button
     @FindBy(id = "cms-plugins-city")
     public WebElement citiesButton;
-
-
-
-
-
-
-
-
-
-
-
 
 
 
