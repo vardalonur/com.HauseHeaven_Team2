@@ -35,22 +35,51 @@ public class US_07 {
 
         Listing listing = new Listing();
 
+        //Click on the first property of the page with "View" Button
         actions.sendKeys(Keys.PAGE_DOWN).perform();
         listing.viewButton.get(0).click();
 
+        //Click on "Share" button
         utilities.ReusableMethods.bekle(2);
         actions.sendKeys(Keys.PAGE_DOWN).perform();
         listing.shareButton.click();
         utilities.ReusableMethods.bekle(2);
+        //Choose "Facebook"
+        //Validate current URL
 
         Driver.getDriver().quit();
 
     }
 
     @Test
-    public void TC02(){}
+    public void TC02(){
+        //Launch browser
+        //Go to https://qa.hauseheaven.com/
+        //Click on "Listing"
+        //Validate Current Title
+        //Click on the first property of the page with "View" Button
+    }
     @Test
-    public void TC03(){}
+    public void TC03(){
+        //Launch browser
+        //Go to https://qa.hauseheaven.com/login
+        //Enter valid username and password
+        //Click on "Listing"
+        //Validate Current Title
+        //Click on the second property of the page with "View" Button
+        //Scroll Down
+        //Comment it and Submit Review
+    }
     @Test
-    public void TC04(){}
+    public void TC04(){
+        //Launch browser
+        //Go to https://qa.hauseheaven.com/login
+        //Enter valid username and password
+        //Click on "Listing"
+        //Validate Current Title
+        //Click on the first property of the page with "View" Button
+        //Fill the form with fake data up
+        //Send Message
+
+    }
 }
