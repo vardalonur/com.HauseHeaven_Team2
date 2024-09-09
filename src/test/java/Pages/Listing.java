@@ -142,20 +142,7 @@ public class Listing {
 
 
     //CAN YILMAZ'a ait buraya kadar
-
-
-
-
-
-
-
-
-
-
-
-
-
-        //SERPİL ................\\
+//SERPİL ................\\
 
 //Projects Page\\
 

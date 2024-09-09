@@ -1,5 +1,6 @@
 package Pages;
 
+import org.apache.xmlbeans.impl.xb.xsdschema.Public;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -92,7 +93,7 @@ public class AdminDashboard {
     @FindBy (xpath = "/html/body/div[2]/div[2]/div[3]/div[2]/div/div[2]/div[1]/div[2]/div[2]/div/div/div[2]/button[1]")
     public WebElement createButton;
     //Listedeki ilk item edit butonu
-    @FindBy (xpath = "//*[@data-bs-original-title=\"Edit\"][1]")
+    @FindBy (xpath = "//*[@data-bs-original-title='Edit'][1]")
     public WebElement editButton;
     //Listedeki ilk item delete butonu
     @FindBy (xpath = "//*[@data-bs-original-title='Delete'][1]")
@@ -430,25 +431,6 @@ public class AdminDashboard {
         //DAMLA BİTİŞ
         //SERPİL BAŞLANGIÇ
 
-//SERPİL//Admindashboard Home Page//
-
-    //Locations Button
-    @FindBy(xpath = "//span[contains(text(), 'Locations')]")
-    public WebElement locationsButton;
-
-    //Locations Menu Subsections\\
-
-    // 1. Countries Button
-    @FindBy(id = "cms-plugins-country")
-    public WebElement countriesButton;
-
-    // 2. States Button
-    @FindBy(id = "cms-plugins-state")
-    public WebElement statesButton;
-
-    // 3. Cities Button
-    @FindBy(id = "cms-plugins-city")
-    public WebElement citiesButton;
 
 //SERPİL//Admindashboard Home Page//
 
@@ -469,9 +451,6 @@ public class AdminDashboard {
     // 3. Cities Button
     @FindBy(id = "cms-plugins-city")
     public WebElement citiesButton;
-
-
-
 
 
 
@@ -647,4 +626,126 @@ public class AdminDashboard {
 
 
         //ÜMİT BİTİŞ
-}
+
+
+
+//GULNAR
+    //payments buttonları.
+   @FindBy(xpath = ("//*[@id='cms-plugins-payments']/a/span[1]"))
+   public WebElement paymentsButton;
+
+    @FindBy(xpath = ("//*[@id='cms-plugins-payments-all']"))
+    public WebElement transactionsButton;
+
+    @FindBy(xpath = ("//*[@id='cms-plugins-payment-methods']/a"))
+    public WebElement paymentMethodsButton;
+
+    @FindBy(xpath = ("//*[@id='app']/div[2]/div[1]/div/div[2]/ul/li[5]/a"))
+    public WebElement adminProfilDropdown;
+
+    @FindBy(xpath = ("//*[@class='btn-logout']"))
+    public WebElement logoutButton;
+
+    @FindBy(xpath = ("//*[@id='app']/div[2]/div[3]/div[2]/div/ol/li[3]"))
+    public WebElement paymentMethodsConfirm;
+
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Gulnar end
+
