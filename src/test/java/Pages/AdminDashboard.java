@@ -92,7 +92,7 @@ public class AdminDashboard {
     @FindBy (xpath = "/html/body/div[2]/div[2]/div[3]/div[2]/div/div[2]/div[1]/div[2]/div[2]/div/div/div[2]/button[1]")
     public WebElement createButton;
     //Listedeki ilk item edit butonu
-    @FindBy (xpath = "//*[@data-bs-original-title=\"Edit\"][1]")
+    @FindBy (xpath = "//*[@data-bs-original-title='Edit'][1]")
     public WebElement editButton;
     //Listedeki ilk item delete butonu
     @FindBy (xpath = "//*[@data-bs-original-title='Delete'][1]")
@@ -296,7 +296,7 @@ public class AdminDashboard {
 
 
 
-
+        //DAMLA BAŞLANGIÇ
     //Admindashboard Home Page//
 
     @FindBy (xpath = "//div[@class='page-header navbar navbar-static-top']" )
@@ -427,6 +427,28 @@ public class AdminDashboard {
 
 
 
+        //DAMLA BİTİŞ
+        //SERPİL BAŞLANGIÇ
+
+//SERPİL//Admindashboard Home Page//
+
+    //Locations Button
+    @FindBy(xpath = "//span[contains(text(), 'Locations')]")
+    public WebElement locationsButton;
+
+    //Locations Menu Subsections\\
+
+    // 1. Countries Button
+    @FindBy(id = "cms-plugins-country")
+    public WebElement countriesButton;
+
+    // 2. States Button
+    @FindBy(id = "cms-plugins-state")
+    public WebElement statesButton;
+
+    // 3. Cities Button
+    @FindBy(id = "cms-plugins-city")
+    public WebElement citiesButton;
 
 
 
@@ -443,4 +465,163 @@ public class AdminDashboard {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //SERPİL BİTİŞ
+        //ÜMİT BAŞLANGIÇ
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //ÜMİT BİTİŞ
 }
