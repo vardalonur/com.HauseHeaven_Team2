@@ -466,7 +466,7 @@ public class AdminDashboard {
     @FindBy(xpath = "//span[contains(text(), 'Locations')]")
     public WebElement locationsButton;
 
-    //Locations Menu Subsections\\
+    //Locations Menu Subsections \\
 
     // 1. Countries Button
     @FindBy(id = "cms-plugins-country")
