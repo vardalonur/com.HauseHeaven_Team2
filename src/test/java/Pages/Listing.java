@@ -90,10 +90,8 @@ public class Listing {
 
     @FindBy(xpath = "//a[@class='cl-facebook']")
     public WebElement facebookButton;
-
-
-
-
+    @FindBy(xpath = "//*[@id=\"app\"]/section/div[2]/div[1]/div[2]/div[1]/ul/li[2]/a")
+    public WebElement wishList;
 
 
 
