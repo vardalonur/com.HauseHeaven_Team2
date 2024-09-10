@@ -7,9 +7,9 @@ import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
 public class WebsiteMain {
-   public WebsiteMain () { PageFactory.initElements(Driver.getDriver(), this);}
-
-   // CAN BAŞLANGIÇ
+   public WebsiteMain () {     PageFactory.initElements(utilities.Driver.getDriver(), this);
+}
+// CAN BAŞLANGIÇ
 // Listing Butonu
 @FindBy (linkText ="Listing")
 public WebElement listingButton;
@@ -177,9 +177,6 @@ public WebElement LogoutButton;
    // Header bölümü
    @FindBy(xpath = "//*[@class='nav-menus-wrapper']")
    public WebElement headerBolumu;
-
-
-
 
 
 
@@ -621,7 +618,7 @@ public WebElement LogoutButton;
    @FindBy (xpath = "//*[@class ='ipt-title']")
    public WebElement propertiesPageButton;
 
-   @FindBy (xpath = "//*[@id=\'app\']/div/div/div/div/div/h2")
+   @FindBy (xpath = "//*[@id='app']/div/div/div/div/div/h2")
    public WebElement allProjectsPageButton;
 
    @FindBy (xpath = "//*[@class ='ipt-title']")
@@ -636,10 +633,12 @@ public WebElement LogoutButton;
    @FindBy (xpath = "//*[@class='text-center']")
    public WebElement signUpPageButton;
 
+ @FindBy(xpath = ("//*[@id='navigation']/div[2]/ul[1]/li[5]/a"))
 
+ public  WebElement getBlogButton;
 
-
-
+ @FindBy(xpath = ("//*[@id='app']/section/div/div[2]/div/div/div[1]/div[1]/div/div[3]/h4/a"))
+  public WebElement Blogatiklama;
 
 
 
