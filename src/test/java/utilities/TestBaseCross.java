@@ -27,6 +27,8 @@ public class TestBaseCross {
     @AfterMethod
     public void tearDown(){
 
+
         utilities.DriverCross.quitDriver();
+
     }
 }

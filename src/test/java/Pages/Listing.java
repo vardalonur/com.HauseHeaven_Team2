@@ -35,39 +35,74 @@ public class Listing {
     @FindBy (id= "select2-select-type-container")
     public WebElement typeDropDown;
 
-    @FindBy (xpath = "//span[@class='select2-selection__placeholder']")
-    public List<WebElement> searchBoxDropDownMenu;
-    //3. index min 4 max
-    @FindBy (xpath = "//label=[@clas='checkbox-custom-label']")
-    public List<WebElement> checkBoxes;
-    //0. index wifi 2.index swimming pool
-    @FindBy (xpath = "//*[@id=\"app\"]/section/div[2]/div[1]/div[2]/div[1]/ul/li[1]/a")
-    public WebElement shareButton;
+    @FindBy (xpath = "//input[@class='select2-search__field']")
+    public WebElement dropDownYazmaYeri;
 
+    @FindBy (xpath = "//span[@id='select2-minprice-container']")
+    public WebElement searchBoxMinPriceDropDownMenu;
 
+    @FindBy (xpath = "//span[@id='select2-maxprice-container']")
+    public WebElement searchBoxMaxPriceDropDownMenu;
 
+    @FindBy (xpath = "/html/body/div[2]/div[4]/section/div/div[2]/div[1]/div/div[2]/div/form/div[9]/div[2]/ul/li[1]/label")
+    public WebElement wifi;
 
+    @FindBy (xpath = "/html/body/div[2]/div[4]/section/div/div[2]/div[1]/div/div[2]/div/form/div[9]/div[2]/ul/li[3]/label")
+    public WebElement swimmingpool;
 
+    @FindBy (xpath = "//*[@id=\"filters-form\"]/button")
+    public WebElement findNewHomeButton;
 
+    @FindBy (className = "m-0")
+    public  WebElement numberOfResultHome;
 
+   @FindBy (xpath = "//*[@id='app']/section/div[2]/div[1]/div[2]/div[1]/ul/li[1]/a")
+   public WebElement shareButton;
 
+    @FindBy (xpath = "//textarea[@class='form-control ht-80']")
+    public WebElement commentTextArea;
 
+    @FindBy (xpath = "//*[@id=\"clTen\"]/div/form/div[2]/div[2]/div/button")
+    public WebElement submitReview;
 
+    @FindBy (xpath = "//*[@id=\"name\"]")
+    public WebElement nameForm;
 
+    @FindBy (xpath = "//*[@id=\"email\"]")
+    public WebElement emailForm;
 
+    @FindBy (xpath = "//*[@id=\"consult-form\"]/div/div[2]/input")
+    public WebElement phoneForm;
 
+    @FindBy (xpath = "//*[@id=\"consult-form\"]/div/div[5]/textarea")
+    public WebElement contentForm;
 
+    @FindBy (xpath = "//*[@id=\"consult-form\"]/div/div[6]/button")
+    public WebElement sendForm;
 
+    @FindBy (xpath = "//*[@id=\"select2-sort_by-container\"]/span")
+    public WebElement sortByButton;
+    @FindBy (xpath = "/html/body/span/span/span[1]/input")
+    public WebElement sortByButtonInput;
 
+    @FindBy(xpath = "//*[@id=\"app\"]/section/div/div[2]/div/div[2]/div[1]/div/div[2]/div[1]/div/div[1]/h4/a")
+    public WebElement headOfFirstProperty;
 
+    @FindBy(xpath = "//a[@class='cl-facebook']")
+    public WebElement facebookButton;
+    @FindBy(xpath = "//*[@id=\"app\"]/section/div[2]/div[1]/div[2]/div[1]/ul/li[2]/a")
+    public WebElement wishList;
 
 
 
 
 
 
+    //CAN YILMAZ'a ait buraya kadar  1-100
 
+//SERPİL ................\\
 
+//Projects Page\\
 
 
 
@@ -126,7 +161,6 @@ public class Listing {
 
 
 
-    //CAN YILMAZ'a ait buraya kadar
 
 
 
@@ -167,35 +201,7 @@ public class Listing {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    // Arzuv is writing here
 
 
 }
