@@ -154,9 +154,29 @@ public WebElement userDashboardButton;
 
 
 @FindBy(xpath = "(//*[@class='login-item'])[2]")
-public WebElement LogoutButtoni;
+public WebElement LogoutButton;
 
+//================== HEADER ORTAK ELEMENTLER BURAYA KADAR =======================
 
+   // Anasayfa 'Find Accessible Homes To Rent' yazısı
+   @FindBy(className = "hero-search")
+   public WebElement findAccessibleYazisi;
+
+   // 'Blog' sayfa başlığı yazısı
+   @FindBy(className = "col-lg-12 col-md-12")
+   public WebElement blogYazisi;
+
+   // 'Contact' sayfa başlığı yazısı
+   @FindBy(className = "col-lg-12 col-md-12")
+   public WebElement contactYazisi;
+
+   // Add Property sayfası title text box
+   @FindBy(xpath = "(//*[@class='form-control'])[1]")
+   public WebElement titleTextBox;
+
+   // Header bölümü
+   @FindBy(xpath = "//*[@class='nav-menus-wrapper']")
+   public WebElement headerBolumu;
 
 
 
@@ -598,7 +618,7 @@ public WebElement LogoutButtoni;
    @FindBy (xpath = "//*[@class ='ipt-title']")
    public WebElement propertiesPageButton;
 
-   @FindBy (xpath = "//*[@id=\'app\']/div/div/div/div/div/h2")
+   @FindBy (xpath = "//*[@id='app']/div/div/div/div/div/h2")
    public WebElement allProjectsPageButton;
 
    @FindBy (xpath = "//*[@class ='ipt-title']")
