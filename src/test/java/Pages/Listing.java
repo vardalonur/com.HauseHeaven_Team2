@@ -157,4 +157,82 @@ public class Listing {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // KEVSER
+
+    // 'Properties' sayfa başlığı yazısı
+    @FindBy(className = "ipt-title")
+    public WebElement propertiesYazisi;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // KEVSER BİTİŞ
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
