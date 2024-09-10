@@ -69,4 +69,63 @@ public class Projects {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // can yilmaz
+    @FindBy (xpath = "//*[@id=\"clOne\"]/div/ul/li[4]/span")
+    public WebElement typeOfProjectinProjectPage;
+
+    @FindBy (xpath = "//*[@id=\"clOne\"]/div/ul/li[4]/span")
+    public WebElement typeOfProjectinDetails;
+
+    @FindBy(xpath = "//span[@id='select2-filter_country_id-container']")
+    public WebElement country;
+
+    @FindBy(xpath = "/html/body/span/span/span[1]/input")
+    public WebElement countryInput;
+
+    @FindBy (xpath = " //span[@id='select2-ptypes-container']")
+    public WebElement category;
+
+    @FindBy (xpath = "/html/body/span/span/span[1]/input")
+    public WebElement categoryInput;
+
+    @FindBy (xpath = "//button[@type='submit']")
+    public WebElement searchButton;
+
+    @FindBy (xpath = "//*[@id=\"app\"]/div/section/div[2]/div[2]/div[1]/div/div[1]/div[2]/span")
+    public WebElement villa;
+
+
+
+
+
+
+
 }

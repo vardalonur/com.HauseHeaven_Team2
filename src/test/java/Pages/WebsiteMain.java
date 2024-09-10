@@ -132,7 +132,7 @@ public WebElement signUpButton;
 
 @FindBy(xpath = "//*[@href=\"https://qa.hauseheaven.com/login\"]")
 public WebElement signInButton;
-/*
+
 @FindBy(xpath = "(//*[@href=\"https://qa.hauseheaven.com/\"])[3]")
 public WebElement homeButton;
 
@@ -151,9 +151,10 @@ public WebElement addPropertyButton;
 // kullanıcı adı-soyadı yazan kısım
 @FindBy(xpath = "(//*[@class='login-item'])[1]")
 public WebElement userDashboardButton;
-*/
+
+
 @FindBy(xpath = "(//*[@class='login-item'])[2]")
-public WebElement LogoutButton;
+public WebElement LogoutButtoni;
 
 
 
@@ -586,6 +587,144 @@ public WebElement LogoutButton;
 
 
 
-   //ÜMİT BİTİŞ
+   //ÜMİT BİTİ
 
+   //  ====================  Arzuv  ====================
+   // Clicking on every menu, navigates to a new page XPaths'
+
+   @FindBy (xpath = "//*[@class='hero-search']")
+   public WebElement homePageButton;
+
+   @FindBy (xpath = "//*[@class ='ipt-title']")
+   public WebElement propertiesPageButton;
+
+   @FindBy (xpath = "//*[@id=\'app\']/div/div/div/div/div/h2")
+   public WebElement allProjectsPageButton;
+
+   @FindBy (xpath = "//*[@class ='ipt-title']")
+   public WebElement allAgentsPageButton;
+
+   @FindBy (xpath = "//*[@class='ipt-title']")
+   public WebElement blogPageButton;
+
+   @FindBy (xpath = "//*[@class='ipt-title']")
+   public WebElement contactPageButton;
+
+   @FindBy (xpath = "//*[@class='text-center']")
+   public WebElement signUpPageButton;
+
+ @FindBy(xpath = ("//*[@id='navigation']/div[2]/ul[1]/li[5]/a"))
+
+ public  WebElement getBlogButton;
+
+ @FindBy(xpath = ("//*[@id='app']/section/div/div[2]/div/div/div[1]/div[1]/div/div[3]/h4/a"))
+  public WebElement Blogatiklama;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   // arzuv end
 }

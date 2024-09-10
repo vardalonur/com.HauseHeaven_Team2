@@ -309,6 +309,9 @@ public class AdminDashboard {
     @FindBy(xpath = "(//span[@class='badge badge-default'])[1]")
     public WebElement topNavBarButton;
 
+    @FindBy(xpath ="/html/body/div[2]/div[2]/div[3]/div[1]/div/div/div/ul/li[14]/a" )
+    public WebElement payments;
+
         //Blog Menu Subsections//
 
     //Categories Button
@@ -332,8 +335,33 @@ public class AdminDashboard {
     @FindBy(xpath = "/html/body/div[2]/div[2]/div[3]/div[2]/div/div[2]/div/div[3]/div/div[2]/form/div[2]/input" )
     public WebElement categoriesNameForm;
 
-    @FindBy(xpath = "//div[@class='ui-select-wrapper form-group'][1]")
+    @FindBy(xpath = "//*[@class='select-search-full ui-select select2-hidden-accessible']")
     public WebElement categoriesParentForm;
+
+    @FindBy(xpath = "//*[@class='form-control ui-select ui-select is-valid']")
+    public WebElement statusDropdownElementi;
+
+    @FindBy(xpath = "/html/body/div[2]/div[2]/div[3]/div[2]/div/div[2]/div/div[3]/div/div[2]/form/div[13]/div[2]/div/button[1]")
+    public WebElement saveExit;
+
+    @FindBy(xpath = "/html/body/div[2]/div[2]/div[3]/div[2]/div/div[2]/div/div[2]/div/div[2]/div[2]/ul/li[2]/ul/li")
+    public WebElement newCategory;
+
+    @FindBy(xpath = "(//a[@class='btn btn-icon btn-danger deleteDialog'])[3]")
+    public WebElement cetegoriesTrashButton;
+
+    @FindBy(xpath = "//button[@class='float-end btn btn-danger delete-crud-entry']")
+    public WebElement ConfirmDelete;
+
+    @FindBy(xpath = "/html/body/div[5]/div")
+    public WebElement toastMessage;
+
+    //PAYMENTS Menu
+       //Transactions
+    @FindBy(xpath = "/html/body/div[2]/div[2]/div[3]/div[1]/div/div/div/ul/li[14]/ul/li[1]/a")
+    public WebElement transactionsAltBaslik;
+
+
 
 
 
@@ -431,13 +459,14 @@ public class AdminDashboard {
         //DAMLA BİTİŞ
         //SERPİL BAŞLANGIÇ
 
+
 //SERPİL//Admindashboard Home Page//
 
     //Locations Button
     @FindBy(xpath = "//span[contains(text(), 'Locations')]")
     public WebElement locationsButton;
 
-    //Locations Menu Subsections\\
+    //Locations Menu Subsections \\
 
     // 1. Countries Button
     @FindBy(id = "cms-plugins-country")
@@ -747,25 +776,4 @@ public class AdminDashboard {
 
 
 //Gulnar end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
