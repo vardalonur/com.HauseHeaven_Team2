@@ -156,10 +156,7 @@ public class US_06 {
        actions.sendKeys(Keys.PAGE_DOWN).perform();
        utilities.ReusableMethods.bekle(2);
         actions.sendKeys(Keys.PAGE_DOWN).perform();
-      //  utilities.ReusableMethods.bekle(2);
-      //  actions.sendKeys(Keys.PAGE_DOWN).perform();
-      //  js.executeScript("window.scrollBy(0,1700)");
-      //  listing.findNewHomeButton.click();
+
         //Validate the Result
 
         String expectedResult = "0";
@@ -191,13 +188,10 @@ public class US_06 {
         listing.sortByButtonInput.sendKeys(Keys.ENTER);
         //Create softAssert Object
         SoftAssert softAssert = new SoftAssert();
-     //  JavascriptExecutor js = (JavascriptExecutor) driver;
-     //  js.executeScript("arguments[0].scrollIntoView(true);", listing.headOfFirstProperty);
 
         utilities.ReusableMethods.bekle(2);
         actions.sendKeys(Keys.PAGE_DOWN).perform();
         String expectedTitle = "001";
-
 
         String actualTitle = listing.headOfFirstProperty.getText();
 
