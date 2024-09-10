@@ -51,6 +51,7 @@ public class UserDashboard {
     public WebElement projectsButton;
 
 
+
   
   
   
@@ -331,6 +332,94 @@ public class UserDashboard {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//gulnar bıttı.
+    // CAN YILMAZ BASLANGIC 400
+    @FindBy(xpath = "//*[@id=\"frmhomesearch\"]/div[1]/div[1]/div/div/div/input")
+    public WebElement searchForALocation;
+
+    @FindBy(xpath = "//*[@id=\"select2-ptypes-container\"]")
+    public WebElement category;
+
+    ////span[@id='select2-ptypes-container']
+    @FindBy(xpath = "//*[@id=\"select2-ptypes-container\"]")
+    public WebElement categoryInput;
+
+    @FindBy(xpath = "//*[@id=\"frmhomesearch\"]/div[2]/button")
+    public WebElement searchResult;
+
+    @FindBy(xpath = "//*[@id=\"app\"]/section/div/div[2]/div/div[1]/div/div/div[1]/div/h4")
+    public WebElement numberOfResultBodySearch;
+
+
   
   
   
@@ -341,7 +430,7 @@ public class UserDashboard {
 
 
 
-    //gulnar bıttı.
+    
 
 
 
@@ -366,6 +455,7 @@ public class UserDashboard {
   
   
   
+
 
 
 }
