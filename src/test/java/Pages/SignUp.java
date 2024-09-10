@@ -10,7 +10,9 @@ public class SignUp {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
+
     //KEVSER
+
     @FindBy(id = "first_name")
     public WebElement firsNameBox;
 
@@ -31,6 +33,11 @@ public class SignUp {
 
     @FindBy(xpath = "(//*[@type='submit'])[1]")
     public WebElement registerButton;
+
+    @FindBy(className = "col-lg-12 col-md-12 col-sm-12")
+    public WebElement yourCurrentCreditYazisi;
+
+
 
 
 
