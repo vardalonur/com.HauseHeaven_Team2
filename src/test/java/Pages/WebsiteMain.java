@@ -319,6 +319,9 @@ public WebElement LogoutButton;
    @FindBy(xpath = "//*[@id='select2-ptypes-container']")
    public WebElement propertyTypeBar;
 
+   @FindBy(xpath = "(//*[@class='select2-selection__arrow'])[3]")
+   public WebElement propertyTypeArrow;
+
    @FindBy(xpath = "//*[@id='select2-select-bedroom-container']")
    public WebElement bedroomsBar;
 
@@ -327,6 +330,9 @@ public WebElement LogoutButton;
 
    @FindBy(xpath = "//*[@class='btn search-btn']")
    public WebElement searchResultBar;
+
+   @FindBy(xpath = "//*[@class='m-0']")
+   public WebElement foundResultText;
 
    @FindBy(xpath = "(//*[@class='sec-heading center'])[1]")
    public WebElement howItWorksText;
