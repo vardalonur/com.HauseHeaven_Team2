@@ -11,7 +11,6 @@ public class SignUp {
     }
 
 
-
     //KEVSER
 
     @FindBy(id = "first_name")
