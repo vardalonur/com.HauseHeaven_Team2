@@ -12,6 +12,8 @@ import utilities.ReusableMethods;
 
 public class US_02 {
 
+/*
+
 WebDriver driver;
 
     @Test
@@ -60,4 +62,7 @@ WebDriver driver;
         Driver.quitDriver();
 
 }
+
+*/
+
 }
