@@ -7,9 +7,9 @@ import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
 public class WebsiteMain {
-   public WebsiteMain () {     PageFactory.initElements(utilities.Driver.getDriver(), this);
-}
-// CAN BAŞLANGIÇ
+   public WebsiteMain () { PageFactory.initElements(Driver.getDriver(), this);}
+
+   // CAN BAŞLANGIÇ
 // Listing Butonu
 @FindBy (linkText ="Listing")
 public WebElement listingButton;
@@ -152,9 +152,32 @@ public WebElement addPropertyButton;
 @FindBy(xpath = "(//*[@class='login-item'])[1]")
 public WebElement userDashboardButton;
 
-*/
+
 @FindBy(xpath = "(//*[@class='login-item'])[2]")
 public WebElement LogoutButton;
+
+//================== HEADER ORTAK ELEMENTLER BURAYA KADAR =======================
+
+   // Anasayfa 'Find Accessible Homes To Rent' yazısı
+   @FindBy(className = "hero-search")
+   public WebElement findAccessibleYazisi;
+
+   // 'Blog' sayfa başlığı yazısı
+   @FindBy(className = "col-lg-12 col-md-12")
+   public WebElement blogYazisi;
+
+   // 'Contact' sayfa başlığı yazısı
+   @FindBy(className = "col-lg-12 col-md-12")
+   public WebElement contactYazisi;
+
+   // Add Property sayfası title text box
+   @FindBy(xpath = "(//*[@class='form-control'])[1]")
+   public WebElement titleTextBox;
+
+   // Header bölümü
+   @FindBy(xpath = "//*[@class='nav-menus-wrapper']")
+   public WebElement headerBolumu;
+
 
 
 

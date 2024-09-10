@@ -461,7 +461,7 @@ public class AdminDashboard {
 
 
 //SERPİL//Admindashboard Home Page//
-
+/*
     //Locations Button
     @FindBy(xpath = "//span[contains(text(), 'Locations')]")
     public WebElement locationsButton;
@@ -481,7 +481,7 @@ public class AdminDashboard {
     public WebElement citiesButton;
 
 
-
+*/
 
 
 
