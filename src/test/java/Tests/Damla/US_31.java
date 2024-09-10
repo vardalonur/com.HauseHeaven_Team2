@@ -1,11 +1,23 @@
 package Tests.Damla;
 
 import Pages.AdminDashboard;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.ReusableMethods;
+
+import java.time.Duration;
 
 public class US_31 {
 
@@ -66,6 +78,7 @@ public class US_31 {
 
     @Test
     public void TC03(){
+        Actions actions=new Actions(Driver.getDriver());
 
         // Launch browser and Go to https://qa.hauseheaven.com/admin/login
         Driver.getDriver().get(ConfigReader.getProperty("AdminDashUrl"));
@@ -101,8 +114,77 @@ public class US_31 {
         adminDashboard.categoriesCreateButton.click();
 
         //Fill in the mandatory fields in the form that opens.
-        adminDashboard.nameForm.sendKeys(ConfigReader.getProperty("ItemName"));
-        //adminDashboard.categoriesParentForm.click();
+        adminDashboard.categoriesNameForm.sendKeys(ConfigReader.getProperty("ItemName"));
+
+          ReusableMethods.bekle(2);
+          Select selectParent=new Select(adminDashboard.categoriesParentForm);
+          ReusableMethods.bekle(2);
+          selectParent.selectByIndex(2);
+
+          actions.sendKeys(Keys.PAGE_DOWN).perform();
+
+          //ReusableMethods.bekle(2);
+          //Select selectStatus=new Select(adminDashboard.statusDropdownElementi);
+          //ReusableMethods.bekle(2);
+          //selectStatus.selectByValue("pending");
+
         //Click save-exit.
+
+        ReusableMethods.bekle(1);
+        adminDashboard.saveExit.click();
+
+        Driver.quitDriver();
+    }
+    @Test
+    public void TC04(){
+        Actions actions=new Actions(Driver.getDriver());
+
+        // Launch browser and Go to https://qa.hauseheaven.com/admin/login
+        Driver.getDriver().get(ConfigReader.getProperty("AdminDashUrl"));
+
+        AdminDashboard adminDashboard=new AdminDashboard();
+
+        // Enter the relevant data in the Email field.
+        adminDashboard.emailUsernameForm.sendKeys(ConfigReader.getProperty("AdminGecerliEmail"));
+
+        // Enter the relevant data in the password field.
+        adminDashboard.passwordForm.sendKeys(ConfigReader.getProperty("AdminGecerliPassword"));
+
+        // Click the Sign in button.
+        adminDashboard.signInButton.click();
+
+        // Click on the "Blog" title in Sidebar.
+        adminDashboard.blogButton.click();
+
+        //Click on “Categories” under Blog.
+        adminDashboard.CategoriesButton.click();
+
+        //The Categories page is displayed.
+
+        SoftAssert softAssert=new SoftAssert();
+        softAssert.assertTrue(adminDashboard.CategoriesButton.isDisplayed());
+
+        //Click on the “create” button to create a new category.
+        adminDashboard.categoriesCreateButton.click();
+
+        adminDashboard.newCategory.click();
+
+        adminDashboard.cetegoriesTrashButton.click();
+
+        adminDashboard.ConfirmDelete.click();
+
+        By infoBoxLocator=By.xpath("/html/body/div[5]/div");
+
+        WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement infoBox=wait.until(ExpectedConditions.visibilityOfElementLocated(infoBoxLocator));
+
+        String infoBoxText= infoBox.getText();
+        //Assert.assertTrue(infoBoxText,"Beklenen Mesaj");
+
+
+
+
+
+
     }
 }
