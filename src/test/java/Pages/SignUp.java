@@ -10,10 +10,10 @@ public class SignUp {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-<<<<<<< HEAD
-=======
+
+
     //KEVSER
->>>>>>> main
+
     @FindBy(id = "first_name")
     public WebElement firsNameBox;
 
