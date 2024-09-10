@@ -15,11 +15,10 @@ public class UserDashboard {
         PageFactory.initElements(utilities.Driver.getDriver(), this);
     }
 
-<<<<<<< HEAD
 
-//SERPİL BAŞLANGIÇ
-=======
->>>>>>> main
+
+
+
 
 //SERPİL BAŞLANGIÇ
     /*
@@ -163,11 +162,10 @@ public class UserDashboard {
     @FindBy(xpath = "//*[@title='credits']")
     public WebElement buyCreditsButton;
 
-<<<<<<< HEAD
-=======
+
     @FindBy(xpath = "(//*[text()='Purchase'])[1]")
     public WebElement freeFirstPostButton;
->>>>>>> main
+
 
     @FindBy(xpath = "//*[@id=\"app-real-estate\"]/div/div/div/div[1]/div/div[2]/div[1]/p/strong")
     public WebElement creditsNumber;
@@ -283,52 +281,22 @@ public class UserDashboard {
 
 
 
-<<<<<<< HEAD
-        //SERPİL BİTİŞ
 
-        // KEVSER BAŞLANGIÇ
 
-    ////// SETTINGS //////
 
-    @FindBy(xpath = "//*[@title='Settings']")
-    public WebElement settingsButton;
 
-    @FindBy(id = "phone")
-    public WebElement phoneBox;
 
-    @FindBy(xpath = "(//*[@type='submit'])[1]")
-    public WebElement saveButton;
 
-    @FindBy(xpath = "//*[@id=\"filter_search\"]/div[2]/div/div[1]/span")
-    public WebElement phoneNumberText;
 
-    ////// BUY CREDITS AREA //////
 
-    @FindBy(xpath = "//*[@title='credits']")
-    public WebElement buyCreditsButton;
 
-    @FindBy(xpath = "(//*[text()='Purchase'])[1]")
-    public WebElement freeFirstPostButton;
 
-    @FindBy(xpath = "//*[@id=\"app-real-estate\"]/div/div/div/div[1]/div/div[2]/div[1]/p/strong")
-    public WebElement creditsNumber;
 
-    ////// WRITE A PROPERTY AREA //////
 
-    @FindBy(xpath = "//*[@title='Write a property']")
-    public WebElement writePropertyButton;
 
-    @FindBy(xpath = "(//*[@class='form-control'])[1]")
-    public WebElement titleTextBox;
 
-    @FindBy(xpath = "//*[@class='ck-placeholder']")
-    public WebElement contentTextBox;
 
-    @FindBy(xpath = "(//*[@type='submit'])[1]")
-    public WebElement saveExitButton;
 
-    @FindBy(xpath = "//*[@id=\"botble-real-estate-tables-account-property-table_info\"]/span/span[2]")
-    public WebElement totalAdvertNumberText;
 
 
 
@@ -365,21 +333,6 @@ public class UserDashboard {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-=======
->>>>>>> main
 
 
 
@@ -387,15 +340,13 @@ public class UserDashboard {
 
     // KEVSER BİTİŞ
 
-<<<<<<< HEAD
-=======
+
     //Gulnar basladı
 
 
 
    @FindBy(xpath = "//*[@id='navigation']/div[2]/ul[2]/li[3]")
  public WebElement logoutButton;
->>>>>>> main
 
 
 
@@ -407,8 +358,7 @@ public class UserDashboard {
 
 
 
-<<<<<<< HEAD
-=======
+
 
 
 
@@ -568,5 +518,5 @@ public class UserDashboard {
 
 
 
->>>>>>> main
+
 }
