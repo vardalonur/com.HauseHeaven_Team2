@@ -125,6 +125,9 @@ public class WebsiteMain {
     @FindBy(xpath = "//*[@class='btn search-btn']")
     public WebElement searchResultBar;
 
+    @FindBy(xpath = "//*[@class='m-0']")
+    public WebElement searchResultText;
+
     @FindBy(xpath = "(//*[@class='sec-heading center'])[1]")
     public WebElement howItWorksText;
 

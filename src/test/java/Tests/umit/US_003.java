@@ -4,6 +4,8 @@ import Pages.WebsiteMain;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -62,11 +64,27 @@ public class US_003 {
         websiteMain.minPriceClearButton.click();
         ReusableMethods.bekle(1);
 
+//  Click on the minPriceButton and select "1000" option again
+        span.selectByValue("1000");
+        ReusableMethods.bekle(1);
+
+//  Click on the PropertyType button and select "Apartment" option
+
+        websiteMain.propertyTypeBar.click();
+        span.selectByValue("1");
+
+//  Click on the search result button
+
+        websiteMain.searchResultBar.click();
 
 
+//  Verify that a result is found
 
+    String expectedResultText= "Found 1 - 9 Of 9 Results";
+    String actualResultText=websiteMain.searchResultText.getText();
 
-
+    Assert.assertEquals(actualResultText,expectedResultText);
+    ReusableMethods.bekle(2);
 
 
 
