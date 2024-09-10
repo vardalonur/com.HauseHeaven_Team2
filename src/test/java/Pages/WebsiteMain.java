@@ -132,7 +132,7 @@ public WebElement signUpButton;
 
 @FindBy(xpath = "//*[@href=\"https://qa.hauseheaven.com/login\"]")
 public WebElement signInButton;
-
+/*
 @FindBy(xpath = "(//*[@href=\"https://qa.hauseheaven.com/\"])[3]")
 public WebElement homeButton;
 
