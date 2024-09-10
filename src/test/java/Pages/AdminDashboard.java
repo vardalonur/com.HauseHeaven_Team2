@@ -344,17 +344,16 @@ public class AdminDashboard {
     @FindBy(xpath = "/html/body/div[2]/div[2]/div[3]/div[2]/div/div[2]/div/div[3]/div/div[2]/form/div[13]/div[2]/div/button[1]")
     public WebElement saveExit;
 
-    @FindBy(xpath = "/html/body/div[2]/div[2]/div[3]/div[2]/div/div[2]/div/div[2]/div/div[2]/div[2]/ul/li[2]/ul/li")
+    @FindBy(xpath = "(//a[@class='fetch-data category-name'])[2]")
     public WebElement newCategory;
 
-    @FindBy(xpath = "(//a[@class='btn btn-icon btn-danger deleteDialog'])[3]")
+    @FindBy(xpath = "(//a[@class='btn btn-icon btn-danger deleteDialog'])[2]")
     public WebElement cetegoriesTrashButton;
 
     @FindBy(xpath = "//button[@class='float-end btn btn-danger delete-crud-entry']")
     public WebElement ConfirmDelete;
 
-    @FindBy(xpath = "/html/body/div[5]/div")
-    public WebElement toastMessage;
+
 
     //PAYMENTS Menu
        //Transactions
