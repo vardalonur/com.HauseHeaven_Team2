@@ -141,6 +141,10 @@ public class Listing {
 
 
 
+
+
+
+
     //CAN YILMAZ'a ait buraya kadar
 //SERPİL ................\\
 
@@ -197,6 +201,53 @@ public class Listing {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // Arzuv is writing here
 
 
 }

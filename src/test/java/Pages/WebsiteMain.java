@@ -132,7 +132,7 @@ public WebElement signUpButton;
 
 @FindBy(xpath = "//*[@href=\"https://qa.hauseheaven.com/login\"]")
 public WebElement signInButton;
-/*
+
 @FindBy(xpath = "(//*[@href=\"https://qa.hauseheaven.com/\"])[3]")
 public WebElement homeButton;
 
@@ -155,7 +155,7 @@ public WebElement userDashboardButton;
 @FindBy(xpath = "(//*[@class='login-item'])[2]")
 public WebElement LogoutButton;
 
-*/
+
 
 
 
@@ -586,6 +586,142 @@ public WebElement LogoutButton;
 
 
 
-   //ÜMİT BİTİŞ
+   //ÜMİT BİTİ
 
+   //  ====================  Arzuv  ====================
+   // Clicking on every menu, navigates to a new page XPaths'
+
+   @FindBy (xpath = "//*[@class='hero-search']")
+   public WebElement homePageButton;
+
+   @FindBy (xpath = "//*[@class ='ipt-title']")
+   public WebElement propertiesPageButton;
+
+   @FindBy (xpath = "//*[@id=\'app\']/div/div/div/div/div/h2")
+   public WebElement allProjectsPageButton;
+
+   @FindBy (xpath = "//*[@class ='ipt-title']")
+   public WebElement allAgentsPageButton;
+
+   @FindBy (xpath = "//*[@class='ipt-title']")
+   public WebElement blogPageButton;
+
+   @FindBy (xpath = "//*[@class='ipt-title']")
+   public WebElement contactPageButton;
+
+   @FindBy (xpath = "//*[@class='text-center']")
+   public WebElement signUpPageButton;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   // arzuv end
 }
