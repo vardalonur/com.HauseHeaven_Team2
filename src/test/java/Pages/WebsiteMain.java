@@ -159,15 +159,30 @@ public WebElement LogoutButton;
 //================== HEADER ORTAK ELEMENTLER BURAYA KADAR =======================
 
    // Anasayfa 'Find Accessible Homes To Rent' yazısı
+   /*
    @FindBy(className = "hero-search")
    public WebElement findAccessibleYazisi;
+   //h1[text()='Find accessible homes to rent']
+   */
+   @FindBy(xpath = "//h1[text()='Find accessible homes to rent']")
+   public WebElement findAccessibleYazisi;
 
+   /*
    // 'Blog' sayfa başlığı yazısı
    @FindBy(className = "col-lg-12 col-md-12")
    public WebElement blogYazisi;
+   */
 
+   // 'Blog' sayfa başlığı yazısı
+   @FindBy(xpath = "//h1[text()='Blog']")
+   public WebElement blogYazisi;
+   /*
    // 'Contact' sayfa başlığı yazısı
    @FindBy(className = "col-lg-12 col-md-12")
+   public WebElement contactYazisi;
+   */
+   // 'Contact' sayfa başlığı yazısı
+   @FindBy(xpath = "//h1[text()='Contact']")
    public WebElement contactYazisi;
 
    // Add Property sayfası title text box
@@ -633,12 +648,11 @@ public WebElement LogoutButton;
    @FindBy (xpath = "//*[@class='text-center']")
    public WebElement signUpPageButton;
 
- @FindBy(xpath = ("//*[@id='navigation']/div[2]/ul[1]/li[5]/a"))
+   @FindBy (xpath = ("//*[@id='navigation']/div[2]/ul[1]/li[5]/a"))
+   public  WebElement getBlogButton;
 
- public  WebElement getBlogButton;
-
- @FindBy(xpath = ("//*[@id='app']/section/div/div[2]/div/div/div[1]/div[1]/div/div[3]/h4/a"))
-  public WebElement Blogatiklama;
+   @FindBy (xpath = ("//*[@id='app']/section/div/div[2]/div/div/div[1]/div[1]/div/div[3]/h4/a"))
+   public WebElement Blogatiklama;
 
 
 
