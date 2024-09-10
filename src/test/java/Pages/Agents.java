@@ -11,6 +11,7 @@ public class Agents {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
+    //KEVSER
     @FindBy(xpath = "(//*[@class='fr-can-name'])[1]")
     public WebElement ilkAgentIsimElementi;
 

@@ -3,6 +3,9 @@ package Pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Test;
+
+import java.awt.*;
 
 import java.awt.*;
 
@@ -12,13 +15,23 @@ public class UserDashboard {
         PageFactory.initElements(utilities.Driver.getDriver(), this);
     }
 
+<<<<<<< HEAD
 
 //SERPİL BAŞLANGIÇ
+=======
+>>>>>>> main
 
+//SERPİL BAŞLANGIÇ
+    /*
+    !!!!!!!!!!!!!
+    BU ELEMENT HEADER'A AIT VE WEBSITEMAIN CLASS'INDA KAYITLI /signInButton/ (ONUR)
+    !!!!!!!!!!!!!
+    */
     //Home Page\\
     //Home Page SıgnIn Button
     @FindBy(xpath = "//li[@class='add-listing']")
     public WebElement homePageSignInButton;
+
 
     //User Login Panel\\
     //UserEmail/Username
@@ -32,61 +45,149 @@ public class UserDashboard {
     public WebElement userLogInButton;
 
 
+    /*
+    !!!!!!!!!!!!!
+    HEADER ELEMENTLERİ BURADA OLMAZ (ONUR)
+    !!!!!!!!!!!!!
+     */
     // Header Elements\\
     //Projects element
     @FindBy (xpath = "/html/body/div[2]/div[2]/div/nav/div[2]/ul[1]/li[3]/a")
     public WebElement projectsButton;
 
 
-    //Projects Page\\
 
-    //Result Text
-    @FindBy(xpath = "//div[@class='left-column'] ")
-    public WebElement resultText;
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 
-    //First Project
-    @FindBy(xpath = "//p[@class='listing-short-description'][1]")
-    public WebElement firstProject;
+        //SERPİL BİTİŞ
 
-    //Second Project
-    @FindBy(xpath = "(//p[@class='listing-short-description'])[2]")
-    public WebElement secondProject;
+        // KEVSER BAŞLANGIÇ
 
-    //Thirth Project
-    @FindBy(xpath = "//p[@class='listing-short-description'][3]")
-    public WebElement thirthProject;
+    ////// SETTINGS //////
 
-    //Fourth Project
-    @FindBy(xpath = "(//p[@class='listing-short-description'])[4]")
-    public WebElement fourthProject;
+    @FindBy(xpath = "//*[@title='Settings']")
+    public WebElement settingsButton;
 
-    //Fifth Project
-    @FindBy(xpath = "//p[@class='listing-short-description'][5]")
-    public WebElement fifthProject;
+    @FindBy(id = "phone")
+    public WebElement phoneBox;
 
-    //Sixth Project
-    @FindBy(xpath = "(//p[@class='listing-short-description'])[6]")
-    public WebElement sixthProject;
+    @FindBy(xpath = "(//*[@type='submit'])[1]")
+    public WebElement saveButton;
 
-    //Seventh Project
-    @FindBy(xpath = "//p[@class='listing-short-description'][7]")
-    public WebElement seventhProject;
+    @FindBy(xpath = "//*[@id=\"filter_search\"]/div[2]/div/div[1]/span")
+    public WebElement phoneNumberText;
 
-    //Eighth Project
-    @FindBy(xpath = "(//p[@class='listing-short-description'])[8]")
-    public WebElement eighthProject;
+    ////// BUY CREDITS AREA //////
 
-    //Ninth Project
-    @FindBy(xpath = "(//p[@class='listing-short-description'])[9]")
-    public WebElement ninthhProject;
+    @FindBy(xpath = "//*[@title='credits']")
+    public WebElement buyCreditsButton;
 
+<<<<<<< HEAD
+=======
+    @FindBy(xpath = "(//*[text()='Purchase'])[1]")
+    public WebElement freeFirstPostButton;
+>>>>>>> main
 
+    @FindBy(xpath = "//*[@id=\"app-real-estate\"]/div/div/div/div[1]/div/div[2]/div[1]/p/strong")
+    public WebElement creditsNumber;
 
+    ////// WRITE A PROPERTY AREA //////
 
+    @FindBy(xpath = "//*[@title='Write a property']")
+    public WebElement writePropertyButton;
 
+    @FindBy(xpath = "(//*[@class='form-control'])[1]")
+    public WebElement titleTextBox;
 
+    @FindBy(xpath = "//*[@class='ck-placeholder']")
+    public WebElement contentTextBox;
 
+    @FindBy(xpath = "(//*[@type='submit'])[1]")
+    public WebElement saveExitButton;
 
+    @FindBy(xpath = "//*[@id=\"botble-real-estate-tables-account-property-table_info\"]/span/span[2]")
+    public WebElement totalAdvertNumberText;
 
 
 
@@ -182,6 +283,7 @@ public class UserDashboard {
 
 
 
+<<<<<<< HEAD
         //SERPİL BİTİŞ
 
         // KEVSER BAŞLANGIÇ
@@ -276,6 +378,8 @@ public class UserDashboard {
 
 
 
+=======
+>>>>>>> main
 
 
 
@@ -283,6 +387,15 @@ public class UserDashboard {
 
     // KEVSER BİTİŞ
 
+<<<<<<< HEAD
+=======
+    //Gulnar basladı
+
+
+
+   @FindBy(xpath = "//*[@id='navigation']/div[2]/ul[2]/li[3]")
+ public WebElement logoutButton;
+>>>>>>> main
 
 
 
@@ -294,4 +407,166 @@ public class UserDashboard {
 
 
 
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//gulnar bıttı.
+    // CAN YILMAZ BASLANGIC 400
+    @FindBy(xpath = "//*[@id=\"frmhomesearch\"]/div[1]/div[1]/div/div/div/input")
+    public WebElement searchForALocation;
+
+    @FindBy(xpath = "//*[@id=\"select2-ptypes-container\"]")
+    public WebElement category;
+
+    ////span[@id='select2-ptypes-container']
+    @FindBy(xpath = "//*[@id=\"select2-ptypes-container\"]")
+    public WebElement categoryInput;
+
+    @FindBy(xpath = "//*[@id=\"frmhomesearch\"]/div[2]/button")
+    public WebElement searchResult;
+
+    @FindBy(xpath = "//*[@id=\"app\"]/section/div/div[2]/div/div[1]/div/div/div[1]/div/h4")
+    public WebElement numberOfResultBodySearch;
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+    
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+>>>>>>> main
 }
