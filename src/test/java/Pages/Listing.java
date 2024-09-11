@@ -207,18 +207,21 @@ public class Listing {
     @FindBy(className = "ipt-title")
     public WebElement propertiesYazisi;
 
+    // ilk ilandaki 'View' butonu
+    @FindBy(xpath = "(//*[@class='prt-view'])[1]")
+    public WebElement ilkViewButton;
 
+    // facebook yazısı
+    @FindBy(xpath = "//*[@href=\"https://www.facebook.com/\"]")
+    public WebElement facebookYazisi;
 
+    // 'Save' butonu
+    @FindBy(xpath = "//*[@class='btn btn-likes add-to-wishlist']")
+    public WebElement saveButton;
 
-
-
-
-
-
-
-
-
-
+    // wishlist'e kayıtlı element sayısı yazısı
+    @FindBy(xpath = "(//*[@class='wishlist-count'])[1]")
+    public WebElement wishlistSayisi;
 
     // KEVSER BİTİŞ
 
