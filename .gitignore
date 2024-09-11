@@ -14,7 +14,6 @@ test-output/
 .idea/compiler.xml
 .idea/libraries/
 .idea/workspace.xml
-.idea/.gitignore
 *.iws
 *.iml
 *.ipr
