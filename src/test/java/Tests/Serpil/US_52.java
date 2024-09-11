@@ -57,7 +57,7 @@ public class US_52 {
 
      */
        //Go to https://qa.hauseheaven.com/
-        Driver.getDriver().get(ConfigReader.getProperty("AdminSerUrl"));
+        Driver.getDriver().get(ConfigReader.getProperty("AdminDashUrl"));
         SoftAssert softAssert = new SoftAssert();
         AdminDashboard adminDashboard = new AdminDashboard();
 
