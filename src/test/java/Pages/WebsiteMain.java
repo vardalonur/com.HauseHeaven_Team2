@@ -152,7 +152,7 @@ public WebElement addPropertyButton;
 @FindBy(xpath = "(//*[@class='login-item'])[1]")
 public WebElement userDashboardButton;
 
-*/
+
 @FindBy(xpath = "(//*[@class='login-item'])[2]")
 public WebElement LogoutButton;
 
