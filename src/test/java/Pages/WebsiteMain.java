@@ -359,6 +359,9 @@ public WebElement LogoutButton;
    @FindBy(xpath = "//*[@title='9876 Pine Avenue']")
    public WebElement pineAvenueTitle;
 
+   @FindBy(xpath = "(//*[@class='property-listing property-2 '])[3]")
+   public WebElement pineAvenueModul;
+
    @FindBy(xpath = "(//*[@class='slick-slide slick-current slick-active'])[4]")
    public WebElement goodPlaceImage4;
 
@@ -370,6 +373,9 @@ public WebElement LogoutButton;
 
    @FindBy(xpath = "//*[@title='13579 Elmwood Avenue']")
    public WebElement elmwood2Title;
+
+   @FindBy(xpath = "//*[@class='prt-detail-title-desc']")
+   public WebElement elmwood2PageTitle;
 
    @FindBy(xpath = "//*[@title='13579 Willow Street']")
    public WebElement willowStreetTitle;
@@ -410,6 +416,9 @@ public WebElement LogoutButton;
    @FindBy(xpath = "(//*[@class='add-to-wishlist'])[5]")
    public WebElement wishListButton5;
 
+   @FindBy(xpath = "//*[@id='alert-container']")
+   public WebElement wishListAddText;
+
    @FindBy(xpath = "(//*[@class='add-to-wishlist'])[6]")
    public WebElement wishListButton6;
 
@@ -437,6 +446,12 @@ public WebElement LogoutButton;
    @FindBy(xpath = "(//*[@class='ti-angle-right'])[3]")
    public WebElement miamiRightArrow;
 
+   @FindBy(xpath = "(//*[@class='location-property-wrap'])[4]")
+   public WebElement newYorkModule;
+
+   @FindBy(xpath = "(//*[@class='location-property-content'])[4]")
+   public WebElement newYorkPropertyContent;
+
    @FindBy(xpath = "//*[@data-src='https://qa.hauseheaven.com/storage/newyork-400xauto.jpg']")
    public WebElement newyorkImage;
 
@@ -454,6 +469,9 @@ public WebElement LogoutButton;
 
    @FindBy(xpath = "(//*[@class='ti-angle-right'])[6]")
    public WebElement austinRightArrow;
+
+   @FindBy(xpath = "//*[@class='item-sorting clearfix']")
+   public WebElement austinPageFoundResultText;
 
    @FindBy(xpath = "//*[@data-src='https://qa.hauseheaven.com/storage/chicago-400xauto.jpg']")
    public WebElement chicagoImage;
