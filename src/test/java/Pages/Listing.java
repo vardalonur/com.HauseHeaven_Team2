@@ -102,7 +102,6 @@ public class Listing {
 
 //SERPİL ................\\
 
-//Projects Page\\
 
 
 
@@ -186,6 +185,44 @@ public class Listing {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // KEVSER
+
+    // 'Properties' sayfa başlığı yazısı
+    @FindBy(className = "ipt-title")
+    public WebElement propertiesYazisi;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // KEVSER BİTİŞ
 
 
 
@@ -202,6 +239,7 @@ public class Listing {
 
 
     // Arzuv is writing here
+
 
 
 }
