@@ -772,7 +772,7 @@ public WebElement LogoutButton;
    //SERPİL BAŞLANGIÇ.....\\
 
    // HEADER NAME ELEMENT
-   @FindBy(xpath = "(//li[@class='login-item'])[2]")
+   @FindBy(xpath = "(//li[@class='login-item'])[1]")
    public WebElement headerNameElement;
 
 
@@ -785,5 +785,5 @@ public WebElement LogoutButton;
 
 
 
-  
+
 }
