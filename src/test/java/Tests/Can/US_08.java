@@ -2,6 +2,7 @@ package Tests.Can;
 
 import Pages.Projects;
 import Pages.UserDashboard;
+import Pages.WebsiteMain;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -26,8 +27,9 @@ public class US_08 {
         //Go to https://qa.hauseheaven.com/
         Driver.getDriver().get(ConfigReader.getProperty("WebsiteMainPageURL"));
         //Click on "Project"
+        WebsiteMain websiteMain= new WebsiteMain();
         UserDashboard userDashboard = new UserDashboard();
-        userDashboard.projectsButton.click();
+        websiteMain.projectsButton.click();
 
         //Validate Current Title
         String expectedTitle = "Projects";
@@ -57,8 +59,9 @@ public class US_08 {
         //Go to https://qa.hauseheaven.com/
         Driver.getDriver().get(ConfigReader.getProperty("WebsiteMainPageURL"));
         //Click on "Projects"
+        WebsiteMain websiteMain= new WebsiteMain();
         UserDashboard userDashboard = new UserDashboard();
-        userDashboard.projectsButton.click();
+        websiteMain.projectsButton.click();
         //Validate Current Title
         String expectedTitle = "Projects";
         String actualTitle = Driver.getDriver().getTitle();
@@ -101,8 +104,9 @@ public class US_08 {
         //Go to https://qa.hauseheaven.com/
         Driver.getDriver().get(ConfigReader.getProperty("WebsiteMainPageURL"));
         //Click on "Projects"
+        WebsiteMain websiteMain= new WebsiteMain();
         UserDashboard userDashboard = new UserDashboard();
-        userDashboard.projectsButton.click();
+       websiteMain.projectsButton.click();
         //Validate Current Title
         String expectedTitle = "Projects";
         String actualTitle = Driver.getDriver().getTitle();

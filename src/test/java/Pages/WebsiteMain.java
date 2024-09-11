@@ -614,7 +614,11 @@ public WebElement LogoutButton;
 
 
 
-   //ÜMİT BİTİ
+
+   //ÜMİT BİTİŞ
+
+
+
 
    //  ====================  Arzuv  ====================
    // Clicking on every menu, navigates to a new page XPaths'
@@ -750,7 +754,22 @@ public WebElement LogoutButton;
 
 
 
-
-
    // arzuv end
+
+   //SERPİL BAŞLANGIÇ.....\\
+
+   // HEADER NAME ELEMENT
+   @FindBy(xpath = "(//li[@class='login-item'])[2]")
+   public WebElement headerNameElement;
+
+
+
+
+
+
+
+
+
+
+
 }

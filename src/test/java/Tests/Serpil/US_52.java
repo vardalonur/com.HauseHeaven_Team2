@@ -25,7 +25,7 @@ public class US_52 {
      */
 
        //Go to https://qa.hauseheaven.com/
-       Driver.getDriver().get(ConfigReader.getProperty("AdminSerUrl"));
+       Driver.getDriver().get(ConfigReader.getProperty("AdminDashUrl"));
        SoftAssert softAssert = new SoftAssert();
        AdminDashboard adminDashboard = new AdminDashboard();
 
@@ -34,12 +34,12 @@ public class US_52 {
        adminDashboard.passwordForm.sendKeys(ConfigReader.getProperty("AdminSerValidPassword"));
        adminDashboard.signInButton.click();
        Thread.sleep(2000);
-        /*
+
        // Confirm that the "Locations" heading is displayed.
        softAssert.assertTrue(adminDashboard.locationsButton.isDisplayed(), "Locations heading is not displayed.");
        softAssert.assertAll();
        Driver.quitDriver();
-        */
+
     }
 
     @Test
@@ -57,7 +57,7 @@ public class US_52 {
 
      */
        //Go to https://qa.hauseheaven.com/
-        Driver.getDriver().get(ConfigReader.getProperty("AdminSerUrl"));
+        Driver.getDriver().get(ConfigReader.getProperty("AdminDashUrl"));
         SoftAssert softAssert = new SoftAssert();
         AdminDashboard adminDashboard = new AdminDashboard();
 
@@ -67,7 +67,7 @@ public class US_52 {
         adminDashboard.signInButton.click();
         Thread.sleep(2000);
 
-        /*
+
 
         // Confirm that the 'Locations' heading is displayed.
         softAssert.assertTrue(adminDashboard.locationsButton.isDisplayed(), "Locations heading is not displayed.");
@@ -95,7 +95,7 @@ public class US_52 {
         Driver.quitDriver();
 
 
-         */
+
     }
 
 }
