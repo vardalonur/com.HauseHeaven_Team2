@@ -28,7 +28,7 @@ public class Agents {
     public WebElement ilkAgentMailButonu;
     /*
     // 'All Agents' sayfa başlığı yazısı
-    @FindBy(className = "col-lg-12 col-md-12")
+    @FindBy(xpath = "//h1[text()='All Agents']")
     public WebElement allAgentsYazisi;
      */
     @FindBy(xpath = "//*[@class='col-lg-12 col-md-12']")

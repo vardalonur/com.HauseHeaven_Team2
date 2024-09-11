@@ -7,9 +7,9 @@ import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
 public class WebsiteMain {
-   public WebsiteMain () {     PageFactory.initElements(utilities.Driver.getDriver(), this);
-}
-// CAN BAŞLANGIÇ
+   public WebsiteMain () { PageFactory.initElements(Driver.getDriver(), this);}
+
+   // CAN BAŞLANGIÇ
 // Listing Butonu
 @FindBy (linkText ="Listing")
 public WebElement listingButton;
@@ -149,7 +149,7 @@ public WebElement contactButton;
 public WebElement addPropertyButton;
 
 // kullanıcı adı-soyadı yazan kısım
-@FindBy(xpath = "(//*[@class='login-item'])[1]")
+@FindBy(xpath = "//*[@href=\"https://qa.hauseheaven.com/account/dashboard\"]")
 public WebElement userDashboardButton;
 
 
@@ -158,29 +158,21 @@ public WebElement LogoutButton;
 
 //================== HEADER ORTAK ELEMENTLER BURAYA KADAR =======================
 
+
+
+
+
+
+
    // Anasayfa 'Find Accessible Homes To Rent' yazısı
-   /*
-   @FindBy(className = "hero-search")
-   public WebElement findAccessibleYazisi;
-   //h1[text()='Find accessible homes to rent']
-   */
+
    @FindBy(xpath = "//h1[text()='Find accessible homes to rent']")
    public WebElement findAccessibleYazisi;
-
-   /*
-   // 'Blog' sayfa başlığı yazısı
-   @FindBy(className = "col-lg-12 col-md-12")
-   public WebElement blogYazisi;
-   */
 
    // 'Blog' sayfa başlığı yazısı
    @FindBy(xpath = "//h1[text()='Blog']")
    public WebElement blogYazisi;
-   /*
-   // 'Contact' sayfa başlığı yazısı
-   @FindBy(className = "col-lg-12 col-md-12")
-   public WebElement contactYazisi;
-   */
+
    // 'Contact' sayfa başlığı yazısı
    @FindBy(xpath = "//h1[text()='Contact']")
    public WebElement contactYazisi;
