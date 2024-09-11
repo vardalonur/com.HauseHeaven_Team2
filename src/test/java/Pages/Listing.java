@@ -97,10 +97,11 @@ public class Listing {
 
 
 
+
     //CAN YILMAZ'a ait buraya kadar  1-100
+
 //SERPİL ................\\
 
-//Projects Page\\
 
 
 
@@ -152,6 +153,92 @@ public class Listing {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // KEVSER
+
+    // 'Properties' sayfa başlığı yazısı
+    @FindBy(className = "ipt-title")
+    public WebElement propertiesYazisi;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // KEVSER BİTİŞ
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // Arzuv is writing here
 
 
 

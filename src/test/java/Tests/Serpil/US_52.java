@@ -13,7 +13,9 @@ import utilities.Driver;
 import java.time.Duration;
 
 public class US_52 {
-        @Test
+
+
+    @Test
     public void locations() throws InterruptedException {
 
        /* Launch browser
@@ -23,7 +25,7 @@ public class US_52 {
      */
 
        //Go to https://qa.hauseheaven.com/
-       Driver.getDriver().get(ConfigReader.getProperty("AdminSerUrl"));
+       Driver.getDriver().get(ConfigReader.getProperty("AdminDashUrl"));
        SoftAssert softAssert = new SoftAssert();
        AdminDashboard adminDashboard = new AdminDashboard();
 
@@ -65,6 +67,8 @@ public class US_52 {
         adminDashboard.signInButton.click();
         Thread.sleep(2000);
 
+
+
         // Confirm that the 'Locations' heading is displayed.
         softAssert.assertTrue(adminDashboard.locationsButton.isDisplayed(), "Locations heading is not displayed.");
 
@@ -89,5 +93,9 @@ public class US_52 {
         softAssert.assertTrue(adminDashboard.citiesButton.isEnabled(),"'Cities' option is not enabled");
         softAssert.assertAll();
         Driver.quitDriver();
+
+
+
     }
+
 }
