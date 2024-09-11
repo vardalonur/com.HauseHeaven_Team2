@@ -30,6 +30,7 @@ public class US_50 {
 
         // Click the Sign in button.
         adminDashboard.signInButton.click();
+        Driver.quitDriver();
 
     }
     @Test
@@ -58,6 +59,8 @@ public class US_50 {
         //Transactions page is displayed.
         SoftAssert softAssert=new SoftAssert();
         softAssert.assertTrue(adminDashboard.transactionsAltBaslik.isDisplayed());
+
+        Driver.quitDriver();
     }
     @Test
     public void TC03(){
@@ -85,13 +88,12 @@ public class US_50 {
         SoftAssert softAssert=new SoftAssert();
         softAssert.assertTrue(adminDashboard.transactionsAltBaslik.isDisplayed());
 
-        Actions actions=new Actions(Driver.getDriver());
-        //actions.sendKeys(Keys.PAGE_DOWN).perform();
-        actions.sendKeys(Keys.DOWN);
         ReusableMethods.bekle(2);
-        //WebElement infoBox= driver.findElement(By.xpath("//span[@class='badge bg-secondary bold badge-dt']"));
 
-        //Assert.assertTrue(infoBox.isDisplayed());
+        adminDashboard.infoBox.click();
+        softAssert.assertTrue(adminDashboard.infoBox.isDisplayed(),"Total number of payments displayed.");
+
+
         Driver.quitDriver();
     }
 }
