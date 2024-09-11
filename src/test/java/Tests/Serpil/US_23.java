@@ -17,7 +17,7 @@ import static utilities.Driver.driver;
 public class US_23 {
 
 
-    @Test
+    @Test (priority = 1)
     public void projects () throws InterruptedException {
 
       /*Launch browser
@@ -57,7 +57,7 @@ public class US_23 {
 
     }
 
-    @Test
+    @Test (priority = 2)
     public void projectDetail() throws InterruptedException {
 
           /* Launch browser
@@ -135,7 +135,7 @@ project name, description, date etc.
 
 
         Thread.sleep(1000);
-        projects.secondProject.click();
+        projects.fifthProject.click();
 
         softAssert.assertTrue(projects.fifthProjectDetails.isDisplayed(),"Fifth project detail page is not displayed");
         System.out.println("Beşinci proje detay sayfası başarıyla görüntülendi.");
