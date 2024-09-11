@@ -149,7 +149,7 @@ public WebElement contactButton;
 public WebElement addPropertyButton;
 
 // kullanıcı adı-soyadı yazan kısım
-@FindBy(xpath = "(//*[@class='login-item'])[1]")
+@FindBy(xpath = "//*[@href=\"https://qa.hauseheaven.com/account/dashboard\"]")
 public WebElement userDashboardButton;
 
 

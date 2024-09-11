@@ -5,6 +5,7 @@ import org.apache.xmlbeans.impl.xb.xsdschema.Attribute;
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
@@ -135,7 +136,8 @@ public class US_17 {
 
         //Profil ismi butonunun görünür olmadığını doğrula
         WebsiteMain websiteMain = new WebsiteMain();
-        Assert.assertFalse(websiteMain.addPropertyButton.isDisplayed());
+        ReusableMethods.bekle(1);
+        Assert.assertFalse(websiteMain.userDashboardButton.isDisplayed());
 
         //Logout butonunun görünür olmadığını doğrula
         Assert.assertFalse(websiteMain.LogoutButton.isDisplayed());

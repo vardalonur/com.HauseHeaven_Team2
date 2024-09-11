@@ -200,7 +200,7 @@ public class Projects {
     // KEVSER BAŞLANGIÇ
 
     // 'All Projects' sayfa başlığı yazısı
-    @FindBy(className = "col-lg-12 col-md-12")
+    @FindBy(xpath = "//h2[text()='All projects']")
     public WebElement allProjectsYazisi;
 
 
