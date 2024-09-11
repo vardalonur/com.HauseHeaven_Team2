@@ -590,7 +590,7 @@ public WebElement LogoutButton;
    //ÜMİT BİTİ
 
    //  ====================  Arzuv  ====================
-   // Clicking on every menu, navigates to a new page So teh XPaths' are below
+   // Clicking on every menu, navigates to a new page So the XPaths' are below
 
    @FindBy (xpath = "//*[@class='hero-search']")
    public WebElement homePageButton;
@@ -638,6 +638,14 @@ public WebElement LogoutButton;
    @FindBy (xpath = "//*[@class='fr-position']")
    public WebElement propertiesResultButton;
 
+   @FindBy (xpath = "//*[@class='ti-email']")
+   public WebElement agentsMessageBoxButton;
+
+   @FindBy (xpath = "//*[@class='fr-grid-footer-flex-right']")
+   public WebElement agentsViewTagButton;
+
+   @FindBy (xpath = "//*[@class='ipt-title']")
+   public WebElement agentsDetailPageButton;
 
 
 

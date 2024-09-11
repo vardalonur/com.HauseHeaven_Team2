@@ -1,5 +1,6 @@
 package Tests.Arzuv;
 
+import Pages.Agents;
 import Pages.WebsiteMain;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -47,7 +48,6 @@ public class US_24 {
         Assert.assertTrue(websiteMain.propertiesResultButton.isDisplayed());
 
         ReusableMethods.bekle(2);
-        driver.quit();
 
     }
 
@@ -55,12 +55,26 @@ public class US_24 {
     public void TC02(){
 
       // Page down for viewing an agent you are interested in
+        js.executeScript("window.scrollBy(0,2000)");
+        utilities.ReusableMethods.bekle(2);
 
       // Agent's name on card is displayed
+        Agents agents = new Agents();
+        agents.ilkAgentIsimElementi.isDisplayed();
+
       // Agent's contact info on card is displayed
+        agents.ilkAgentTelefonNo.isDisplayed();
+
       // Confirm message box is clickable
+        websiteMain.agentsMessageBoxButton.isDisplayed();
+
       // Confirm 'View' tag is clickable
+        websiteMain.agentsViewTagButton.isDisplayed();
+        websiteMain.agentsViewTagButton.click();
+
       // Navigate to new page
+        websiteMain.agentsDetailPageButton.isDisplayed();
+
     }
 
     @Test(priority = 3)
@@ -71,5 +85,7 @@ public class US_24 {
       // Agent's name is displayed
       // Agent's property result is displayed
       // Determine the properties are for 'SALE' or for 'RENT'
+
+        driver.quit();
     }
 }

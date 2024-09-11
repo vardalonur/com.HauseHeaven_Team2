@@ -19,6 +19,5 @@ public class US_10 {
       //  Navigate to a new page where you can read the rest of blog
       //  Click Blog menu again to see other blog posts
 
-
     }
 }

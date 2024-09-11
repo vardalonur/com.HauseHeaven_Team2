@@ -17,7 +17,7 @@ public class US_02 {
 WebDriver driver;
 
     @Test
-    public void TC01() throws InterruptedException{
+    public void TC01(){
 
          // Open the browser and Enter url https://qa.hauseheaven.com/
          Driver.getDriver().get(ConfigReader.getProperty("WebsiteMainPageURL"));
