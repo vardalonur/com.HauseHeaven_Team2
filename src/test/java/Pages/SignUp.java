@@ -33,10 +33,13 @@ public class SignUp {
 
     @FindBy(xpath = "(//*[@type='submit'])[1]")
     public WebElement registerButton;
-
+    /*
     @FindBy(className = "col-lg-12 col-md-12 col-sm-12")
     public WebElement yourCurrentCreditYazisi;
+    */
 
+    @FindBy(xpath = "//*[@class='col-lg-12 col-md-12 col-sm-12']")
+    public WebElement yourCurrentCreditYazisi;
 
 
 
