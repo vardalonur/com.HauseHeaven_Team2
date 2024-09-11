@@ -7,9 +7,9 @@ import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
 public class WebsiteMain {
-   public WebsiteMain () {     PageFactory.initElements(utilities.Driver.getDriver(), this);
-}
-// CAN BAŞLANGIÇ
+   public WebsiteMain () { PageFactory.initElements(Driver.getDriver(), this);}
+
+   // CAN BAŞLANGIÇ
 // Listing Butonu
 @FindBy (linkText ="Listing")
 public WebElement listingButton;
@@ -149,7 +149,7 @@ public WebElement contactButton;
 public WebElement addPropertyButton;
 
 // kullanıcı adı-soyadı yazan kısım
-@FindBy(xpath = "(//*[@class='login-item'])[1]")
+@FindBy(xpath = "//*[@href=\"https://qa.hauseheaven.com/account/dashboard\"]")
 public WebElement userDashboardButton;
 
 
@@ -158,29 +158,21 @@ public WebElement LogoutButton;
 
 //================== HEADER ORTAK ELEMENTLER BURAYA KADAR =======================
 
+
+
+
+
+
+
    // Anasayfa 'Find Accessible Homes To Rent' yazısı
-   /*
-   @FindBy(className = "hero-search")
-   public WebElement findAccessibleYazisi;
-   //h1[text()='Find accessible homes to rent']
-   */
+
    @FindBy(xpath = "//h1[text()='Find accessible homes to rent']")
    public WebElement findAccessibleYazisi;
-
-   /*
-   // 'Blog' sayfa başlığı yazısı
-   @FindBy(className = "col-lg-12 col-md-12")
-   public WebElement blogYazisi;
-   */
 
    // 'Blog' sayfa başlığı yazısı
    @FindBy(xpath = "//h1[text()='Blog']")
    public WebElement blogYazisi;
-   /*
-   // 'Contact' sayfa başlığı yazısı
-   @FindBy(className = "col-lg-12 col-md-12")
-   public WebElement contactYazisi;
-   */
+
    // 'Contact' sayfa başlığı yazısı
    @FindBy(xpath = "//h1[text()='Contact']")
    public WebElement contactYazisi;
@@ -192,6 +184,7 @@ public WebElement LogoutButton;
    // Header bölümü
    @FindBy(xpath = "//*[@class='nav-menus-wrapper']")
    public WebElement headerBolumu;
+
 
 
 
@@ -657,6 +650,18 @@ public WebElement LogoutButton;
 
    @FindBy (xpath = ("//*[@id='app']/section/div/div[2]/div/div/div[1]/div[1]/div/div[3]/h4/a"))
    public WebElement Blogatiklama;
+    
+   @FindBy (xpath = "//*[@class='fr-position']")
+   public WebElement propertiesResultButton;
+
+   @FindBy (xpath = "//*[@class='ti-email']")
+   public WebElement agentsMessageBoxButton;
+
+   @FindBy (xpath = "//*[@class='fr-grid-footer-flex-right']")
+   public WebElement agentsViewTagButton;
+
+   @FindBy (xpath = "//*[@class='ipt-title']")
+   public WebElement agentsDetailPageButton;
 
 
 
@@ -769,7 +774,6 @@ public WebElement LogoutButton;
    // HEADER NAME ELEMENT
    @FindBy(xpath = "(//li[@class='login-item'])[1]")
    public WebElement headerNameElement;
-
 
 
 
