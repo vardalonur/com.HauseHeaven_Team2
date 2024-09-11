@@ -12,9 +12,11 @@ public class US_16 {
     @Test
     public void newListening() throws InterruptedException {
 
-        /*Launch browser
+        /*
+        Launch browser
         Go to https://qa.hauseheaven.com/
         Log in as registered user by entering user email and password
+        Click on the name button
         Navigate to the properties listing page.
         Click on the 'Create' button.
         Enter required details into the form fields (e.g., property name, description, price, location, images).
@@ -22,6 +24,8 @@ public class US_16 {
         Check for a confirmation message that the listing is successfully added.
         Verify that the new listing appears in the listings page.
         */
+
+
 
 
         //Go to https://qa.hauseheaven.com/
