@@ -16,6 +16,10 @@ public class UserDashboard {
     }
 
 
+
+
+
+
 //SERPİL BAŞLANGIÇ
     /*
     !!!!!!!!!!!!!
@@ -159,6 +163,7 @@ public WebElement userDashboardPropertiesButton;
     @FindBy(xpath = "(//*[text()='Purchase'])[1]")
     public WebElement freeFirstPostButton;
 
+
     @FindBy(xpath = "//*[@id=\"app-real-estate\"]/div/div/div/div[1]/div/div[2]/div[1]/p/strong")
     public WebElement creditsNumber;
 
@@ -278,7 +283,60 @@ public WebElement userDashboardPropertiesButton;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     // KEVSER BİTİŞ
+
 
     //Gulnar basladı
 
@@ -286,6 +344,7 @@ public WebElement userDashboardPropertiesButton;
 
    @FindBy(xpath = "//*[@id='navigation']/div[2]/ul[2]/li[3]")
  public WebElement logoutButton;
+
 
 
 
@@ -453,6 +512,7 @@ public WebElement userDashboardPropertiesButton;
   
   
   
+
 
 
 

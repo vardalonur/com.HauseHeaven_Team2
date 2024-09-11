@@ -1,10 +1,7 @@
 package Tests.Damla;
 
 import Pages.AdminDashboard;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -114,7 +111,7 @@ public class US_31 {
         adminDashboard.categoriesCreateButton.click();
 
         //Fill in the mandatory fields in the form that opens.
-        adminDashboard.categoriesNameForm.sendKeys(ConfigReader.getProperty("ItemName"));
+        adminDashboard.categoriesNameForm.sendKeys(ConfigReader.getProperty("formName"));
 
           ReusableMethods.bekle(2);
           Select selectParent=new Select(adminDashboard.categoriesParentForm);
@@ -123,10 +120,7 @@ public class US_31 {
 
           actions.sendKeys(Keys.PAGE_DOWN).perform();
 
-          //ReusableMethods.bekle(2);
-          //Select selectStatus=new Select(adminDashboard.statusDropdownElementi);
-          //ReusableMethods.bekle(2);
-          //selectStatus.selectByValue("pending");
+          adminDashboard.statusDropdownElementi.submit();
 
         //Click save-exit.
 
@@ -167,23 +161,16 @@ public class US_31 {
         //Click on the “create” button to create a new category.
         adminDashboard.categoriesCreateButton.click();
 
+        //The category is deleted.
         adminDashboard.newCategory.click();
 
         adminDashboard.cetegoriesTrashButton.click();
 
         adminDashboard.ConfirmDelete.click();
 
-        By infoBoxLocator=By.xpath("/html/body/div[5]/div");
+        boolean isCategoryPresent=false;
 
-        WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
-        WebElement infoBox=wait.until(ExpectedConditions.visibilityOfElementLocated(infoBoxLocator));
-
-        String infoBoxText= infoBox.getText();
-        //Assert.assertTrue(infoBoxText,"Beklenen Mesaj");
-
-
-
-
+        Assert.assertFalse(isCategoryPresent,"kategori görüntülenemedi.");
 
 
     }

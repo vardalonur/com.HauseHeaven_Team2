@@ -90,9 +90,8 @@ public class Listing {
 
     @FindBy(xpath = "//a[@class='cl-facebook']")
     public WebElement facebookButton;
-
-
-
+    @FindBy(xpath = "//*[@id=\"app\"]/section/div[2]/div[1]/div[2]/div[1]/ul/li[2]/a")
+    public WebElement wishList;
 
 
 
@@ -100,6 +99,7 @@ public class Listing {
 
 
     //CAN YILMAZ'a ait buraya kadar  1-100
+
 //SERPİL ................\\
 
 
@@ -156,6 +156,89 @@ public class Listing {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // KEVSER
+
+    // 'Properties' sayfa başlığı yazısı
+    @FindBy(className = "ipt-title")
+    public WebElement propertiesYazisi;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // KEVSER BİTİŞ
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // Arzuv is writing here
 
 
 
