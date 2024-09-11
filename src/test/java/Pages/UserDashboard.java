@@ -49,14 +49,11 @@ public class UserDashboard {
     HEADER ELEMENTLERİ BURADA OLMAZ (ONUR)
     !!!!!!!!!!!!!
      */
-    // Header Elements\\
-    //Projects element
-    @FindBy (xpath = "/html/body/div[2]/div[2]/div/nav/div[2]/ul[1]/li[3]/a")
-    public WebElement projectsButton;
 
 
-
-  
+//UserDashboard Properties Button
+@FindBy(xpath = "//li[@class='active']")
+public WebElement userDashboardPropertiesButton;
   
   
   
