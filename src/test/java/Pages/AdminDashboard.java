@@ -312,6 +312,9 @@ public class AdminDashboard {
     @FindBy(xpath ="/html/body/div[2]/div[2]/div[3]/div[1]/div/div/div/ul/li[14]/a" )
     public WebElement payments;
 
+    @FindBy(xpath = "/html/body/div[2]/div[2]/div[3]/div[1]/div/div/div/ul/li[15]/a")
+    public WebElement locations;
+
         //Blog Menu Subsections//
 
     //Categories Button
@@ -344,22 +347,67 @@ public class AdminDashboard {
     @FindBy(xpath = "/html/body/div[2]/div[2]/div[3]/div[2]/div/div[2]/div/div[3]/div/div[2]/form/div[13]/div[2]/div/button[1]")
     public WebElement saveExit;
 
-    @FindBy(xpath = "/html/body/div[2]/div[2]/div[3]/div[2]/div/div[2]/div/div[2]/div/div[2]/div[2]/ul/li[2]/ul/li")
+    @FindBy(xpath = "(//a[@class='fetch-data category-name'])[2]")
     public WebElement newCategory;
 
-    @FindBy(xpath = "(//a[@class='btn btn-icon btn-danger deleteDialog'])[3]")
+    @FindBy(xpath = "(//a[@class='btn btn-icon btn-danger deleteDialog'])[2]")
     public WebElement cetegoriesTrashButton;
 
     @FindBy(xpath = "//button[@class='float-end btn btn-danger delete-crud-entry']")
     public WebElement ConfirmDelete;
 
-    @FindBy(xpath = "/html/body/div[5]/div")
-    public WebElement toastMessage;
+
 
     //PAYMENTS Menu
        //Transactions
     @FindBy(xpath = "/html/body/div[2]/div[2]/div[3]/div[1]/div/div/div/ul/li[14]/ul/li[1]/a")
     public WebElement transactionsAltBaslik;
+
+    @FindBy(xpath = "/html/body/div[2]/div[2]/div[3]/div[2]/div/div[2]/div[1]/div[2]/div[2]/div/div/div[4]/div[3]/span")
+    public WebElement infoBox;
+
+    //LOCATIONS MENU
+         //Cities
+    @FindBy(id = "cms-plugins-city")
+    public WebElement cities;
+
+    @FindBy(xpath = "//table[@class='table table-striped table-hover vertical-middle dataTable no-footer dtr-inline']")
+    public WebElement citiesTable;
+
+    @FindBy(xpath = "//button[@class='btn btn-secondary action-item']")
+    public WebElement citiesCreateButton;
+
+    @FindBy(xpath = "/html/body/div[2]/div[2]/div[3]/div[2]/div/div[2]/form/div[2]/div[1]/div[1]/div/div[1]/input")
+    public WebElement citiesFormName;
+
+    @FindBy(xpath = "/html/body/div[2]/div[2]/div[3]/div[2]/div/div[2]/form/div[2]/div[1]/div[1]/div/div[2]/input")
+    public WebElement citiesFormSlug;
+
+    @FindBy(xpath = "//*[@class='form-control select-search-full ui-select select2-hidden-accessible']")
+    public WebElement countryDropdownMenu;
+
+    @FindBy(xpath = "(//button[@class='btn btn-info'])[1]")
+    public WebElement citiesSaveExit;
+
+    @FindBy(xpath = "(//a[@class='btn btn-icon btn-sm btn-danger deleteDialog'])[1]")
+    public WebElement citiesDeleteButton;
+
+    @FindBy(xpath = "(//a[@class='btn btn-icon btn-sm btn-primary'])[1]")
+    public WebElement citiesEditButton;
+
+    @FindBy(xpath = "(//div[@class='checkbox checkbox-primary table-checkbox'])[1]")
+    public WebElement citiesCheckBox;
+
+    @FindBy(xpath = "//button[@class='float-end btn btn-danger delete-crud-entry']")
+    public WebElement deletecheckbutton;
+
+
+
+
+
+
+
+
 
 
 
@@ -460,6 +508,8 @@ public class AdminDashboard {
         //SERPİL BAŞLANGIÇ
 
 
+
+
 //SERPİL//Admindashboard Home Page//
 
     //Locations Button
@@ -479,6 +529,7 @@ public class AdminDashboard {
     // 3. Cities Button
     @FindBy(id = "cms-plugins-city")
     public WebElement citiesButton;
+
 
 
 

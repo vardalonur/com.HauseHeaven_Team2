@@ -20,7 +20,7 @@ public class US_06 {
     public void TC01(){
 
         //Go to HauseHeven Home Page
-        Driver.getDriver().get("https://qa.hauseheaven.com/");
+        Driver.getDriver().get(ConfigReader.getProperty("WebsiteMainPageURL"));
 
         //Click on "Listing"
         WebsiteMain webSiteMain = new WebsiteMain();
@@ -58,7 +58,7 @@ public class US_06 {
     public void TC02(){
         Actions actions = new Actions(Driver.getDriver());
         //Go to HauseHeven Home Page
-        Driver.getDriver().get("https://qa.hauseheaven.com/");
+        Driver.getDriver().get(ConfigReader.getProperty("WebsiteMainPageURL"));
 
         //Click on "Listing"
         WebsiteMain webSiteMain = new WebsiteMain();
@@ -101,7 +101,7 @@ public class US_06 {
     public void TC03(){
         Actions actions = new Actions(Driver.getDriver());
         //Go to HauseHeven Home Page
-        Driver.getDriver().get("https://qa.hauseheaven.com/");
+        Driver.getDriver().get(ConfigReader.getProperty("WebsiteMainPageURL"));
 
         //Click on "Listing"
         WebsiteMain webSiteMain = new WebsiteMain();
@@ -156,10 +156,7 @@ public class US_06 {
        actions.sendKeys(Keys.PAGE_DOWN).perform();
        utilities.ReusableMethods.bekle(2);
         actions.sendKeys(Keys.PAGE_DOWN).perform();
-      //  utilities.ReusableMethods.bekle(2);
-      //  actions.sendKeys(Keys.PAGE_DOWN).perform();
-      //  js.executeScript("window.scrollBy(0,1700)");
-      //  listing.findNewHomeButton.click();
+
         //Validate the Result
 
         String expectedResult = "0";
@@ -174,7 +171,7 @@ public class US_06 {
     public void TC04(){
         Actions actions = new Actions(Driver.getDriver());
         //Go to HauseHeven Home Page
-        Driver.getDriver().get("https://qa.hauseheaven.com/");
+        Driver.getDriver().get(ConfigReader.getProperty("WebsiteMainPageURL"));
 
         //Click on "Listing"
         WebsiteMain webSiteMain = new WebsiteMain();
@@ -191,13 +188,10 @@ public class US_06 {
         listing.sortByButtonInput.sendKeys(Keys.ENTER);
         //Create softAssert Object
         SoftAssert softAssert = new SoftAssert();
-     //  JavascriptExecutor js = (JavascriptExecutor) driver;
-     //  js.executeScript("arguments[0].scrollIntoView(true);", listing.headOfFirstProperty);
 
         utilities.ReusableMethods.bekle(2);
         actions.sendKeys(Keys.PAGE_DOWN).perform();
         String expectedTitle = "001";
-
 
         String actualTitle = listing.headOfFirstProperty.getText();
 

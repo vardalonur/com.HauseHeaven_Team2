@@ -7,9 +7,9 @@ import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
 public class WebsiteMain {
-   public WebsiteMain () {     PageFactory.initElements(utilities.Driver.getDriver(), this);
-}
-// CAN BAŞLANGIÇ
+   public WebsiteMain () { PageFactory.initElements(Driver.getDriver(), this);}
+
+   // CAN BAŞLANGIÇ
 // Listing Butonu
 @FindBy (linkText ="Listing")
 public WebElement listingButton;
@@ -149,13 +149,41 @@ public WebElement contactButton;
 public WebElement addPropertyButton;
 
 // kullanıcı adı-soyadı yazan kısım
-@FindBy(xpath = "(//*[@class='login-item'])[1]")
+@FindBy(xpath = "//*[@href=\"https://qa.hauseheaven.com/account/dashboard\"]")
 public WebElement userDashboardButton;
 
 
 @FindBy(xpath = "(//*[@class='login-item'])[2]")
 public WebElement LogoutButton;
 
+//================== HEADER ORTAK ELEMENTLER BURAYA KADAR =======================
+
+
+
+
+
+
+
+   // Anasayfa 'Find Accessible Homes To Rent' yazısı
+
+   @FindBy(xpath = "//h1[text()='Find accessible homes to rent']")
+   public WebElement findAccessibleYazisi;
+
+   // 'Blog' sayfa başlığı yazısı
+   @FindBy(xpath = "//h1[text()='Blog']")
+   public WebElement blogYazisi;
+
+   // 'Contact' sayfa başlığı yazısı
+   @FindBy(xpath = "//h1[text()='Contact']")
+   public WebElement contactYazisi;
+
+   // Add Property sayfası title text box
+   @FindBy(xpath = "(//*[@class='form-control'])[1]")
+   public WebElement titleTextBox;
+
+   // Header bölümü
+   @FindBy(xpath = "//*[@class='nav-menus-wrapper']")
+   public WebElement headerBolumu;
 
 
 
@@ -587,10 +615,14 @@ public WebElement LogoutButton;
 
 
 
-   //ÜMİT BİTİ
+
+   //ÜMİT BİTİŞ
+
+
+
 
    //  ====================  Arzuv  ====================
-   // Clicking on every menu, navigates to a new page So the XPaths' are below
+   // Clicking on every menu, navigates to a new page XPaths'
 
    @FindBy (xpath = "//*[@class='hero-search']")
    public WebElement homePageButton;
@@ -598,7 +630,7 @@ public WebElement LogoutButton;
    @FindBy (xpath = "//*[@class ='ipt-title']")
    public WebElement propertiesPageButton;
 
-   @FindBy (xpath = "//*[@id=\'app\']/div/div/div/div/div/h2")
+   @FindBy (xpath = "//*[@id='app']/div/div/div/div/div/h2")
    public WebElement allProjectsPageButton;
 
    @FindBy (xpath = "//*[@class ='ipt-title']")
@@ -613,28 +645,12 @@ public WebElement LogoutButton;
    @FindBy (xpath = "//*[@class='text-center']")
    public WebElement signUpPageButton;
 
-    // Below are the menu locators
-   @FindBy (xpath = "//*[@class='current-menu-item']")
-   public WebElement HomeButton;
+   @FindBy (xpath = ("//*[@id='navigation']/div[2]/ul[1]/li[5]/a"))
+   public  WebElement getBlogButton;
 
-   @FindBy (xpath = "//*[@class='nav-submenu-open']")
-   public WebElement ListingButton;
-
-   @FindBy (xpath = "//*[@class='current-menu-item nav-submenu-open']")
-   public WebElement ProjectsButton;
-
-   @FindBy (xpath = "//*[@class='current-menu-item nav-submenu-open']")
-   public WebElement AgentsButton;
-
-   @FindBy (xpath = "//*[@href='https://qa.hauseheaven.com/blog'][2]")
-   public WebElement BlogButton;
-
-   @FindBy (xpath = "//*[@class='current-menu-item nav-submenu-open']")
-   public WebElement ContactButton;
-
-   @FindBy (xpath = "//*[@class='current-menu-item']")
-   public WebElement SignupButton;
-
+   @FindBy (xpath = ("//*[@id='app']/section/div/div[2]/div/div/div[1]/div[1]/div/div[3]/h4/a"))
+   public WebElement Blogatiklama;
+    
    @FindBy (xpath = "//*[@class='fr-position']")
    public WebElement propertiesResultButton;
 
@@ -751,12 +767,23 @@ public WebElement LogoutButton;
 
 
 
-
-
-
-
-
-
-
    // arzuv end
+
+   //SERPİL BAŞLANGIÇ.....\\
+
+   // HEADER NAME ELEMENT
+   @FindBy(xpath = "(//li[@class='login-item'])[2]")
+   public WebElement headerNameElement;
+
+
+
+
+
+
+
+
+
+
+
+  
 }

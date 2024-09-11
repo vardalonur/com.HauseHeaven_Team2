@@ -21,7 +21,7 @@ public class US_07 {
     public void TC01(){
         Actions actions = new Actions(Driver.getDriver());
         //Go to HauseHeven Home Page
-        Driver.getDriver().get("https://qa.hauseheaven.com/");
+        Driver.getDriver().get(ConfigReader.getProperty("WebsiteMainPageURL"));
 
         //Click on "Listing"
         WebsiteMain webSiteMain = new WebsiteMain();
@@ -64,7 +64,7 @@ public class US_07 {
     public void TC02(){
         Actions actions = new Actions(Driver.getDriver());
         //Go to HauseHeven Home Page
-        Driver.getDriver().get("https://qa.hauseheaven.com/");
+        Driver.getDriver().get(ConfigReader.getProperty("WebsiteMainPageURL"));
 
         //Click on "Listing"
         WebsiteMain webSiteMain = new WebsiteMain();
@@ -83,7 +83,17 @@ public class US_07 {
 
         //Click on the first property of the page with "View" Button
         actions.sendKeys(Keys.PAGE_DOWN).perform();
+        utilities.ReusableMethods.bekle(1);
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        utilities.ReusableMethods.bekle(1);
+
         listing.viewButton.get(0).click();
+
+        js.executeScript("window.scrollBy(0,300)");
+        utilities.ReusableMethods.bekle(1);
+        listing.wishList.click();
+
+        utilities.ReusableMethods.bekle(3);
         Driver.quitDriver();
     }
     @Test
@@ -93,11 +103,21 @@ public class US_07 {
         //Go to https://qa.hauseheaven.com/login
         Driver.getDriver().get(ConfigReader.getProperty("UserLoginPageUrl"));
         UserDashboard userDashboard = new UserDashboard();
+
+        //Enter invalid username and password
+        userDashboard.userEmailUsernameForm.sendKeys("invalidmail@gmail.com");
+        userDashboard.userPasswordForm.sendKeys("invalidpassword");
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,200)");
+        userDashboard.userLogInButton.click();
+
         //Enter valid username and password
+        js.executeScript("window.scrollBy(0, -200)");
+        userDashboard.userEmailUsernameForm.clear();
+        userDashboard.userPasswordForm.clear();
         userDashboard.userEmailUsernameForm.sendKeys(ConfigReader.getProperty("WebsiteGecerliEmail"));
         userDashboard.userPasswordForm.sendKeys(ConfigReader.getProperty("WebsiteGecerliPassword"));
 
-        JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(0,200)");
         userDashboard.userLogInButton.click();
 
@@ -130,6 +150,7 @@ public class US_07 {
         utilities.ReusableMethods.bekle(1);
         actions.sendKeys(Keys.PAGE_DOWN).perform();
         actions.sendKeys(Keys.PAGE_DOWN).perform();
+        utilities.ReusableMethods.bekle(1);
         //Comment it and Submit Review
         listing.commentTextArea.sendKeys("Comment");
         utilities.ReusableMethods.bekle(2);
@@ -139,8 +160,8 @@ public class US_07 {
     @Test
     public void TC04(){
         Actions actions = new Actions(Driver.getDriver());
-        //Go to HauseHeven Home Page
-        Driver.getDriver().get("https://qa.hauseheaven.com/");
+        //Go to HauseHeaven Home Page
+        Driver.getDriver().get(ConfigReader.getProperty("WebsiteMainPageURL"));
 
         //Click on "Listing"
         WebsiteMain webSiteMain = new WebsiteMain();

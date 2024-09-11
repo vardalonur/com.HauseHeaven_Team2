@@ -25,12 +25,24 @@ public class US_19 {
         //Go to https://qa.hauseheaven.com/login
         Driver.getDriver().get(ConfigReader.getProperty("UserLoginPageUrl"));
         UserDashboard userDashboard = new UserDashboard();
+
+        //Enter invalid username and password
+        userDashboard.userEmailUsernameForm.sendKeys("invalidmail@gmail.com");
+        userDashboard.userPasswordForm.sendKeys("invalidpassword");
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,200)");
+        userDashboard.userLogInButton.click();
+
         //Enter valid username and password
+        js.executeScript("window.scrollBy(0, -200)");
+        userDashboard.userEmailUsernameForm.clear();
+        userDashboard.userPasswordForm.clear();
+
         userDashboard.userEmailUsernameForm.sendKeys(ConfigReader.getProperty("WebsiteGecerliEmail"));
         userDashboard.userPasswordForm.sendKeys(ConfigReader.getProperty("WebsiteGecerliPassword"));
 
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("window.scrollBy(0,200)");
+        utilities.ReusableMethods.bekle(1);
+        js.executeScript("window.scrollBy(0,250)");
         userDashboard.userLogInButton.click();
         //Enter test data in body section
         utilities.ReusableMethods.bekle(3);
@@ -63,6 +75,7 @@ public class US_19 {
         SoftAssert softAssert = new SoftAssert();
 
         String expectedTitle = "0 Results";
+        utilities.ReusableMethods.bekle(2);
         String actualTitle = userDashboard.numberOfResultBodySearch.getText();
 
         softAssert.assertEquals(actualTitle, expectedTitle);
