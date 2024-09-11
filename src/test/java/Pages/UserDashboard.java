@@ -16,6 +16,10 @@ public class UserDashboard {
     }
 
 
+
+
+
+
 //SERPİL BAŞLANGIÇ
     /*
     !!!!!!!!!!!!!
@@ -45,14 +49,11 @@ public class UserDashboard {
     HEADER ELEMENTLERİ BURADA OLMAZ (ONUR)
     !!!!!!!!!!!!!
      */
-    // Header Elements\\
-    //Projects element
-    @FindBy (xpath = "/html/body/div[2]/div[2]/div/nav/div[2]/ul[1]/li[3]/a")
-    public WebElement projectsButton;
 
 
-
-  
+//UserDashboard Properties Button
+@FindBy(xpath = "//li[@class='active']")
+public WebElement userDashboardPropertiesButton;
   
   
   
@@ -158,8 +159,10 @@ public class UserDashboard {
     @FindBy(xpath = "//*[@title='credits']")
     public WebElement buyCreditsButton;
 
+
     @FindBy(xpath = "(//*[text()='Purchase'])[1]")
     public WebElement freeFirstPostButton;
+
 
     @FindBy(xpath = "//*[@id=\"app-real-estate\"]/div/div/div/div[1]/div/div[2]/div[1]/p/strong")
     public WebElement creditsNumber;
@@ -280,7 +283,60 @@ public class UserDashboard {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     // KEVSER BİTİŞ
+
 
     //Gulnar basladı
 
@@ -288,6 +344,7 @@ public class UserDashboard {
 
    @FindBy(xpath = "//*[@id='navigation']/div[2]/ul[2]/li[3]")
  public WebElement logoutButton;
+
 
 
 
@@ -455,6 +512,7 @@ public class UserDashboard {
   
   
   
+
 
 
 

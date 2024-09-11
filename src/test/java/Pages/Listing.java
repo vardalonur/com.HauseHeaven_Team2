@@ -90,9 +90,8 @@ public class Listing {
 
     @FindBy(xpath = "//a[@class='cl-facebook']")
     public WebElement facebookButton;
-
-
-
+    @FindBy(xpath = "//*[@id=\"app\"]/section/div[2]/div[1]/div[2]/div[1]/ul/li[2]/a")
+    public WebElement wishList;
 
 
 
@@ -104,7 +103,6 @@ public class Listing {
 
 //SERPİL ................\\
 
-//Projects Page\\
 
 
 
@@ -203,7 +201,28 @@ public class Listing {
 
 
 
-    // Arzuv is writing here
 
+
+
+    // KEVSER
+
+    // 'Properties' sayfa başlığı yazısı
+    @FindBy(className = "ipt-title")
+    public WebElement propertiesYazisi;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // KEVSER BİTİŞ
 
 }
