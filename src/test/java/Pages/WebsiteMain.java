@@ -132,7 +132,7 @@ public WebElement signUpButton;
 
 @FindBy(xpath = "//*[@href=\"https://qa.hauseheaven.com/login\"]")
 public WebElement signInButton;
-/*
+
 @FindBy(xpath = "(//*[@href=\"https://qa.hauseheaven.com/\"])[3]")
 public WebElement homeButton;
 
@@ -152,7 +152,7 @@ public WebElement addPropertyButton;
 @FindBy(xpath = "(//*[@class='login-item'])[1]")
 public WebElement userDashboardButton;
 
-*/
+
 @FindBy(xpath = "(//*[@class='login-item'])[2]")
 public WebElement LogoutButton;
 
@@ -590,7 +590,7 @@ public WebElement LogoutButton;
    //ÜMİT BİTİ
 
    //  ====================  Arzuv  ====================
-   // Clicking on every menu, navigates to a new page XPaths'
+   // Clicking on every menu, navigates to a new page So teh XPaths' are below
 
    @FindBy (xpath = "//*[@class='hero-search']")
    public WebElement homePageButton;
@@ -612,6 +612,32 @@ public WebElement LogoutButton;
 
    @FindBy (xpath = "//*[@class='text-center']")
    public WebElement signUpPageButton;
+
+    // Below are the menu locators
+   @FindBy (xpath = "//*[@class='current-menu-item']")
+   public WebElement HomeButton;
+
+   @FindBy (xpath = "//*[@class='nav-submenu-open']")
+   public WebElement ListingButton;
+
+   @FindBy (xpath = "//*[@class='current-menu-item nav-submenu-open']")
+   public WebElement ProjectsButton;
+
+   @FindBy (xpath = "//*[@class='current-menu-item nav-submenu-open']")
+   public WebElement AgentsButton;
+
+   @FindBy (xpath = "//*[@href='https://qa.hauseheaven.com/blog'][2]")
+   public WebElement BlogButton;
+
+   @FindBy (xpath = "//*[@class='current-menu-item nav-submenu-open']")
+   public WebElement ContactButton;
+
+   @FindBy (xpath = "//*[@class='current-menu-item']")
+   public WebElement SignupButton;
+
+   @FindBy (xpath = "//*[@class='fr-position']")
+   public WebElement propertiesResultButton;
+
 
 
 
