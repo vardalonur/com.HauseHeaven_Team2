@@ -28,7 +28,7 @@ public class US_17 {
         userDashboard.userEmailUsernameForm.sendKeys(ConfigReader.getProperty("kevsGecerliEmail"));
 
         //Şifre gir
-        userDashboard.userPasswordForm.sendKeys(ConfigReader.getProperty("kevseGecerliPassword"));
+        userDashboard.userPasswordForm.sendKeys(ConfigReader.getProperty("kevsGecerliPassword"));
 
         //Login butonuna tıkla
         userDashboard.userLogInButton.click();
@@ -110,7 +110,7 @@ public class US_17 {
         userDashboard.userEmailUsernameForm.sendKeys(ConfigReader.getProperty("kevsGecerliEmail"));
 
         //Şifre gir
-        userDashboard.userPasswordForm.sendKeys(ConfigReader.getProperty("kevseGecerliPassword"));
+        userDashboard.userPasswordForm.sendKeys(ConfigReader.getProperty("kevsGecerliPassword"));
 
         //Login butonuna tıkla
         userDashboard.userLogInButton.click();
