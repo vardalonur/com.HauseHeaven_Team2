@@ -2,6 +2,7 @@ package Tests.Serpil;
 
 import Pages.Listing;
 import Pages.UserDashboard;
+import Pages.WebsiteMain;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import utilities.ConfigReader;
@@ -32,6 +33,7 @@ Verify that the new listing appears in the listings page.
         SoftAssert softAssert = new SoftAssert();
         UserDashboard userDashboard = new UserDashboard();
         Listing listing=new Listing();
+        WebsiteMain websiteMain= new WebsiteMain();
 
         //Log in as registered user by entering user email and password
         userDashboard.homePageSignInButton.click();
@@ -42,11 +44,7 @@ Verify that the new listing appears in the listings page.
 
 
         //Click on the name button
-
-
-
-
-
+        websiteMain.headerNameElement.click();
 
         //Navigate to the properties listing page.
 
