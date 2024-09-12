@@ -1,8 +1,10 @@
 package Tests.Kevser;
 
 import Pages.Listing;
+import Pages.SignUp;
 import Pages.UserDashboard;
 import Pages.WebsiteMain;
+import com.github.javafaker.Faker;
 import org.apache.xmlbeans.impl.xb.xsdschema.Attribute;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.interactions.Actions;
@@ -110,23 +112,87 @@ public class US_22 {
     @Test
     public void TC03(){
         //Browser aç ve https://qa.hauseheaven.com/  adersine git
-        //Sign In butonuna tıkla
-        //Email gir
-        //Şifre gir
-        //Login butonuna tıkla
+        Driver.getDriver().get(ConfigReader.getProperty("WebsiteMainPageURL"));
+
+        //Sign Up butonuna tıkla
+        WebsiteMain websiteMain = new WebsiteMain();
+        websiteMain.signUpButton.click();
+
+        //Firs name text box'ına isim gir
+        SignUp signUp = new SignUp();
+        signUp.firsNameBox.sendKeys("Kevser");
+
+        //Last name text box'ına soyisim gir
+        signUp.lastNameBox.sendKeys("Test");
+
+        //Email text box'ına mail adresi gir
+        Faker faker = new Faker();
+        signUp.emailBox.sendKeys(faker.internet().emailAddress());
+
+        //Username text box'ına kullanıcı adı gir
+        signUp.usernameBox.sendKeys(faker.funnyName().name());
+
+        //Password text box'ına şifre gir
+        signUp.passwordBox.sendKeys("Kevser1.");
+
+        //Confirm Pasword text box'ına aynı şifreyi tekrar gir
+        signUp.confirmPasswordBox.sendKeys("Kevser1.");
+
+        ReusableMethods.bekle(1);
+
+        //Register butonuna tıkla
+        signUp.registerButton.click();
+
         //Listing butonuna tıkla
+        websiteMain.listingButton.click();
+
         //Sayfayı kaydır
+        Listing listing = new Listing();
+        JavascriptExecutor jse = (JavascriptExecutor) Driver.getDriver();
+        jse.executeScript("arguments[0].scrollIntoView({block: 'center'});",listing.ilkViewButton);
+        ReusableMethods.bekle(1);
+
         //İlk ilanda 'View' butonuna tıkla
-        //Sayfayı kaydır
+        listing.ilkViewButton.click();
+
+        //'Write a Review' bölümü görünene kadar sayfayı kaydır
+        jse.executeScript("arguments[0].scrollIntoView({block: 'center'});",listing.writeAReviewYazisi);
+        ReusableMethods.bekle(1);
+
         // 'Service' seçeneğinde 3.yıldıza tıkla
+        listing.serviceYildiz3.click();
+
         // 'Value for Money' seçeneğinde 3.yıldıza tıkla
+        listing.valueForMoneyYildiz3.click();
+
         // 'Location' seçeneğinde 3.yıldıza tıkla
+        listing.locationYildiz3.click();
+
         // 'Cleanliness' seçeneğinde 3.yıldıza tıkla
+        listing.cleanlinessYildiz3.click();
+
         // 'Average Rating' 3 olduğunu doğrula
+        String expectedAverageRating = "3.00";
+        String actualAverageRating = listing.averageRatingYazisi.getText();
+
+        Assert.assertEquals(actualAverageRating,expectedAverageRating);
+
         // 'Messages' kutusuna mesaj yaz
+        listing.messagesBox.sendKeys("hi!");
+
         //Submit Review butonuna tıkla
+        listing.submitReview.click();
+
         //Sayfayı kaydır
+        jse.executeScript("arguments[0].scrollIntoView({block: 'center'});",listing.sonYorum);
+        ReusableMethods.bekle(1);
+
         //Yazılan mesajın görüntülendiğini doğrula
+        String expectedSonYorum = "hi!";
+        String actualSonYorum = listing.sonYorum.getText();
+        Assert.assertEquals(actualSonYorum,expectedSonYorum);
+
         //Sayfayı kapat
+        Driver.quitDriver();
     }
 }

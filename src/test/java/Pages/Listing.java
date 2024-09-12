@@ -225,6 +225,39 @@ public class Listing {
     @FindBy(xpath = "(//*[@class='wishlist-count'])[1]")
     public WebElement wishlistSayisi;
 
+    // 'Write a Review' yazisi
+    @FindBy(xpath = "(//*[@class='property_block_wrap_header'])[7]")
+    public WebElement writeAReviewYazisi;
+
+    // 'Service' bölümü 3.yıldız
+    @FindBy(xpath = "(//*[@data-rating-value='3'])[1]")
+    public WebElement serviceYildiz3;
+
+    // 'Value For Money' bölümü 3.yıldız
+    @FindBy(xpath = "(//*[@data-rating-value='3'])[2]")
+    public WebElement valueForMoneyYildiz3;
+
+    // 'Location' bölümü 3.yıldız
+    @FindBy(xpath = "(//*[@data-rating-value='3'])[3]")
+    public WebElement locationYildiz3;
+
+    // 'Cleanliness' bölümü 3.yıldız
+    @FindBy(xpath = "(//*[@data-rating-value='3'])[4]")
+    public WebElement cleanlinessYildiz3;
+
+    // 'Average Rating' yazısı
+    @FindBy(xpath = "//*[@class='high user_commnet_avg_rate']")
+    public WebElement averageRatingYazisi;
+
+    // 'Messages' kutusu
+    @FindBy(xpath = "//*[@name='comment']")
+    public WebElement messagesBox;
+
+    // son yorum
+    @FindBy(xpath = "(//*[@class='comment-text'])[1]")
+    public WebElement sonYorum;
+
+
     // KEVSER BİTİŞ
 
 
