@@ -2,7 +2,9 @@ package Tests.Kevser;
 
 import Pages.*;
 import org.apache.xmlbeans.impl.xb.xsdschema.Attribute;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -11,6 +13,8 @@ import utilities.Driver;
 import utilities.ReusableMethods;
 
 import java.util.List;
+
+import static utilities.Driver.driver;
 
 public class US_17 {
 
@@ -136,11 +140,14 @@ public class US_17 {
 
         //Profil ismi butonunun görünür olmadığını doğrula
         WebsiteMain websiteMain = new WebsiteMain();
-        ReusableMethods.bekle(1);
-        Assert.assertFalse(websiteMain.userDashboardButton.isDisplayed());
+        List<WebElement> negatifElementleri = driver.
+                        findElements(By.xpath("//*[@href=\"https://qa.hauseheaven.com/account/dashboard\"]"));
+        Assert.assertTrue(negatifElementleri.isEmpty(), "Element mevcut ve görünür.");
 
         //Logout butonunun görünür olmadığını doğrula
-        Assert.assertFalse(websiteMain.LogoutButton.isDisplayed());
+        List<WebElement> negatifElementleri2 = driver.
+                findElements(By.xpath("(//*[@class='login-item'])[2]"));
+        Assert.assertTrue(negatifElementleri2.isEmpty(), "Element mevcut ve görünür.");
 
         //Sayfayı kapat
         Driver.quitDriver();
