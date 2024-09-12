@@ -430,6 +430,15 @@ public class WebsiteMain {
    @FindBy(xpath = "//a[@title='Pinterest']")
    public WebElement pinterestIcon;
 
+    //   ============= agents =============
+    @FindBy (xpath = "//*[@id=\'app\']/section/div/div[1]/div[5]/div/div[1]/div[2]/div[1]/h5/a")
+    public WebElement fifthAgentsNameButton;
+    @FindBy (xpath = "//*[@src='https://qa.hauseheaven.com/storage/ac5.jpg']")
+    public WebElement fifthAgentImgButton;
+    @FindBy (xpath = "//*[@class='agency-name']")
+    public WebElement agentHazelPageButton;
+    @FindBy (xpath = "//*[@class='prt-detio']")
+    public WebElement hazelsPropertyButton;
 
 
 
