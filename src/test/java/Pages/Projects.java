@@ -66,38 +66,6 @@ public class Projects {
     @FindBy(xpath = "(//h4[@class='property_block_title'])[5]")
     public WebElement fifthProjectDetails;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     // can yilmaz
     @FindBy (xpath = "//*[@id=\"clOne\"]/div/ul/li[4]/span")
     public WebElement typeOfProjectinProjectPage;
@@ -124,81 +92,6 @@ public class Projects {
     public WebElement villa;
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     // KEVSER BAŞLANGIÇ
     /*
     // 'All Projects' sayfa başlığı yazısı
@@ -209,27 +102,6 @@ public class Projects {
     @FindBy(xpath = "//*[@class='col-lg-12 col-md-12']")
     public WebElement allProjectsYazisi;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     // KEVSER BİTİŞ
-
-
-
-
-
-
-
 
 }
