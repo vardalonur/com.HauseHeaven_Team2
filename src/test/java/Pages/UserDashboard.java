@@ -45,11 +45,6 @@ public class UserDashboard {
     public WebElement userLogInButton;
 
 
-    /*
-    !!!!!!!!!!!!!
-    HEADER ELEMENTLERİ BURADA OLMAZ (ONUR)
-    !!!!!!!!!!!!!
-     */
 
 
 //UserDashboard Button
@@ -76,9 +71,9 @@ public WebElement descriptionBox;
 @FindBy(xpath = "//div[@role='textbox']")
 public WebElement contentBox;
 
-@FindBy(xpath = "//span[@title='Newark']")
+@FindBy(xpath = "(//span[@class='select2-selection__rendered'])[1]")
 public WebElement cityBox;
-  
+
  @FindBy(xpath = "//input[@placeholder='Property location']")
  public WebElement propertyLocationBox;
 
@@ -88,43 +83,82 @@ public WebElement latitudeBox;
 @FindBy(xpath = "//input[@name='longitude']")
 public WebElement longitudeBox;
 
-@FindBy(xpath = "(//input[@class='form-control'])[6]")
+@FindBy(xpath = "//input[@name='number_bedroom']")
 public WebElement numberBedroomsBox;
 
 
-@FindBy(xpath = "")
+@FindBy(xpath = "//input[@name='number_bathroom']")
 public WebElement numberBathroomsBox;
 
-@FindBy(xpath = "(//input[@class='form-control'])[8]")
+@FindBy(xpath = "//input[@name='number_floor']")
 public WebElement numberFloorsBox;
 
-@FindBy(xpath = "(//input[@class='form-control'])[8]")
+@FindBy(xpath = "//input[@name='square']")
 public WebElement squareBox;
-@FindBy(id = "price-number")
+@FindBy(xpath = "//input[@name='price']")
 public WebElement priceNumberBox;
-@FindBy(id="select2-currency_id-container")
-public WebElement currencyBox;
 
 @FindBy(xpath = "//select[@name='type_id']")
 public WebElement typeButton;
 
+@FindBy(xpath = "(//label[@class='checkbox-inline'])[1]")
+public WebElement featuresWifi;
+
+@FindBy(xpath = "(//label[@class='checkbox-inline'])[2]")
+public WebElement featuresParking;
+
+@FindBy (xpath = "(//td[@class='column-key-id sorting_1 dtr-control'])[1]")
+public WebElement listingIdNo;
+
+@FindBy(xpath = "(//a[@class='btn btn-icon btn-sm btn-primary'])[1]")
+public WebElement editButton;
+
+@FindBy(xpath = "(//a[@class='btn btn-icon btn-sm btn-danger deleteDialog'])[1]")
+public WebElement deleteButton;
+
+@FindBy(xpath = "(//div[@class='modal-header bg-danger'])[1]")
+public WebElement confirmationText;
+
+@FindBy(xpath = "//button[@class='float-end btn btn-danger delete-crud-entry']")
+public WebElement confirmationdeleteButton;
 
 
+////////////////
+
+    @FindBy(xpath = "//div[@class='col-lg-6 col-md-6 mt-3']")
+    public WebElement aboutusPage;
+
+    @FindBy(xpath = "//div[@class='contact-info']")
+    public WebElement contactUsPage;
+
+    @FindBy(xpath = "//div[@class='col text-center']")
+    public WebElement termsConditionsPage;
 
 
+    @FindBy(xpath = "//div[@class='item-sorting-box']")
+    public WebElement allPropertiesPage;
+
+    @FindBy(xpath = "//div[@class='item-sorting-box']")
+    public WebElement housesForSailPage;
+
+    @FindBy(xpath = "//div[@class='item-sorting-box']")
+    public WebElement housesforRentPage;
 
 
+    //@FindBy(xpath = "//a[@title='The Benefits Of Investing In Emerging Real Estate Markets']")
+    //public WebElement newsFirstElement;
+    //@FindBy(xpath = "//a[@title='A Guide To Negotiating The Best Deal On Your Dream Home']")
+    //public WebElement newsSecondElement;
+    //@FindBy(xpath = "//a[@title='The Rise Of Sustainable Homes: Building For A Greener Future']")
+    //public WebElement newsThirdElement;
 
+    @FindBy(xpath = "//div[@class='sec-heading center']")
+    public WebElement newsFirstPage;
+    @FindBy(xpath = "//div[@class='sec-heading center']")
+    public WebElement newsSecondPage;
 
-
-
-
-
-
-
-
-
-
+    @FindBy(xpath = "//li[@class='breadcrumb-item active']")
+    public WebElement newsThirdPage;
 
 
 

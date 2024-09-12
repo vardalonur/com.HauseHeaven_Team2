@@ -304,6 +304,13 @@ public class WebsiteMain {
     public WebElement reviewByCustomer;
     @FindBy(xpath = "//*[@id='alert-container']")
     public WebElement scrollBarElement;
+    @FindBy(xpath = "//*[@class='ipt-title']")
+    public WebElement agentsDetailPageButton;
+    @FindBy(xpath = "//*[@class='fr-position']")
+    public WebElement propertiesResultButton;
+    @FindBy(xpath = "//*[@class='ti-email']")
+    public WebElement agentsMessageBoxButton;
+  
     //ÜMİT BİTİŞ
 
 
@@ -337,18 +344,8 @@ public class WebsiteMain {
     @FindBy(xpath = ("//*[@id='app']/section/div/div[2]/div/div/div[1]/div[1]/div/div[3]/h4/a"))
     public WebElement Blogatiklama;
 
-    @FindBy(xpath = "//*[@class='fr-position']")
-    public WebElement propertiesResultButton;
-
-    @FindBy(xpath = "//*[@class='ti-email']")
-    public WebElement agentsMessageBoxButton;
-
     @FindBy(xpath = "//*[@class='fr-grid-footer-flex-right']")
     public WebElement agentsViewTagButton;
-
-    @FindBy(xpath = "//*[@class='ipt-title']")
-    public WebElement agentsDetailPageButton;
-
 
     // arzuv end
 
@@ -358,5 +355,46 @@ public class WebsiteMain {
     @FindBy(xpath = "(//li[@class='login-item'])[1]")
     public WebElement headerNameElement;
 
+  
+     //FOOTER
+
+   @FindBy(xpath = "//i[@class='fas fa-map-marker-alt']" )
+   public WebElement navigationElement;
+  
+   //ABOUT US
+   @FindBy(xpath = "//a[@title='About us']")
+   public WebElement aboutUsElement;
+  
+   @FindBy(xpath = "//a[@title='Contact us']")
+   public WebElement contactUsElement;
+
+   @FindBy(xpath = "//a[@title='Terms & Conditions']")
+   public WebElement termsConditionsElement;
+
+   @FindBy(xpath = "//a[@title='All properties']")
+   public WebElement allPropertiesElement;
+
+   @FindBy(xpath = "//a[@title='Houses for sale']")
+   public WebElement housesForSailElement;
+
+   @FindBy(xpath = "//a[@title='Houses for rent']")
+   public WebElement housesforRentElement;
+
+
+   @FindBy(xpath = "//a[@title='The Benefits Of Investing In Emerging Real Estate Markets']")
+   public WebElement newsFirstElement;
+
+   @FindBy(xpath = "//a[@title='A Guide To Negotiating The Best Deal On Your Dream Home']")
+   public WebElement newsSecondElement;
+
+
+   @FindBy(xpath = "//a[@title='The Rise Of Sustainable Homes: Building For A Greener Future']")
+   public WebElement newsThirdElement;
+
+   @FindBy(xpath = "//input[@name='email']")
+   public WebElement subscribeBox;
+
+   @FindBy(xpath = "//button[@class='btn bg-dark text-white']")
+   public WebElement subscribeButton;
 
 }
