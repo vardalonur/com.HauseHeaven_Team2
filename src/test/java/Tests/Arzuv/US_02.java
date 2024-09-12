@@ -13,7 +13,7 @@ import utilities.ReusableMethods;
 public class US_02 {
 
 
-/*
+
 
 WebDriver driver;
 
@@ -27,43 +27,48 @@ WebDriver driver;
          // Confirm that menus on the header can be clicked and navigated to new page
         // Home button
         WebsiteMain websiteMain = new WebsiteMain();
-        websiteMain.HomeButton.click();
+        websiteMain.homeButton.click();
+        ReusableMethods.bekle(1);
         Assert.assertTrue(websiteMain.homePageButton.isDisplayed());
 
         // Click Listing button and Properties page opens
         websiteMain.listingButton.click();
+        ReusableMethods.bekle(1);
         Assert.assertTrue(websiteMain.propertiesPageButton.isDisplayed());
         ReusableMethods.bekle(1);
 
         // Click Projects button and AllProjects page opens
-        websiteMain.ProjectsButton.click();
+        websiteMain.projectsButton.click();
+        ReusableMethods.bekle(1);
         Assert.assertTrue(websiteMain.allProjectsPageButton.isDisplayed());
         ReusableMethods.bekle(1);
 
         // Click Agents button and AllAgents page opens
-        websiteMain.AgentsButton.click();
+        websiteMain.agentsButton.click();
+        ReusableMethods.bekle(1);
         Assert.assertTrue(websiteMain.allAgentsPageButton.isDisplayed());
         ReusableMethods.bekle(1);
 
         // Click Blog button and Blogs page opens
-        websiteMain.BlogButton.click();
+        websiteMain.blogButton.click();
+        ReusableMethods.bekle(1);
         Assert.assertTrue(websiteMain.blogPageButton.isDisplayed());
         ReusableMethods.bekle(1);
 
         // Click Contact button and Contact info page opens
-        websiteMain.ContactButton.click();
+        websiteMain.contactButton.click();
+        ReusableMethods.bekle(1);
         Assert.assertTrue(websiteMain.contactPageButton.isDisplayed());
         ReusableMethods.bekle(1);
 
         // Click Signup button and Register page opens
-        websiteMain.SignupButton.click();
+        websiteMain.signUpButton.click();
+        ReusableMethods.bekle(1);
         Assert.assertTrue(websiteMain.signUpPageButton.isDisplayed());
 
         ReusableMethods.bekle(2);
         Driver.quitDriver();
 
 }
-*/
-
 
 }

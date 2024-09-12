@@ -632,68 +632,61 @@ public WebElement LogoutButton;
 
    //  ====================  Arzuv  ====================
    // Clicking on every menu, navigates to a new page XPaths'
-
    @FindBy (xpath = "//*[@class='hero-search']")
    public WebElement homePageButton;
-
    @FindBy (xpath = "//*[@class ='ipt-title']")
    public WebElement propertiesPageButton;
-
    @FindBy (xpath = "//*[@id='app']/div/div/div/div/div/h2")
-
    public WebElement allProjectsPageButton;
-
    @FindBy (xpath = "//*[@class ='ipt-title']")
    public WebElement allAgentsPageButton;
-
    @FindBy (xpath = "//*[@class='ipt-title']")
    public WebElement blogPageButton;
-
    @FindBy (xpath = "//*[@class='ipt-title']")
    public WebElement contactPageButton;
-
    @FindBy (xpath = "//*[@class='text-center']")
    public WebElement signUpPageButton;
 
     // Below are the menu locators
    @FindBy (xpath = "//*[@class='current-menu-item']")
    public WebElement HomeButton;
-
    @FindBy (xpath = "//*[@class='nav-submenu-open']")
    public WebElement ListingButton;
-
    @FindBy (xpath = "//*[@class='current-menu-item nav-submenu-open']")
    public WebElement ProjectsButton;
-
    @FindBy (xpath = "//*[@class='current-menu-item nav-submenu-open']")
    public WebElement AgentsButton;
-
    @FindBy (xpath = "//*[@href='https://qa.hauseheaven.com/blog'][2]")
    public WebElement BlogButton;
-
    @FindBy (xpath = "//*[@class='current-menu-item nav-submenu-open']")
    public WebElement ContactButton;
-
    @FindBy (xpath = "//*[@class='current-menu-item']")
    public WebElement SignupButton;
 
    @FindBy (xpath = "//*[@class='fr-position']")
    public WebElement propertiesResultButton;
-
-   @FindBy (xpath = "//*[@class='ti-email']")
+   @FindBy (xpath = "//*[@class='agent-email'][1]")
    public WebElement agentsMessageBoxButton;
-
-   @FindBy (xpath = "//*[@class='fr-grid-footer-flex-right']")
+   @FindBy (xpath = "//*[@class='fr-grid-footer-flex-right'][1]")
    public WebElement agentsViewTagButton;
-
    @FindBy (xpath = "//*[@class='ipt-title']")
    public WebElement agentsDetailPageButton;
-
    @FindBy (xpath = ("//*[@id='navigation']/div[2]/ul[1]/li[5]/a"))
    public  WebElement getBlogButton;
-
    @FindBy (xpath = ("//*[@id='app']/section/div/div[2]/div/div/div[1]/div[1]/div/div[3]/h4/a"))
    public WebElement Blogatiklama;
+
+   //   ============= agents =============
+   @FindBy (xpath = "//*[@id=\'app\']/section/div/div[1]/div[5]/div/div[1]/div[2]/div[1]/h5/a")
+   public WebElement fifthAgentsNameButton;
+   @FindBy (xpath = "//*[@src='https://qa.hauseheaven.com/storage/ac5.jpg']")
+   public WebElement fifthAgentImgButton;
+   @FindBy (xpath = "//*[@class='agency-name']")
+   public WebElement agentHazelPageButton;
+   @FindBy (xpath = "//*[@class='prt-detio']")
+   public WebElement hazelsPropertyButton;
+
+
 
 
 
