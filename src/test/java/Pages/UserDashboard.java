@@ -1,6 +1,7 @@
 package Pages;
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
@@ -44,99 +45,149 @@ public class UserDashboard {
     public WebElement userLogInButton;
 
 
-    /*
-    !!!!!!!!!!!!!
-    HEADER ELEMENTLERİ BURADA OLMAZ (ONUR)
-    !!!!!!!!!!!!!
-     */
 
 
-//UserDashboard Properties Button
-@FindBy(xpath = "//li[@class='active']")
+//UserDashboard Button
+@FindBy(xpath = "(//a[@href='https://qa.hauseheaven.com/account/dashboard'])[2]")
+public WebElement userDashboardButton;
+
+@FindBy(xpath = "//i[@class='far fa-newspaper mr1']")
 public WebElement userDashboardPropertiesButton;
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
 
-        //SERPİL BİTİŞ
+
+@FindBy(xpath = "//th[@class='column-key-id sorting_desc']")
+public WebElement dashboardPropertiesIdButton;
+  
+@FindBy(xpath = "(//td[@class='column-key-id sorting_1 dtr-control'])[1]")
+public  WebElement firstIdElement;
+  
+@FindBy(xpath = "//button[@class='btn btn-secondary action-item']")
+public  WebElement createButton;
+  
+  //ADD PROPERTIES PAGE
+@FindBy(xpath = "//textarea[@name='description']")
+public WebElement descriptionBox;
+  
+@FindBy(xpath = "//div[@role='textbox']")
+public WebElement contentBox;
+
+@FindBy(xpath = "(//span[@class='select2-selection__rendered'])[1]")
+public WebElement cityBox;
+
+ @FindBy(xpath = "//input[@placeholder='Property location']")
+ public WebElement propertyLocationBox;
+
+@FindBy(xpath = "//input[@name='latitude']")
+public WebElement latitudeBox;
+
+@FindBy(xpath = "//input[@name='longitude']")
+public WebElement longitudeBox;
+
+@FindBy(xpath = "//input[@name='number_bedroom']")
+public WebElement numberBedroomsBox;
+
+
+@FindBy(xpath = "//input[@name='number_bathroom']")
+public WebElement numberBathroomsBox;
+
+@FindBy(xpath = "//input[@name='number_floor']")
+public WebElement numberFloorsBox;
+
+@FindBy(xpath = "//input[@name='square']")
+public WebElement squareBox;
+@FindBy(xpath = "//input[@name='price']")
+public WebElement priceNumberBox;
+
+@FindBy(xpath = "//select[@name='type_id']")
+public WebElement typeButton;
+
+@FindBy(xpath = "(//label[@class='checkbox-inline'])[1]")
+public WebElement featuresWifi;
+
+@FindBy(xpath = "(//label[@class='checkbox-inline'])[2]")
+public WebElement featuresParking;
+
+@FindBy (xpath = "(//td[@class='column-key-id sorting_1 dtr-control'])[1]")
+public WebElement listingIdNo;
+
+@FindBy(xpath = "(//a[@class='btn btn-icon btn-sm btn-primary'])[1]")
+public WebElement editButton;
+
+@FindBy(xpath = "(//a[@class='btn btn-icon btn-sm btn-danger deleteDialog'])[1]")
+public WebElement deleteButton;
+
+@FindBy(xpath = "(//div[@class='modal-header bg-danger'])[1]")
+public WebElement confirmationText;
+
+@FindBy(xpath = "//button[@class='float-end btn btn-danger delete-crud-entry']")
+public WebElement confirmationdeleteButton;
+
+
+////////////////
+
+    @FindBy(xpath = "//div[@class='col-lg-6 col-md-6 mt-3']")
+    public WebElement aboutusPage;
+
+    @FindBy(xpath = "//div[@class='contact-info']")
+    public WebElement contactUsPage;
+
+    @FindBy(xpath = "//div[@class='col text-center']")
+    public WebElement termsConditionsPage;
+
+
+    @FindBy(xpath = "//div[@class='item-sorting-box']")
+    public WebElement allPropertiesPage;
+
+    @FindBy(xpath = "//div[@class='item-sorting-box']")
+    public WebElement housesForSailPage;
+
+    @FindBy(xpath = "//div[@class='item-sorting-box']")
+    public WebElement housesforRentPage;
+
+
+    //@FindBy(xpath = "//a[@title='The Benefits Of Investing In Emerging Real Estate Markets']")
+    //public WebElement newsFirstElement;
+    //@FindBy(xpath = "//a[@title='A Guide To Negotiating The Best Deal On Your Dream Home']")
+    //public WebElement newsSecondElement;
+    //@FindBy(xpath = "//a[@title='The Rise Of Sustainable Homes: Building For A Greener Future']")
+    //public WebElement newsThirdElement;
+
+    @FindBy(xpath = "//div[@class='sec-heading center']")
+    public WebElement newsFirstPage;
+    @FindBy(xpath = "//div[@class='sec-heading center']")
+    public WebElement newsSecondPage;
+
+    @FindBy(xpath = "//li[@class='breadcrumb-item active']")
+    public WebElement newsThirdPage;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //SERPİL BİTİŞ
 
         // KEVSER BAŞLANGIÇ
 

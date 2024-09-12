@@ -15,10 +15,11 @@ public class US_02 {
 
 
 
+
 WebDriver driver;
 
     @Test
-    public void TC01(){
+    public void TC01() throws InterruptedException{
 
          // Open the browser and Enter url https://qa.hauseheaven.com/
          Driver.getDriver().get(ConfigReader.getProperty("WebsiteMainPageURL"));
@@ -28,7 +29,9 @@ WebDriver driver;
         // Home button
         WebsiteMain websiteMain = new WebsiteMain();
         websiteMain.homeButton.click();
+
         ReusableMethods.bekle(1);
+
         Assert.assertTrue(websiteMain.homePageButton.isDisplayed());
 
         // Click Listing button and Properties page opens
@@ -39,31 +42,41 @@ WebDriver driver;
 
         // Click Projects button and AllProjects page opens
         websiteMain.projectsButton.click();
+
         ReusableMethods.bekle(1);
+
         Assert.assertTrue(websiteMain.allProjectsPageButton.isDisplayed());
         ReusableMethods.bekle(1);
 
         // Click Agents button and AllAgents page opens
         websiteMain.agentsButton.click();
+
         ReusableMethods.bekle(1);
+
         Assert.assertTrue(websiteMain.allAgentsPageButton.isDisplayed());
         ReusableMethods.bekle(1);
 
         // Click Blog button and Blogs page opens
         websiteMain.blogButton.click();
+
         ReusableMethods.bekle(1);
+
         Assert.assertTrue(websiteMain.blogPageButton.isDisplayed());
         ReusableMethods.bekle(1);
 
         // Click Contact button and Contact info page opens
         websiteMain.contactButton.click();
+
         ReusableMethods.bekle(1);
+
         Assert.assertTrue(websiteMain.contactPageButton.isDisplayed());
         ReusableMethods.bekle(1);
 
         // Click Signup button and Register page opens
         websiteMain.signUpButton.click();
+
         ReusableMethods.bekle(1);
+
         Assert.assertTrue(websiteMain.signUpPageButton.isDisplayed());
 
         ReusableMethods.bekle(2);
@@ -71,4 +84,6 @@ WebDriver driver;
 
 }
 
+
 }
+
