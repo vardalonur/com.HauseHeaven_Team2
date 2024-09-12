@@ -15,7 +15,7 @@ import java.time.Duration;
 public class US_52 {
 
 
-    @Test
+    @Test (priority = 1)
     public void locations() throws InterruptedException {
 
        /* Launch browser
@@ -37,25 +37,18 @@ public class US_52 {
 
        // Confirm that the "Locations" heading is displayed.
        softAssert.assertTrue(adminDashboard.locationsButton.isDisplayed(), "Locations heading is not displayed.");
+
        softAssert.assertAll();
+       //Close the page
        Driver.quitDriver();
+
 
     }
 
-    @Test
+    @Test (priority = 2)
     public void LocationsMenu() throws InterruptedException {
 
-        /*Launch browser
-      Go to https://qa.hauseheaven.com/
-      Login as admin by entering valid admin email and password.
-      Confirm that the "Locations' heading is displayed.
-      Click on the "Locations' heading.
-      Verify that the 'Countries', 'States' and 'Cities' options are displayed
-      Click on the "Countries" option and verify that the page loads successfully.
-      Click on the "States" option and verify that the page loads successfully.
-      Click on the "Cities" option and verify that the page loads successfully.
 
-     */
        //Go to https://qa.hauseheaven.com/
         Driver.getDriver().get(ConfigReader.getProperty("AdminDashUrl"));
         SoftAssert softAssert = new SoftAssert();
@@ -79,7 +72,8 @@ public class US_52 {
         softAssert.assertTrue(adminDashboard.countriesButton.isDisplayed(), "'Countries' option is not displayed");
         Thread.sleep(2000);
         adminDashboard.countriesButton.click();
-        softAssert.assertTrue(adminDashboard.statesButton.isEnabled(),"'Countries' option is not enabled");
+        softAssert.assertTrue(adminDashboard.countriesButton.isEnabled(),"'Countries' option is not enabled");
+
         //Verify that the 'States' option is displayed and active.
         softAssert.assertTrue(adminDashboard.statesButton.isDisplayed(), "'States' option is not displayed");
         Thread.sleep(2000);
@@ -92,6 +86,7 @@ public class US_52 {
         adminDashboard.citiesButton.click();
         softAssert.assertTrue(adminDashboard.citiesButton.isEnabled(),"'Cities' option is not enabled");
         softAssert.assertAll();
+        //Close the page
         Driver.quitDriver();
 
 

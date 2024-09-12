@@ -107,11 +107,17 @@ public WebElement featuresWifi;
 @FindBy(xpath = "(//label[@class='checkbox-inline'])[2]")
 public WebElement featuresParking;
 
+@FindBy(xpath = "//button[@class='btn btn-sm btn-info']")
+public WebElement saveexitButton;
+
 @FindBy (xpath = "(//td[@class='column-key-id sorting_1 dtr-control'])[1]")
 public WebElement listingIdNo;
 
 @FindBy(xpath = "(//a[@class='btn btn-icon btn-sm btn-primary'])[1]")
 public WebElement editButton;
+
+@FindBy(xpath = "//div[@class='note note-success']")
+public WebElement edittingPage;
 
 @FindBy(xpath = "(//a[@class='btn btn-icon btn-sm btn-danger deleteDialog'])[1]")
 public WebElement deleteButton;
@@ -121,6 +127,8 @@ public WebElement confirmationText;
 
 @FindBy(xpath = "//button[@class='float-end btn btn-danger delete-crud-entry']")
 public WebElement confirmationdeleteButton;
+
+
 
 
 ////////////////
