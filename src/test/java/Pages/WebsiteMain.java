@@ -782,6 +782,12 @@ public WebElement LogoutButton;
    @FindBy(xpath = "//i[@class='fas fa-map-marker-alt']" )
    public WebElement navigationElement;
 
+   @FindBy(xpath = "//i[@class='fas fa-phone-square']")
+   public WebElement telephoneElement;
+
+   @FindBy(xpath = "//i[@class='fas fa-envelope']")
+   public WebElement emailElement;
+
 
    //ABOUT US
    @FindBy(xpath = "//a[@title='About us']")
@@ -823,10 +829,40 @@ public WebElement LogoutButton;
    @FindBy(xpath = "//a[@title='The Rise Of Sustainable Homes: Building For A Greener Future']")
    public WebElement newsThirdElement;
 
+   @FindBy(xpath = "//a[@title='How to Stage Your Home for a Quick and Profitable Sale']")
+   public WebElement newsFourthElement;
+
+   @FindBy(xpath = "(//div[@class='other-store-app'])[1]")
+   public WebElement googlePlayElement;
+
+   @FindBy(xpath = "(//div[@class='other-store-app'])[2]")
+   public WebElement appStoreElement;
+
    @FindBy(xpath = "//input[@name='email']")
    public WebElement subscribeBox;
 
+   @FindBy(xpath = "//button[@class='js-cookie-consent-agree cookie-consent__agree']")
+   public WebElement cookiesButton;
+
    @FindBy(xpath = "//button[@class='btn bg-dark text-white']")
    public WebElement subscribeButton;
+
+   @FindBy(xpath = "//i[@class='ti-facebook']")
+   public WebElement facebookIcon;
+
+   @FindBy(xpath = "//a[@title='Twitter']")
+   public WebElement twitterIcon;
+
+   @FindBy(xpath = "//a[@title='Instagram']")
+   public WebElement instagramIcon;
+
+   @FindBy(xpath = "//a[@title='Linkedin']")
+   public WebElement linkedinIcon;
+
+   @FindBy(xpath = "//a[@title='Pinterest']")
+   public WebElement pinterestIcon;
+
+
+
 
 }

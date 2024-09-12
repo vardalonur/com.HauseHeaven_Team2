@@ -15,7 +15,7 @@ import java.time.Duration;
 public class US_52 {
 
 
-    @Test
+    @Test (priority = 1)
     public void locations() throws InterruptedException {
 
        /* Launch browser
@@ -42,7 +42,7 @@ public class US_52 {
 
     }
 
-    @Test
+    @Test (priority = 2)
     public void LocationsMenu() throws InterruptedException {
 
         /*Launch browser

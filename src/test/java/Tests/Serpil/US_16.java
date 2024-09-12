@@ -177,13 +177,12 @@ public class US_16 {
 
 
             //Click on the 'Create' button.
-              userDashboard.createButton.click();
+            userDashboard.createButton.click();
 
         //Enter required details into the form fields (e.g., property name, description, price, location, images).
         userDashboard.titleTextBox.sendKeys("01Serpil");
         userDashboard.descriptionBox.sendKeys("Site içinde");
         userDashboard.contentBox.sendKeys("3+1 Bakımlı daire");
-       // userDashboard.cityBox.sendKeys("Bursa");
         userDashboard.propertyLocationBox.sendKeys("Nilüfer");
         userDashboard.latitudeBox.sendKeys("1.462260");
         userDashboard.longitudeBox.sendKeys("103.812530");
@@ -196,7 +195,17 @@ public class US_16 {
         userDashboard.featuresParking.sendKeys("x");
 
         //Click on the 'Save&Exit' or 'Save' button to add the new listing.
-        userDashboard.saveExitButton.click();
+        //verify that "save&exit" button is displayed
+        softAssert.assertTrue(userDashboard.saveexitButton.isDisplayed());
+
+        JavascriptExecutor js1 = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,0);");
+        ReusableMethods.bekle(2);
+
+        //verify that "save&exit" button is clicked
+        userDashboard.saveexitButton.click();
+        //userDashboard.saveexitButton.click();
+        ReusableMethods.bekle(2);
 
         //Verify that the new listing appears in the listings page.
         softAssert.assertTrue(userDashboard.listingIdNo.isDisplayed(),"Listing ID No is not displayed");
@@ -245,10 +254,16 @@ public class US_16 {
         //Click the 'Edit' button on the opened page.
         userDashboard.editButton.click();
 
-        //verify that "save&exit" button is displayed
-        softAssert.assertTrue(userDashboard.saveExitButton.isDisplayed());
-        softAssert.assertAll();
+        //verify that the page can be editted.
+        softAssert.assertTrue(userDashboard.edittingPage.isDisplayed(), "Editting page is not displayed.");
 
+        //verify that "save&exit" button is displayed
+        softAssert.assertTrue(userDashboard.saveexitButton.isDisplayed());
+
+        //verify that "save&exit" button is clicked
+        userDashboard.saveexitButton.click();
+
+        softAssert.assertAll();
         //Close the page
         Driver.quitDriver();
     }
