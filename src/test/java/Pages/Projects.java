@@ -97,6 +97,7 @@ public class Projects {
 
 
 
+
     // can yilmaz
     @FindBy (xpath = "//*[@id=\"clOne\"]/div/ul/li[4]/span")
     public WebElement typeOfProjectinProjectPage;
@@ -197,10 +198,15 @@ public class Projects {
 
 
 
-    // KEVSER BAŞLANGIÇ
 
+    // KEVSER BAŞLANGIÇ
+    /*
     // 'All Projects' sayfa başlığı yazısı
     @FindBy(xpath = "//h2[text()='All projects']")
+    public WebElement allProjectsYazisi;
+    */
+    // 'All Projects' sayfa başlığı yazısı
+    @FindBy(xpath = "//*[@class='col-lg-12 col-md-12']")
     public WebElement allProjectsYazisi;
 
 
@@ -218,6 +224,7 @@ public class Projects {
 
 
     // KEVSER BİTİŞ
+
 
 
 

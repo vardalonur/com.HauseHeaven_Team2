@@ -1,6 +1,7 @@
 package Pages;
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
@@ -49,97 +50,110 @@ public class UserDashboard {
     HEADER ELEMENTLERİ BURADA OLMAZ (ONUR)
     !!!!!!!!!!!!!
      */
-    // Header Elements\\
-    //Projects element
-    @FindBy (xpath = "/html/body/div[2]/div[2]/div/nav/div[2]/ul[1]/li[3]/a")
-    public WebElement projectsButton;
+
+
+//UserDashboard Button
+@FindBy(xpath = "(//a[@href='https://qa.hauseheaven.com/account/dashboard'])[2]")
+public WebElement userDashboardButton;
+
+@FindBy(xpath = "//i[@class='far fa-newspaper mr1']")
+public WebElement userDashboardPropertiesButton;
+
+
+@FindBy(xpath = "//th[@class='column-key-id sorting_desc']")
+public WebElement dashboardPropertiesIdButton;
+  
+@FindBy(xpath = "(//td[@class='column-key-id sorting_1 dtr-control'])[1]")
+public  WebElement firstIdElement;
+  
+@FindBy(xpath = "//button[@class='btn btn-secondary action-item']")
+public  WebElement createButton;
+  
+  //ADD PROPERTIES PAGE
+@FindBy(xpath = "//textarea[@name='description']")
+public WebElement descriptionBox;
+  
+@FindBy(xpath = "//div[@role='textbox']")
+public WebElement contentBox;
+
+@FindBy(xpath = "//span[@title='Newark']")
+public WebElement cityBox;
+  
+ @FindBy(xpath = "//input[@placeholder='Property location']")
+ public WebElement propertyLocationBox;
+
+@FindBy(xpath = "//input[@name='latitude']")
+public WebElement latitudeBox;
+
+@FindBy(xpath = "//input[@name='longitude']")
+public WebElement longitudeBox;
+
+@FindBy(xpath = "(//input[@class='form-control'])[6]")
+public WebElement numberBedroomsBox;
+
+
+@FindBy(xpath = "")
+public WebElement numberBathroomsBox;
+
+@FindBy(xpath = "(//input[@class='form-control'])[8]")
+public WebElement numberFloorsBox;
+
+@FindBy(xpath = "(//input[@class='form-control'])[8]")
+public WebElement squareBox;
+@FindBy(id = "price-number")
+public WebElement priceNumberBox;
+@FindBy(id="select2-currency_id-container")
+public WebElement currencyBox;
+
+@FindBy(xpath = "//select[@name='type_id']")
+public WebElement typeButton;
 
 
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
 
-        //SERPİL BİTİŞ
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //SERPİL BİTİŞ
 
         // KEVSER BAŞLANGIÇ
 

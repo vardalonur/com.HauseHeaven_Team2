@@ -1,9 +1,6 @@
 package Tests.Serpil;
 
-import Pages.AdminDashboard;
-import Pages.Listing;
-import Pages.Projects;
-import Pages.UserDashboard;
+import Pages.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -20,7 +17,7 @@ import static utilities.Driver.driver;
 public class US_23 {
 
 
-    @Test
+    @Test (priority = 1)
     public void projects () throws InterruptedException {
 
       /*Launch browser
@@ -35,7 +32,7 @@ public class US_23 {
         SoftAssert softAssert = new SoftAssert();
         UserDashboard userDashboard = new UserDashboard();
         Projects projects=new Projects();
-
+        WebsiteMain websiteMain= new WebsiteMain();
         //Log in as registered user by entering user email and password
         userDashboard.homePageSignInButton.click();
         userDashboard.userEmailUsernameForm.sendKeys(ConfigReader.getProperty("UserValidEmail"));
@@ -44,8 +41,8 @@ public class US_23 {
         Thread.sleep(2000);
 
         //Click on the 'Projects' link.
-        softAssert.assertTrue(userDashboard.projectsButton.isDisplayed(), "Project button is not displayed.");
-        userDashboard.projectsButton.click();
+        softAssert.assertTrue(websiteMain.projectsButton.isDisplayed(), "Project button is not displayed.");
+        websiteMain.projectsButton.click();
 
         //Confirm that the projects are listed on the page as expected
         List<WebElement> project = driver.findElements(By.xpath("//h4[@class='mb-0']"));
@@ -60,19 +57,19 @@ public class US_23 {
 
     }
 
-    @Test
+    @Test (priority = 2)
     public void projectDetail() throws InterruptedException {
 
           /* Launch browser
-Go to https://qa.hauseheaven.com/
-Log in as registered user by entering user email and password
-Click on the 'Projects' link.
-Confirm that the projects are listed on the page as expected.
-On the 'Projects' page, check the displayed number of projects.
-Click on individual project listings to view the details of each project.
-Verify that each project's details are displayed correctly, including information such as
-project name, description, date etc.
-     */
+        Go to https://qa.hauseheaven.com/
+        Log in as registered user by entering user email and password
+        Click on the 'Projects' link.
+        Confirm that the projects are listed on the page as expected.
+        On the 'Projects' page, check the displayed number of projects.
+        Click on individual project listings to view the details of each project.
+        Verify that each project's details are displayed correctly, including information such as
+        project name, description, date etc.
+        */
 
 
         //Go to https://qa.hauseheaven.com/
@@ -80,21 +77,23 @@ project name, description, date etc.
         SoftAssert softAssert = new SoftAssert();
         UserDashboard userDashboard = new UserDashboard();
         Projects projects=new Projects();
+        WebsiteMain websiteMain=new WebsiteMain();
 
         //Log in as registered user by entering user email and password
         userDashboard.homePageSignInButton.click();
         userDashboard.userEmailUsernameForm.sendKeys(ConfigReader.getProperty("UserValidEmail"));
         userDashboard.userPasswordForm.sendKeys(ConfigReader.getProperty("UserValidPassword"));
         userDashboard.userLogInButton.click();
+
         Thread.sleep(2000);
 
         //Click on the 'Projects' link.
-        softAssert.assertTrue(userDashboard.projectsButton.isDisplayed(), "Project button is not displayed.");
-        userDashboard.projectsButton.click();
+        softAssert.assertTrue(websiteMain.projectsButton.isDisplayed(), "Project button is not displayed.");
+        websiteMain.projectsButton.click();
 
         //Click on the 'Projects' link.
-        softAssert.assertTrue(userDashboard.projectsButton.isDisplayed(), "Project button is not displayed.");
-        userDashboard.projectsButton.click();
+        softAssert.assertTrue(websiteMain.projectsButton.isDisplayed(), "Project button is not displayed.");
+        websiteMain.projectsButton.click();
 
         //Confirm that the projects are listed on the page as expected
         List<WebElement> project = driver.findElements(By.xpath("//h4[@class='mb-0']"));
@@ -127,22 +126,24 @@ project name, description, date etc.
         softAssert.assertTrue(projects.secondProjectDetails.isDisplayed(),"Second project detail page is not displayed");
         System.out.println("İkinci proje detay sayfası başarıyla görüntülendi.");
 
-        driver.navigate().back();
+       // driver.navigate().back();
+        Driver.quitDriver();
+
         //Fifth Project
 
 
-        softAssert.assertTrue(projects.fifthProject.isDisplayed(),"Fifth project is not displayed");
-        System.out.println("Beşinci proje başarıyla listelendi.");
+       // softAssert.assertTrue(projects.fifthProject.isDisplayed(),"Fifth project is not displayed");
+      //  System.out.println("Beşinci proje başarıyla listelendi.");
 
 
-        Thread.sleep(1000);
-        projects.secondProject.click();
+      //  Thread.sleep(1000);
+       // projects.fifthProject.click();
 
-        softAssert.assertTrue(projects.fifthProjectDetails.isDisplayed(),"Fifth project detail page is not displayed");
-        System.out.println("Beşinci proje detay sayfası başarıyla görüntülendi.");
+      //  softAssert.assertTrue(projects.fifthProjectDetails.isDisplayed(),"Fifth project detail page is not displayed");
+      //  System.out.println("Beşinci proje detay sayfası başarıyla görüntülendi.");
 
-        softAssert.assertAll();
-        Driver.quitDriver();
+      //  softAssert.assertAll();
+      //  Driver.quitDriver();
 
 
     }

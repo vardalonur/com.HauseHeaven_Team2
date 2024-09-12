@@ -20,7 +20,7 @@ public class US_06 {
     public void TC01(){
 
         //Go to HauseHeven Home Page
-        Driver.getDriver().get("https://qa.hauseheaven.com/");
+        Driver.getDriver().get(ConfigReader.getProperty("WebsiteMainPageURL"));
 
         //Click on "Listing"
         WebsiteMain webSiteMain = new WebsiteMain();
@@ -58,7 +58,7 @@ public class US_06 {
     public void TC02(){
         Actions actions = new Actions(Driver.getDriver());
         //Go to HauseHeven Home Page
-        Driver.getDriver().get("https://qa.hauseheaven.com/");
+        Driver.getDriver().get(ConfigReader.getProperty("WebsiteMainPageURL"));
 
         //Click on "Listing"
         WebsiteMain webSiteMain = new WebsiteMain();
@@ -101,7 +101,7 @@ public class US_06 {
     public void TC03(){
         Actions actions = new Actions(Driver.getDriver());
         //Go to HauseHeven Home Page
-        Driver.getDriver().get("https://qa.hauseheaven.com/");
+        Driver.getDriver().get(ConfigReader.getProperty("WebsiteMainPageURL"));
 
         //Click on "Listing"
         WebsiteMain webSiteMain = new WebsiteMain();
@@ -171,7 +171,7 @@ public class US_06 {
     public void TC04(){
         Actions actions = new Actions(Driver.getDriver());
         //Go to HauseHeven Home Page
-        Driver.getDriver().get("https://qa.hauseheaven.com/");
+        Driver.getDriver().get(ConfigReader.getProperty("WebsiteMainPageURL"));
 
         //Click on "Listing"
         WebsiteMain webSiteMain = new WebsiteMain();

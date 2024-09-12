@@ -326,6 +326,7 @@ public WebElement LogoutButton;
 
 
 
+
       //KEVSER BİTİŞ
       //ÜMİT BAŞLANGIC
       // Main Page Web Elements
@@ -614,7 +615,11 @@ public WebElement LogoutButton;
 
 
 
-   //ÜMİT BİTİ
+
+   //ÜMİT BİTİŞ
+
+
+
 
    //  ====================  Arzuv  ====================
    // Clicking on every menu, navigates to a new page XPaths'
@@ -645,8 +650,18 @@ public WebElement LogoutButton;
 
    @FindBy (xpath = ("//*[@id='app']/section/div/div[2]/div/div/div[1]/div[1]/div/div[3]/h4/a"))
    public WebElement Blogatiklama;
+    
+   @FindBy (xpath = "//*[@class='fr-position']")
+   public WebElement propertiesResultButton;
 
+   @FindBy (xpath = "//*[@class='ti-email']")
+   public WebElement agentsMessageBoxButton;
 
+   @FindBy (xpath = "//*[@class='fr-grid-footer-flex-right']")
+   public WebElement agentsViewTagButton;
+
+   @FindBy (xpath = "//*[@class='ipt-title']")
+   public WebElement agentsDetailPageButton;
 
 
 
@@ -753,4 +768,22 @@ public WebElement LogoutButton;
 
 
    // arzuv end
+
+   //SERPİL BAŞLANGIÇ.....\\
+
+   // HEADER NAME ELEMENT
+   @FindBy(xpath = "(//li[@class='login-item'])[1]")
+   public WebElement headerNameElement;
+
+
+
+
+
+
+
+
+
+
+
+
 }
