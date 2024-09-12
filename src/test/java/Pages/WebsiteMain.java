@@ -7,9 +7,9 @@ import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
 public class WebsiteMain {
-   public WebsiteMain () {     PageFactory.initElements(utilities.Driver.getDriver(), this);
-}
-// CAN BAŞLANGIÇ
+   public WebsiteMain () { PageFactory.initElements(Driver.getDriver(), this);}
+
+   // CAN BAŞLANGIÇ
 // Listing Butonu
 @FindBy (linkText ="Listing")
 public WebElement listingButton;
@@ -149,13 +149,41 @@ public WebElement contactButton;
 public WebElement addPropertyButton;
 
 // kullanıcı adı-soyadı yazan kısım
-@FindBy(xpath = "(//*[@class='login-item'])[1]")
+@FindBy(xpath = "//*[@href=\"https://qa.hauseheaven.com/account/dashboard\"]")
 public WebElement userDashboardButton;
 
 
 @FindBy(xpath = "(//*[@class='login-item'])[2]")
 public WebElement LogoutButton;
 
+//================== HEADER ORTAK ELEMENTLER BURAYA KADAR =======================
+
+
+
+
+
+
+
+   // Anasayfa 'Find Accessible Homes To Rent' yazısı
+
+   @FindBy(xpath = "//h1[text()='Find accessible homes to rent']")
+   public WebElement findAccessibleYazisi;
+
+   // 'Blog' sayfa başlığı yazısı
+   @FindBy(xpath = "//h1[text()='Blog']")
+   public WebElement blogYazisi;
+
+   // 'Contact' sayfa başlığı yazısı
+   @FindBy(xpath = "//h1[text()='Contact']")
+   public WebElement contactYazisi;
+
+   // Add Property sayfası title text box
+   @FindBy(xpath = "(//*[@class='form-control'])[1]")
+   public WebElement titleTextBox;
+
+   // Header bölümü
+   @FindBy(xpath = "//*[@class='nav-menus-wrapper']")
+   public WebElement headerBolumu;
 
 
 
@@ -320,9 +348,6 @@ public WebElement LogoutButton;
    @FindBy(xpath = "//*[@id='select2-ptypes-container']")
    public WebElement propertyTypeBar;
 
-   @FindBy(xpath = "(//*[@class='select2-selection__arrow'])[3]")
-   public WebElement propertyTypeArrow;
-
    @FindBy(xpath = "//*[@id='select2-select-bedroom-container']")
    public WebElement bedroomsBar;
 
@@ -331,9 +356,6 @@ public WebElement LogoutButton;
 
    @FindBy(xpath = "//*[@class='btn search-btn']")
    public WebElement searchResultBar;
-
-   @FindBy(xpath = "//*[@class='m-0']")
-   public WebElement foundResultText;
 
    @FindBy(xpath = "(//*[@class='sec-heading center'])[1]")
    public WebElement howItWorksText;
@@ -359,9 +381,6 @@ public WebElement LogoutButton;
    @FindBy(xpath = "//*[@title='9876 Pine Avenue']")
    public WebElement pineAvenueTitle;
 
-   @FindBy(xpath = "(//*[@class='property-listing property-2 '])[3]")
-   public WebElement pineAvenueModul;
-
    @FindBy(xpath = "(//*[@class='slick-slide slick-current slick-active'])[4]")
    public WebElement goodPlaceImage4;
 
@@ -373,9 +392,6 @@ public WebElement LogoutButton;
 
    @FindBy(xpath = "//*[@title='13579 Elmwood Avenue']")
    public WebElement elmwood2Title;
-
-   @FindBy(xpath = "//*[@class='prt-detail-title-desc']")
-   public WebElement elmwood2PageTitle;
 
    @FindBy(xpath = "//*[@title='13579 Willow Street']")
    public WebElement willowStreetTitle;
@@ -416,9 +432,6 @@ public WebElement LogoutButton;
    @FindBy(xpath = "(//*[@class='add-to-wishlist'])[5]")
    public WebElement wishListButton5;
 
-   @FindBy(xpath = "//*[@id='alert-container']")
-   public WebElement wishListAddText;
-
    @FindBy(xpath = "(//*[@class='add-to-wishlist'])[6]")
    public WebElement wishListButton6;
 
@@ -446,12 +459,6 @@ public WebElement LogoutButton;
    @FindBy(xpath = "(//*[@class='ti-angle-right'])[3]")
    public WebElement miamiRightArrow;
 
-   @FindBy(xpath = "(//*[@class='location-property-wrap'])[4]")
-   public WebElement newYorkModule;
-
-   @FindBy(xpath = "(//*[@class='location-property-content'])[4]")
-   public WebElement newYorkPropertyContent;
-
    @FindBy(xpath = "//*[@data-src='https://qa.hauseheaven.com/storage/newyork-400xauto.jpg']")
    public WebElement newyorkImage;
 
@@ -469,9 +476,6 @@ public WebElement LogoutButton;
 
    @FindBy(xpath = "(//*[@class='ti-angle-right'])[6]")
    public WebElement austinRightArrow;
-
-   @FindBy(xpath = "//*[@class='item-sorting clearfix']")
-   public WebElement austinPageFoundResultText;
 
    @FindBy(xpath = "//*[@data-src='https://qa.hauseheaven.com/storage/chicago-400xauto.jpg']")
    public WebElement chicagoImage;
@@ -611,7 +615,11 @@ public WebElement LogoutButton;
 
 
 
-   //ÜMİT BİTİ
+
+   //ÜMİT BİTİŞ
+
+
+
 
    //  ====================  Arzuv  ====================
    // Clicking on every menu, navigates to a new page XPaths'
@@ -622,7 +630,7 @@ public WebElement LogoutButton;
    @FindBy (xpath = "//*[@class ='ipt-title']")
    public WebElement propertiesPageButton;
 
-   @FindBy (xpath = "//*[@id=\'app\']/div/div/div/div/div/h2")
+   @FindBy (xpath = "//*[@id='app']/div/div/div/div/div/h2")
    public WebElement allProjectsPageButton;
 
    @FindBy (xpath = "//*[@class ='ipt-title']")
@@ -637,12 +645,23 @@ public WebElement LogoutButton;
    @FindBy (xpath = "//*[@class='text-center']")
    public WebElement signUpPageButton;
 
+   @FindBy (xpath = ("//*[@id='navigation']/div[2]/ul[1]/li[5]/a"))
+   public  WebElement getBlogButton;
 
+   @FindBy (xpath = ("//*[@id='app']/section/div/div[2]/div/div/div[1]/div[1]/div/div[3]/h4/a"))
+   public WebElement Blogatiklama;
+    
+   @FindBy (xpath = "//*[@class='fr-position']")
+   public WebElement propertiesResultButton;
 
+   @FindBy (xpath = "//*[@class='ti-email']")
+   public WebElement agentsMessageBoxButton;
 
+   @FindBy (xpath = "//*[@class='fr-grid-footer-flex-right']")
+   public WebElement agentsViewTagButton;
 
-
-
+   @FindBy (xpath = "//*[@class='ipt-title']")
+   public WebElement agentsDetailPageButton;
 
 
 
@@ -749,4 +768,22 @@ public WebElement LogoutButton;
 
 
    // arzuv end
+
+   //SERPİL BAŞLANGIÇ.....\\
+
+   // HEADER NAME ELEMENT
+   @FindBy(xpath = "(//li[@class='login-item'])[1]")
+   public WebElement headerNameElement;
+
+
+
+
+
+
+
+
+
+
+
+
 }
