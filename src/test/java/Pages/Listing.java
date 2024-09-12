@@ -98,7 +98,6 @@ public class Listing {
 
 
 
-
     //CAN YILMAZ'a ait buraya kadar  1-100
 
 //SERPİL ................\\
@@ -224,5 +223,70 @@ public class Listing {
 
 
     // KEVSER BİTİŞ
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
