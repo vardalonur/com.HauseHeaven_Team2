@@ -76,9 +76,9 @@ public WebElement descriptionBox;
 @FindBy(xpath = "//div[@role='textbox']")
 public WebElement contentBox;
 
-@FindBy(xpath = "//span[@title='Newark']")
+@FindBy(xpath = "(//span[@class='select2-selection__rendered'])[1]")
 public WebElement cityBox;
-  
+
  @FindBy(xpath = "//input[@placeholder='Property location']")
  public WebElement propertyLocationBox;
 
@@ -88,25 +88,44 @@ public WebElement latitudeBox;
 @FindBy(xpath = "//input[@name='longitude']")
 public WebElement longitudeBox;
 
-@FindBy(xpath = "(//input[@class='form-control'])[6]")
+@FindBy(xpath = "//input[@name='number_bedroom']")
 public WebElement numberBedroomsBox;
 
 
-@FindBy(xpath = "")
+@FindBy(xpath = "//input[@name='number_bathroom']")
 public WebElement numberBathroomsBox;
 
-@FindBy(xpath = "(//input[@class='form-control'])[8]")
+@FindBy(xpath = "//input[@name='number_floor']")
 public WebElement numberFloorsBox;
 
-@FindBy(xpath = "(//input[@class='form-control'])[8]")
+@FindBy(xpath = "//input[@name='square']")
 public WebElement squareBox;
-@FindBy(id = "price-number")
+@FindBy(xpath = "//input[@name='price']")
 public WebElement priceNumberBox;
-@FindBy(id="select2-currency_id-container")
-public WebElement currencyBox;
 
 @FindBy(xpath = "//select[@name='type_id']")
 public WebElement typeButton;
+
+@FindBy(xpath = "(//label[@class='checkbox-inline'])[1]")
+public WebElement featuresWifi;
+
+@FindBy(xpath = "(//label[@class='checkbox-inline'])[2]")
+public WebElement featuresParking;
+
+@FindBy (xpath = "(//td[@class='column-key-id sorting_1 dtr-control'])[1]")
+public WebElement listingIdNo;
+
+@FindBy(xpath = "(//a[@class='btn btn-icon btn-sm btn-primary'])[1]")
+public WebElement editButton;
+
+@FindBy(xpath = "(//a[@class='btn btn-icon btn-sm btn-danger deleteDialog'])[1]")
+public WebElement deleteButton;
+
+@FindBy(xpath = "(//div[@class='modal-header bg-danger'])[1]")
+public WebElement confirmationText;
+
+@FindBy(xpath = "//button[@class='float-end btn btn-danger delete-crud-entry']")
+public WebElement confirmationdeleteButton;
 
 
 
