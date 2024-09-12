@@ -310,7 +310,7 @@ public class WebsiteMain {
     public WebElement propertiesResultButton;
     @FindBy(xpath = "//*[@class='ti-email']")
     public WebElement agentsMessageBoxButton;
-
+  
     //ÜMİT BİTİŞ
 
 
@@ -355,48 +355,80 @@ public class WebsiteMain {
     @FindBy(xpath = "(//li[@class='login-item'])[1]")
     public WebElement headerNameElement;
 
+  
+     //FOOTER
 
-    //FOOTER
+   @FindBy(xpath = "//i[@class='fas fa-map-marker-alt']" )
+   public WebElement navigationElement;
 
-    @FindBy(xpath = "//i[@class='fas fa-map-marker-alt']" )
-    public WebElement navigationElement;
+   @FindBy(xpath = "//i[@class='fas fa-phone-square']")
+   public WebElement telephoneElement;
 
-    //ABOUT US
-    @FindBy(xpath = "//a[@title='About us']")
-    public WebElement aboutUsElement;
+   @FindBy(xpath = "//i[@class='fas fa-envelope']")
+   public WebElement emailElement;
 
-    @FindBy(xpath = "//a[@title='Contact us']")
-    public WebElement contactUsElement;
+   //ABOUT US
+   @FindBy(xpath = "//a[@title='About us']")
+   public WebElement aboutUsElement;
+  
+   @FindBy(xpath = "//a[@title='Contact us']")
+   public WebElement contactUsElement;
 
-    @FindBy(xpath = "//a[@title='Terms & Conditions']")
-    public WebElement termsConditionsElement;
+   @FindBy(xpath = "//a[@title='Terms & Conditions']")
+   public WebElement termsConditionsElement;
 
-    @FindBy(xpath = "//a[@title='All properties']")
-    public WebElement allPropertiesElement;
+   @FindBy(xpath = "//a[@title='All properties']")
+   public WebElement allPropertiesElement;
 
-    @FindBy(xpath = "//a[@title='Houses for sale']")
-    public WebElement housesForSailElement;
+   @FindBy(xpath = "//a[@title='Houses for sale']")
+   public WebElement housesForSailElement;
 
-    @FindBy(xpath = "//a[@title='Houses for rent']")
-    public WebElement housesforRentElement;
-
-
-    @FindBy(xpath = "//a[@title='The Benefits Of Investing In Emerging Real Estate Markets']")
-    public WebElement newsFirstElement;
-
-    @FindBy(xpath = "//a[@title='A Guide To Negotiating The Best Deal On Your Dream Home']")
-    public WebElement newsSecondElement;
+   @FindBy(xpath = "//a[@title='Houses for rent']")
+   public WebElement housesforRentElement;
 
 
-    @FindBy(xpath = "//a[@title='The Rise Of Sustainable Homes: Building For A Greener Future']")
-    public WebElement newsThirdElement;
+   @FindBy(xpath = "//a[@title='The Benefits Of Investing In Emerging Real Estate Markets']")
+   public WebElement newsFirstElement;
 
-    @FindBy(xpath = "//input[@name='email']")
-    public WebElement subscribeBox;
+   @FindBy(xpath = "//a[@title='A Guide To Negotiating The Best Deal On Your Dream Home']")
+   public WebElement newsSecondElement;
 
-    @FindBy(xpath = "//button[@class='btn bg-dark text-white']")
-    public WebElement subscribeButton;
 
+   @FindBy(xpath = "//a[@title='The Rise Of Sustainable Homes: Building For A Greener Future']")
+   public WebElement newsThirdElement;
+
+   @FindBy(xpath = "//a[@title='How to Stage Your Home for a Quick and Profitable Sale']")
+   public WebElement newsFourthElement;
+
+   @FindBy(xpath = "(//div[@class='other-store-app'])[1]")
+   public WebElement googlePlayElement;
+
+   @FindBy(xpath = "(//div[@class='other-store-app'])[2]")
+   public WebElement appStoreElement;
+
+   @FindBy(xpath = "//input[@name='email']")
+   public WebElement subscribeBox;
+
+   @FindBy(xpath = "//button[@class='js-cookie-consent-agree cookie-consent__agree']")
+   public WebElement cookiesButton;
+
+   @FindBy(xpath = "//button[@class='btn bg-dark text-white']")
+   public WebElement subscribeButton;
+
+   @FindBy(xpath = "//i[@class='ti-facebook']")
+   public WebElement facebookIcon;
+
+   @FindBy(xpath = "//a[@title='Twitter']")
+   public WebElement twitterIcon;
+
+   @FindBy(xpath = "//a[@title='Instagram']")
+   public WebElement instagramIcon;
+
+   @FindBy(xpath = "//a[@title='Linkedin']")
+   public WebElement linkedinIcon;
+
+   @FindBy(xpath = "//a[@title='Pinterest']")
+   public WebElement pinterestIcon;
 
     //   ============= agents =============
     @FindBy (xpath = "//*[@id=\'app\']/section/div/div[1]/div[5]/div/div[1]/div[2]/div[1]/h5/a")
@@ -407,5 +439,7 @@ public class WebsiteMain {
     public WebElement agentHazelPageButton;
     @FindBy (xpath = "//*[@class='prt-detio']")
     public WebElement hazelsPropertyButton;
+
+
 
 }

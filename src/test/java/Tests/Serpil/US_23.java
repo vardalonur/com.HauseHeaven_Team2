@@ -21,12 +21,6 @@ public class US_23 {
     @Test (priority = 1)
     public void projects () throws InterruptedException {
 
-      /*Launch browser
-    Go to https://qa.hauseheaven.com/
-    Log in as registered user by entering user email and password
-    Click on the 'Projects' link.
-    Confirm that the projects are listed on the page as expected.
-   */
 
         //Go to https://qa.hauseheaven.com/
         Driver.getDriver().get(ConfigReader.getProperty("WebsiteMainPageURL"));
@@ -34,6 +28,7 @@ public class US_23 {
         UserDashboard userDashboard = new UserDashboard();
         Projects projects=new Projects();
         WebsiteMain websiteMain= new WebsiteMain();
+
         //Log in as registered user by entering user email and password
         userDashboard.homePageSignInButton.click();
         userDashboard.userEmailUsernameForm.sendKeys(ConfigReader.getProperty("UserValidEmail"));
@@ -61,17 +56,6 @@ public class US_23 {
     @Test (priority = 2)
     public void projectDetail() throws InterruptedException {
 
-          /* Launch browser
-        Go to https://qa.hauseheaven.com/
-        Log in as registered user by entering user email and password
-        Click on the 'Projects' link.
-        Confirm that the projects are listed on the page as expected.
-        On the 'Projects' page, check the displayed number of projects.
-        Click on individual project listings to view the details of each project.
-        Verify that each project's details are displayed correctly, including information such as
-        project name, description, date etc.
-        */
-
 
         //Go to https://qa.hauseheaven.com/
         Driver.getDriver().get(ConfigReader.getProperty("WebsiteMainPageURL"));
@@ -92,13 +76,9 @@ public class US_23 {
         softAssert.assertTrue(websiteMain.projectsButton.isDisplayed(), "Project button is not displayed.");
         websiteMain.projectsButton.click();
 
-        //Click on the 'Projects' link.
-        softAssert.assertTrue(websiteMain.projectsButton.isDisplayed(), "Project button is not displayed.");
-        websiteMain.projectsButton.click();
-
         //Confirm that the projects are listed on the page as expected
-       // List<WebElement> project = driver.findElements(By.xpath("//h4[@class='mb-0']"));
-       // softAssert.assertTrue(project.size() > 0, "Projeler listelenmedi");
+       List<WebElement> project = driver.findElements(By.xpath("//h4[@class='mb-0']"));
+       softAssert.assertTrue(project.size() > 0, "Projeler listelenmedi");
 
 
         softAssert.assertTrue(projects.firstProject.isDisplayed(),"First project is not displayed");
@@ -130,21 +110,6 @@ public class US_23 {
        // driver.navigate().back();
         Driver.quitDriver();
 
-        //Fifth Project
-
-
-       // softAssert.assertTrue(projects.fifthProject.isDisplayed(),"Fifth project is not displayed");
-      //  System.out.println("Beşinci proje başarıyla listelendi.");
-
-
-      //  Thread.sleep(1000);
-       // projects.fifthProject.click();
-
-      //  softAssert.assertTrue(projects.fifthProjectDetails.isDisplayed(),"Fifth project detail page is not displayed");
-      //  System.out.println("Beşinci proje detay sayfası başarıyla görüntülendi.");
-
-      //  softAssert.assertAll();
-      //  Driver.quitDriver();
 
 
     }
