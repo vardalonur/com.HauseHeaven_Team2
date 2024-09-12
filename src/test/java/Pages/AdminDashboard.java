@@ -392,6 +392,7 @@ public class AdminDashboard {
 
         //SERPİL BİTİŞ
 
+
         //GULNAR
     //payments buttonları.
    @FindBy(xpath = ("//*[@id='cms-plugins-payments']/a/span[1]"))

@@ -9,6 +9,7 @@ public class Projects {
     public Projects() {
         PageFactory.initElements(utilities.Driver.getDriver(), this);}
 
+
 // SERPİL.........\\
 
     //Result Text

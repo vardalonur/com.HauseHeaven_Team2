@@ -16,7 +16,6 @@ public class WebsiteMain {
     @FindBy(linkText = "Listing")
     public WebElement listingButton;
 
-
     // CAN BİTİŞ
 
     //KEVSER BAŞLANGIÇ

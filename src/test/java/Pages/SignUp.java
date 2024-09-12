@@ -10,7 +10,6 @@ public class SignUp {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-
     //KEVSER
 
     @FindBy(id = "first_name")

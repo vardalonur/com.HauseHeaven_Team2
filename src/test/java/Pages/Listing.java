@@ -258,6 +258,7 @@ public class Listing {
     public WebElement sonYorum;
 
 
+
     // KEVSER BİTİŞ
 
 }

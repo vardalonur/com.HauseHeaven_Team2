@@ -16,7 +16,6 @@ public class UserDashboard {
         PageFactory.initElements(utilities.Driver.getDriver(), this);
     }
 
-
 //SERPİL BAŞLANGIÇ
     /*
     !!!!!!!!!!!!!
