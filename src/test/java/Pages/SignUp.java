@@ -10,7 +10,6 @@ public class SignUp {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-
     //KEVSER
 
     @FindBy(id = "first_name")
@@ -36,9 +35,6 @@ public class SignUp {
 
     @FindBy(xpath = "//h4[text()='Your Current Credits: ']")
     public WebElement yourCurrentCreditYazisi;
-
-
-
 
 
 }
