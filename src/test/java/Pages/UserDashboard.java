@@ -45,11 +45,6 @@ public class UserDashboard {
     public WebElement userLogInButton;
 
 
-    /*
-    !!!!!!!!!!!!!
-    HEADER ELEMENTLERİ BURADA OLMAZ (ONUR)
-    !!!!!!!!!!!!!
-     */
 
 
 //UserDashboard Button
@@ -128,22 +123,42 @@ public WebElement confirmationText;
 public WebElement confirmationdeleteButton;
 
 
+////////////////
+
+    @FindBy(xpath = "//div[@class='col-lg-6 col-md-6 mt-3']")
+    public WebElement aboutusPage;
+
+    @FindBy(xpath = "//div[@class='contact-info']")
+    public WebElement contactUsPage;
+
+    @FindBy(xpath = "//div[@class='col text-center']")
+    public WebElement termsConditionsPage;
 
 
+    @FindBy(xpath = "//div[@class='item-sorting-box']")
+    public WebElement allPropertiesPage;
+
+    @FindBy(xpath = "//div[@class='item-sorting-box']")
+    public WebElement housesForSailPage;
+
+    @FindBy(xpath = "//div[@class='item-sorting-box']")
+    public WebElement housesforRentPage;
 
 
+    //@FindBy(xpath = "//a[@title='The Benefits Of Investing In Emerging Real Estate Markets']")
+    //public WebElement newsFirstElement;
+    //@FindBy(xpath = "//a[@title='A Guide To Negotiating The Best Deal On Your Dream Home']")
+    //public WebElement newsSecondElement;
+    //@FindBy(xpath = "//a[@title='The Rise Of Sustainable Homes: Building For A Greener Future']")
+    //public WebElement newsThirdElement;
 
+    @FindBy(xpath = "//div[@class='sec-heading center']")
+    public WebElement newsFirstPage;
+    @FindBy(xpath = "//div[@class='sec-heading center']")
+    public WebElement newsSecondPage;
 
-
-
-
-
-
-
-
-
-
-
+    @FindBy(xpath = "//li[@class='breadcrumb-item active']")
+    public WebElement newsThirdPage;
 
 
 

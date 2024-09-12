@@ -777,13 +777,56 @@ public WebElement LogoutButton;
 
 
 
+   //FOOTER
+
+   @FindBy(xpath = "//i[@class='fas fa-map-marker-alt']" )
+   public WebElement navigationElement;
 
 
+   //ABOUT US
+   @FindBy(xpath = "//a[@title='About us']")
+   public WebElement aboutUsElement;
+
+   //@FindBy(xpath = "//div[@class='col-lg-6 col-md-6 mt-3']")
+   //public WebElement aboutusPage;
+
+   @FindBy(xpath = "//a[@title='Contact us']")
+   public WebElement contactUsElement;
+
+   @FindBy(xpath = "//a[@title='Terms & Conditions']")
+   public WebElement termsConditionsElement;
+
+   @FindBy(xpath = "//a[@title='All properties']")
+   public WebElement allPropertiesElement;
+
+   @FindBy(xpath = "//a[@title='Houses for sale']")
+   public WebElement housesForSailElement;
+
+   @FindBy(xpath = "//a[@title='Houses for rent']")
+   public WebElement housesforRentElement;
 
 
+  // @FindBy(xpath = "//div[@class='sec-heading center']")
+  // public WebElement newsFirstPage;
+  // @FindBy(xpath = "//div[@class='sec-heading center']")
+  // public WebElement newsSecondPage;
+  // @FindBy(xpath = "//li[@class='breadcrumb-item active']")
+   //public WebElement newsThirdPage;
+
+   @FindBy(xpath = "//a[@title='The Benefits Of Investing In Emerging Real Estate Markets']")
+   public WebElement newsFirstElement;
+
+   @FindBy(xpath = "//a[@title='A Guide To Negotiating The Best Deal On Your Dream Home']")
+   public WebElement newsSecondElement;
 
 
+   @FindBy(xpath = "//a[@title='The Rise Of Sustainable Homes: Building For A Greener Future']")
+   public WebElement newsThirdElement;
 
+   @FindBy(xpath = "//input[@name='email']")
+   public WebElement subscribeBox;
 
+   @FindBy(xpath = "//button[@class='btn bg-dark text-white']")
+   public WebElement subscribeButton;
 
 }
